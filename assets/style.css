@@ -24,7 +24,7 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-image: url(/assets/img/circuits.jpg);
+    background-image: url(./img/circuits.jpg);
 	color: white;
 	min-height: 100%;
 	position: relative;
@@ -200,7 +200,7 @@ Note: Tests/dev only
 	padding-left: 50px;
 	z-index: -1;
 	width: 100%;
-    background-image: url("/assets/img/bg.jpg");
+    background-image: url("./img/bg.jpg");
 	box-sizing: border-box;
 	transition: 1s;
 	font-size: 25px;

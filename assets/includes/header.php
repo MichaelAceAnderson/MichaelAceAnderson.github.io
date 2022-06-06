@@ -7,7 +7,7 @@
 	<!-- Bouton contrôle menu -->
 	<div class="disp" id="toggle" onclick="sideMenu()">☰</div>
 		<div class="profile">
-			<img src="/assets/img/profile.jpg" alt="Photo de profil"/>
+			<img src="./assets/img/profile.jpg" alt="Photo de profil"/>
 			<div class="infos">
 				<h1>Adrien Savoie</h1>
 				<h3>BTS SIO1</h3>
@@ -21,9 +21,9 @@
 				<a onclick="spoil(this);">Projets <span class="dropdown">▿</span></a>
 				<!-- Sous-menu -->
 				<div class="submenu" style="display: none;">
-					<a href="/projets/stage.php">Stage</a>
-					<a href="/projets/ap.php">Atelier Pro</a>
-					<a href="/projets/tp.php">TP</a>
+					<a href="./projets/stage.php">Stage</a>
+					<a href="./projets/ap.php">Atelier Pro</a>
+					<a href="./projets/tp.php">TP</a>
 				</div>
 			</div>
 			<div>
