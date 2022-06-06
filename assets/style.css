@@ -188,10 +188,10 @@ header h1{
 }
 /*
 Note: Tests/dev only
-.content iframe{
-	filter: blur(3px);
-}
 */
+#main iframe{
+	filter: blur(7px);
+}
 
 /* Contenu */
 .main{
