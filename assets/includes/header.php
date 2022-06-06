@@ -9,7 +9,7 @@
 		<div class="profile">
 			<img src="/assets/img/profile.jpg" alt="Photo de profil"/>
 			<div class="infos">
-				<h1>Adrien Savoie</h1>
+				<h1>Prénom NOM</h1>
 				<h3>BTS SIO1</h3>
 			</div>
 		</div>
