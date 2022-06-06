@@ -1,0 +1,311 @@
+/* Propriétés générales du corps de la page */
+@font-face {
+    font-family: 'Agency FB';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Agency FB'), local('AgencyFB-Regular'),
+        url(/assets/includes/agencyfb.ttf) format('truetype');
+}
+
+*{
+	outline: none;
+}
+
+/* Déplacement plus fluide de la page */
+html{
+	scroll-behavior: smooth;
+}
+/* Position, couleur, police et image de fond du corps */
+body{
+	padding: 0;
+	margin: 0;
+	font-family: 'Agency FB', sans-serif;
+    background-color: rgb(60, 60, 60);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url(/assets/img/circuits.jpg);
+	color: white;
+	min-height: 100%;
+	position: relative;
+	z-index: 0;
+}
+
+/* Code destiné à styliser la barre de défilement sur les navigateurs à moteur Chromium (webkit) */
+::-webkit-scrollbar {
+  width: 20px;
+}
+::-webkit-scrollbar-track {
+  background: #202020;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(255 255 255 / 20%);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(255 255 255 / 30%);
+}
+
+/* Styliser tous les liens */
+a{
+	text-decoration: none;
+	color: white;
+}
+
+/* En-tête */
+header {
+    width: 100%;
+    position: relative;
+    top: 0;
+    z-index: 1;
+    text-align: center;
+    text-shadow: 2px 2px 0px black;
+    background-color: rgb(0, 0, 0, 0.4);
+    background-size: cover;
+}
+/* Liens en-tête */
+header a{
+	display: inline-block;
+	padding: 20px;
+	position: relative;
+	font-size: 30px;
+	text-transform: uppercase;
+	vertical-align: middle;
+	box-sizing: border-box;
+	transition: 1s;
+	border: 2px solid transparent;
+}
+header a:hover{
+	cursor: pointer;
+	transition: 1s;
+	border: 2px solid white;
+}
+header a:active{
+	background: rgba(255, 255, 255, 0.3);
+	border: 2px solid gray;
+	transition: 0.1s;
+}
+/* Titre en-tête */
+header h1{
+	margin: 0;
+	display:inline-block;
+	font-size: 80px;
+}
+
+
+/* Menu de gauche */
+.menu{
+	position: fixed;
+	width: 0px;
+	height: 100%;
+	background: rgb(36, 36, 36);
+	top: 0;
+	z-index: 2;
+	overflow-x: hidden;
+	overflow-y: auto;
+	transition: 1s;
+	user-select: none;
+}
+/* Bouton contrôle du menu */
+#toggle.disp{
+	position: fixed;
+	top: 30px;
+	left: 60px;
+	font-size: 60px;
+	width: 60px;
+	user-select: none;
+	z-index: 3;
+	transition: 0.5s;
+	transform: unset;
+    text-shadow: 2px 2px 0px black;
+}
+#toggle.disp:hover{
+	cursor: pointer;
+}
+/* Cadre du profil */
+.menu .profile{
+	height: 120px;
+	margin: 130px 5% 130px 5%;
+    background: rgba(255, 255, 255, 0.15);
+	padding: 15px;
+	white-space: nowrap;
+}
+.menu .profile img{
+    max-height: 100%;
+}
+.menu .profile .infos{
+	position: absolute;
+    display: inline;
+    max-width: 40%;
+    margin: 5px;
+	white-space: normal;
+}
+.menu .profile .infos h1, .menu .profile .infos h3{
+	margin: 0;
+}
+/* Liens du menu */
+.menu .links{
+	position: absolute;
+	top: 300px;
+	width: 100%;
+}
+.menu .links a{
+	display: block;
+	width: 100%;
+	padding: 20px 0 20px 20px;
+	font-size: 25px;
+	box-sizing: border-box;
+	white-space: nowrap;
+	transition: 0s;
+}
+.menu .links a .dropdown{
+    position: absolute;
+    right: 25px;
+}
+.menu .links a:hover{
+	background: rgba(255, 255, 255, 0.15);
+	cursor: pointer;
+	transition: 0.5s;
+}
+.menu .links a:active{
+	background: rgba(255, 255, 255, 0.3);
+	transition: 0.1s;
+}
+
+/* Liens du sous-menu */
+.menu .links .submenu a {
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+}
+
+/* Surcouche du contenu */
+.content{
+	height: 100%;
+	width: 100%;
+	z-index: -2;
+    position: fixed;
+    top: 0;
+}
+/*
+Note: Tests/dev only
+.content iframe{
+	filter: blur(3px);
+}
+*/
+
+/* Contenu */
+.main{
+	position: relative;
+	padding: 5%;
+	padding-left: 50px;
+	z-index: -1;
+	width: 100%;
+    background-image: url("/assets/img/bg.jpg");
+	box-sizing: border-box;
+	transition: 1s;
+	font-size: 25px;
+	min-height: 1000px;
+}
+
+.main form{
+	background: white;
+	color: black;
+	text-align: center;
+	width: 50%;
+	margin: auto;
+}
+.main form h1{
+	background: black;
+	color: white;
+}
+.main input[type="text"], .main textarea{
+	background-color: transparent;
+	border-radius: 0;
+	border-width: 0 0 2px 0;
+    border-color: #001;
+	margin: 10px auto 10px auto;
+	display: block;
+	padding: 7px;
+	width: 50%;
+	height: 20px;
+	transition: 0.2s linear;
+	color: black;
+	font-family: Calibri, sans-serif;
+	font-size: 18px;
+	user-select: none;
+	-ms-user-select: none;
+	-webkit-user-select: none;
+}
+.main textarea{
+	height: 200px;
+}
+.main input[type="text"]:hover, .main textarea:hover{
+    border-color: #005aff;
+	transition: 0.2s linear;
+}
+.main input[type="text"]:focus, .main textarea:focus{
+	background-color: rgb(0 0 0 / 5%);
+	transition: 0.2s linear;
+}
+
+/* Style formulaire */
+.main form .error{
+	background: rgb(255 0 0 / 80%);
+    border: 8px solid rgb(0 0 0 / 20%);
+    margin: 25px;
+    padding: 10px;
+	color: white;
+	display: inline-block;
+}
+.main form .success{
+	background: rgb(0 100 0 / 80%);
+    border: 8px solid rgb(0 0 0 / 20%);
+    padding: 10px;
+	color: white;
+	display: inline-block;
+}
+.main form h3{
+	margin: 0;
+}
+.main form button{
+	background:radial-gradient(#005aff, #005aff);
+	border: 5px solid rgb(0 0 0 / 20%);
+	border-radius: 0;
+	font-size: 20px;
+	padding: 15px;
+	color: white;
+	display: inline;
+	margin: 5px auto 5px auto;
+	transition: 0.5s;
+}
+.main form button:hover{
+	cursor: pointer;
+	transition: 0.5s;
+	border: 5px solid rgb(0 0 0 / 50%);
+}
+.main form button:active{
+	background: radial-gradient(#005aff, #0042bb);
+	cursor: pointer;
+	border: 5px solid rgb(0 0 0 / 30%);
+}
+
+/* Informations de bas de page */
+footer{
+	position: absolute;
+	bottom: 0;
+	z-index: -1;
+	width: 100%;
+	background: rgba(0,0,0, 0.4);
+	text-align: center;
+	font-size: 25px;
+	padding: 15px;
+	box-sizing: border-box;
+}
+
+/* Futur responsive design
+
+@media screen and (min-device-width: 480px) and (max-device-width: 649px){
+
+}
+
+*/
