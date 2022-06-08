@@ -5,7 +5,7 @@
 	include 'assets/includes/header.php';
 ?>
 	<!-- Après avoir inclus le code commun à toutes les pages, on rajoute le contenu individuel de celle-ci -->
-	<div class="content" id="content"></div>
+	<div class="fade" id="fade"></div>
 	<section class="main" id="main">
 		<h1>CV & Lettre de motivation</h1>
 		<iframe src="assets/CV.pdf" width="48%" height="500px" title="CV"></iframe>

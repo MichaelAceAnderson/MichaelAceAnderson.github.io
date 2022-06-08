@@ -14,7 +14,7 @@
 				<!-- On convertir les éléments à récupérer dans la page en variables -->
 				var menu = document.getElementById('menu');
 				var toggle = document.getElementById("toggle");
-				var content = document.getElementById("content");
+				var fade = document.getElementById("fade");
 				var main = document.getElementById("main");
 				var header = document.getElementsByTagName("header")[0];
 
@@ -34,10 +34,10 @@
 					menu.style.transition = '0.5s';
 
 					<!-- Décaler la surcouche foncée -->
-					content.style.marginLeft = '25%';
-					content.style.transition = '0.5s';
-					content.style.background = 'rgb(0, 0, 0, 0.7)';
-					content.style.zIndex = '1';
+					fade.style.marginLeft = '25%';
+					fade.style.transition = '0.5s';
+					fade.style.background = 'rgb(0, 0, 0, 0.7)';
+					fade.style.zIndex = '1';
 
 					<!-- Décaler le contenu -->
 					main.style.paddingLeft = '26%';
@@ -58,10 +58,10 @@
 					toggle.style.position = 'fixed';
 
 					<!-- Décaler la surcouche foncée -->
-					content.style.marginLeft = '';
-					content.style.transition = '0.3s';
-					content.style.background = '';
-					content.style.zIndex = '-2';
+					fade.style.marginLeft = '';
+					fade.style.transition = '0.3s';
+					fade.style.background = '';
+					fade.style.zIndex = '-2';
 
 					<!-- Décaler le contenu -->
 					main.style.paddingLeft = '';

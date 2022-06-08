@@ -1,4 +1,15 @@
 /* Propriétés générales du corps de la page */
+
+:root {
+	--blue: #288aec;
+	--white: #ffffff;
+	--dark: rgb(23 24 25);
+	--darker: rgb(0, 0, 0, 0.2);
+	--evendarker: rgb(0, 0, 0, 0.4);
+	--brighter: rgb(255, 255, 255, 0.1);
+	--evenbrighter: rgb(255, 255, 255, 0.2);
+  }
+
 @font-face {
     font-family: 'Agency FB';
     font-style: normal;
@@ -20,11 +31,11 @@ body{
 	padding: 0;
 	margin: 0;
 	font-family: 'Agency FB', sans-serif;
-    background-color: rgb(60, 60, 60);
+    background-color: var(--dark);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-image: url(./img/circuits.jpg);
+    background-image: url(/assets/img/circuits.jpg);
 	color: white;
 	min-height: 100%;
 	position: relative;
@@ -36,10 +47,10 @@ body{
   width: 20px;
 }
 ::-webkit-scrollbar-track {
-  background: #202020;
+  background: var(--dark);
 }
 ::-webkit-scrollbar-thumb {
-  background: rgb(255 255 255 / 20%);
+  background: var(--brighter);
 }
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(255 255 255 / 30%);
@@ -59,7 +70,7 @@ header {
     z-index: 1;
     text-align: center;
     text-shadow: 2px 2px 0px black;
-    background-color: rgb(0, 0, 0, 0.4);
+    background-color: var(--darker);
     background-size: cover;
 }
 /* Liens en-tête */
@@ -80,7 +91,7 @@ header a:hover{
 	border: 2px solid white;
 }
 header a:active{
-	background: rgba(255, 255, 255, 0.3);
+	background: var(--evenbrighter);
 	border: 2px solid gray;
 	transition: 0.1s;
 }
@@ -97,7 +108,7 @@ header h1{
 	position: fixed;
 	width: 0px;
 	height: 100%;
-	background: rgb(36, 36, 36);
+	background: var(--dark);
 	top: 0;
 	z-index: 2;
 	overflow-x: hidden;
@@ -125,7 +136,7 @@ header h1{
 .menu .profile{
 	height: 120px;
 	margin: 130px 5% 130px 5%;
-    background: rgba(255, 255, 255, 0.15);
+    background: var(--brighter);
 	padding: 15px;
 	white-space: nowrap;
 }
@@ -162,12 +173,12 @@ header h1{
     right: 25px;
 }
 .menu .links a:hover{
-	background: rgba(255, 255, 255, 0.15);
+	background: var(--brighter);
 	cursor: pointer;
 	transition: 0.5s;
 }
 .menu .links a:active{
-	background: rgba(255, 255, 255, 0.3);
+	background: var(--evenbrighter);
 	transition: 0.1s;
 }
 
@@ -179,7 +190,7 @@ header h1{
 }
 
 /* Surcouche du contenu */
-.content{
+.fade{
 	height: 100%;
 	width: 100%;
 	z-index: -2;
@@ -200,7 +211,7 @@ Note: Tests/dev only
 	padding-left: 50px;
 	z-index: -1;
 	width: 100%;
-    background-image: url("./img/bg.jpg");
+    background-image: url("https://www.wallpaperuse.com/wallp/12-123114_m.jpg");
 	box-sizing: border-box;
 	transition: 1s;
 	font-size: 25px;
@@ -222,7 +233,7 @@ Note: Tests/dev only
 	background-color: transparent;
 	border-radius: 0;
 	border-width: 0 0 2px 0;
-    border-color: #001;
+    border-color: black;
 	margin: 10px auto 10px auto;
 	display: block;
 	padding: 7px;
@@ -251,7 +262,7 @@ Note: Tests/dev only
 /* Style formulaire */
 .main form .error{
 	background: rgb(255 0 0 / 80%);
-    border: 8px solid rgb(0 0 0 / 20%);
+    border: 8px solid var(--darker);
     margin: 25px;
     padding: 10px;
 	color: white;
@@ -259,7 +270,7 @@ Note: Tests/dev only
 }
 .main form .success{
 	background: rgb(0 100 0 / 80%);
-    border: 8px solid rgb(0 0 0 / 20%);
+    border: 8px solid var(--darker);
     padding: 10px;
 	color: white;
 	display: inline-block;
@@ -268,8 +279,8 @@ Note: Tests/dev only
 	margin: 0;
 }
 .main form button{
-	background:radial-gradient(#005aff, #005aff);
-	border: 5px solid rgb(0 0 0 / 20%);
+	background: blue;
+	border: 5px solid var(--darker);
 	border-radius: 0;
 	font-size: 20px;
 	padding: 15px;
