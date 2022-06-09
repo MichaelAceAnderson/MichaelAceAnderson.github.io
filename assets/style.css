@@ -211,11 +211,12 @@ Note: Tests/dev only
 	padding-left: 50px;
 	z-index: -1;
 	width: 100%;
+	min-height: 1000px;
+	font-size: 25px;
     background-image: url("https://www.wallpaperuse.com/wallp/12-123114_m.jpg");
 	box-sizing: border-box;
+	text-shadow: 2px 2px 2px black;
 	transition: 1s;
-	font-size: 25px;
-	min-height: 1000px;
 }
 
 .main form{
