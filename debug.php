@@ -61,7 +61,11 @@
     $host='http://'.$_SERVER['SERVER_NAME'].'/'.$D;
 
     echo "<font color=\"green\"><b>Host: </font></b><span>".$host."</span><br>\n";
-
+    /* PHP Info
+    echo "<font color=\"green\"><b>PHP Info: </font></b><span>".phpinfo()."</span><br>\n";
+    //SERVER VARS
+    echo "<font color=\"green\"><b>PHP Info 32: </font></b><span>".phpinfo(32)."</span><br>\n";
+    */
 
     /* Foreach SERVER VARS
     foreach($_SERVER as $key => $value)

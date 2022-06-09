@@ -1,16 +1,33 @@
 /* Propriétés générales du corps de la page */
+@media (prefers-color-scheme: light) /* À adapter */
+{
+	:root
+	{
+		--blue: #288aec;
+		--white: #ffffff;
+		--themecolor: rgb(23 24 25);
+		--darker: rgb(0, 0, 0, 0.2);
+		--evendarker: rgb(0, 0, 0, 0.4);
+		--brighter: rgb(255, 255, 255, 0.1);
+		--evenbrighter: rgb(255, 255, 255, 0.2);
+	}
+}
+@media (prefers-color-scheme: dark), (prefers-color-scheme: no-preference) 
+{
+:root 
+	{
+		--blue: #288aec;
+		--white: #ffffff;
+		--themecolor: rgb(23 24 25);
+		--darker: rgb(0, 0, 0, 0.2);
+		--evendarker: rgb(0, 0, 0, 0.4);
+		--brighter: rgb(255, 255, 255, 0.1);
+		--evenbrighter: rgb(255, 255, 255, 0.2);
+	}
+}
 
-:root {
-	--blue: #288aec;
-	--white: #ffffff;
-	--dark: rgb(23 24 25);
-	--darker: rgb(0, 0, 0, 0.2);
-	--evendarker: rgb(0, 0, 0, 0.4);
-	--brighter: rgb(255, 255, 255, 0.1);
-	--evenbrighter: rgb(255, 255, 255, 0.2);
-  }
-
-@font-face {
+@font-face 
+{
     font-family: 'Agency FB';
     font-style: normal;
     font-weight: 400;
@@ -18,7 +35,8 @@
         url(/assets/includes/agencyfb.ttf) format('truetype');
 }
 
-*{
+*
+{
 	outline: none;
 }
 
@@ -31,7 +49,7 @@ body{
 	padding: 0;
 	margin: 0;
 	font-family: 'Agency FB', sans-serif;
-    background-color: var(--dark);
+    background-color: var(--themecolor);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -47,7 +65,7 @@ body{
   width: 20px;
 }
 ::-webkit-scrollbar-track {
-  background: var(--dark);
+  background: var(--themecolor);
 }
 ::-webkit-scrollbar-thumb {
   background: var(--brighter);
@@ -55,7 +73,10 @@ body{
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(255 255 255 / 30%);
 }
-
+::-webkit-scrollbar-thumb:active {
+	background: var(--brighter);
+  }
+  
 /* Styliser tous les liens */
 a{
 	text-decoration: none;
@@ -70,7 +91,7 @@ header {
     z-index: 1;
     text-align: center;
     text-shadow: 2px 2px 0px black;
-    background-color: var(--darker);
+    background-color: var(--evendarker);
     background-size: cover;
 }
 /* Liens en-tête */
@@ -108,7 +129,7 @@ header h1{
 	position: fixed;
 	width: 0px;
 	height: 100%;
-	background: var(--dark);
+	background: var(--themecolor);
 	top: 0;
 	z-index: 2;
 	overflow-x: hidden;
