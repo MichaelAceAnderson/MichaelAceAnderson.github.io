@@ -210,6 +210,23 @@ header h1{
     padding: 10px;
 }
 
+.submenu {
+	animation: dropdownanimation 400ms ease-in-out backwards;
+	transform-origin: top center;
+}
+
+@keyframes dropdownanimation {
+	0% {
+		transform: rotateX(-90deg);
+	}
+	70% {
+		transform: rotateX(20deg);
+	}
+	100% {
+		transform: rotateX(0deg);
+	}
+}
+
 /* Surcouche du contenu */
 .fade{
 	height: 100%;
