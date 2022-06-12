@@ -1,3 +1,5 @@
+	<script src="/assets/includes/utils.js"></script>
+	
 	<!-- Ici se touve l'entête  -->
 	<header>
 		<a href="#"><h1>Portfolio</h1></a>
@@ -18,17 +20,17 @@
 			<a href="/">Accueil</a>
 			<a href="/cv.php">CV</a>
 			<div>
-				<a onclick="spoil(this);">Projets <span class="dropdown">▿</span></a>
+				<a onclick="dropDownAnimate(this);">Projets <span class="dropdown">▿</span></a>
 				<!-- Sous-menu -->
-				<div class="submenu" style="display: none;">
+				<div class="submenu closed" style="display: none;">
 					<a href="/projets/stage.php">Stage</a>
 					<a href="/projets/ap.php">Atelier Pro</a>
 					<a href="/projets/tp.php">TP</a>
 				</div>
 			</div>
 			<div>
-				<a onclick="spoil(this);">Veilles <span class="dropdown">▿</span></a>
-				<div class="submenu" style="display: none;">
+				<a onclick="dropDownAnimate(this);">Veilles <span class="dropdown">▿</span></a>
+				<div class="submenu closed" style="display: none;">
 					<a href="/vt.php">Veille technologique</a>
 					<a href="/vj.php">Veille juridique</a>
 				</div>

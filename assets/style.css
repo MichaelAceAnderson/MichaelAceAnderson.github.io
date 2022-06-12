@@ -210,8 +210,13 @@ header h1{
     padding: 10px;
 }
 
-.submenu {
-	animation: dropdownanimation 400ms ease-in-out backwards;
+.submenu.closed {
+	animation: dropdownanimationrev 400ms ease-in-out forwards;
+	transform-origin: top center;
+}
+
+.submenu.opened {
+	animation: dropdownanimation 400ms ease-in-out forwards;
 	transform-origin: top center;
 }
 
@@ -224,6 +229,18 @@ header h1{
 	}
 	100% {
 		transform: rotateX(0deg);
+	}
+}
+
+@keyframes dropdownanimationrev {
+	0% {
+		transform: rotateX(0deg);
+	}
+	70% {
+		transform: rotateX(20deg);
+	}
+	100% {
+		transform: rotateX(-90deg);
 	}
 }
 
