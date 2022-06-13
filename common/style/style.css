@@ -32,7 +32,7 @@
     font-style: normal;
     font-weight: 400;
     src: local('Agency FB'), local('AgencyFB-Regular'),
-        url(/assets/includes/agencyfb.ttf) format('truetype');
+        url(/common/fonts/agencyfb.ttf) format('truetype');
 }
 
 *
@@ -53,7 +53,7 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-image: url(/assets/img/circuits.jpg);
+    background-image: url(/common/img/circuits.jpg);
 	color: white;
 	min-height: 100%;
 	position: relative;
