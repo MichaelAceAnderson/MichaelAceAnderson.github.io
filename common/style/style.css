@@ -3,26 +3,24 @@
 {
 	:root
 	{
-		--blue: #288aec;
-		--white: #ffffff;
-		--themecolor: rgb(23 24 25);
+		--textcolor: black;
+		--themecolor: white;
 		--darker: rgb(0, 0, 0, 0.2);
 		--evendarker: rgb(0, 0, 0, 0.4);
-		--brighter: rgb(255, 255, 255, 0.1);
-		--evenbrighter: rgb(255, 255, 255, 0.2);
+		--highlight: rgb(255, 255, 255, 0.1);
+		--evenhighlight: rgb(255, 255, 255, 0.2);
 	}
 }
 @media (prefers-color-scheme: dark), (prefers-color-scheme: no-preference) 
 {
 :root 
 	{
-		--blue: #288aec;
-		--white: #ffffff;
+		--textcolor: white;
 		--themecolor: rgb(23 24 25);
 		--darker: rgb(0, 0, 0, 0.2);
 		--evendarker: rgb(0, 0, 0, 0.4);
-		--brighter: rgb(255, 255, 255, 0.1);
-		--evenbrighter: rgb(255, 255, 255, 0.2);
+		--highlight: rgb(255, 255, 255, 0.1);
+		--evenhighlight: rgb(255, 255, 255, 0.2);
 	}
 }
 
@@ -68,19 +66,19 @@ body{
   background: var(--themecolor);
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--brighter);
+  background: var(--highlight);
 }
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(255 255 255 / 30%);
 }
 ::-webkit-scrollbar-thumb:active {
-	background: var(--brighter);
+	background: var(--highlight);
   }
   
 /* Styliser tous les liens */
 a{
 	text-decoration: none;
-	color: white;
+	color: var(--textcolor);
 }
 
 /* En-tête */
@@ -112,7 +110,7 @@ header a:hover{
 	border: 2px solid white;
 }
 header a:active{
-	background: var(--evenbrighter);
+	background: var(--evenhighlight);
 	border: 2px solid gray;
 	transition: 0.1s;
 }
@@ -133,7 +131,7 @@ header h1{
 	top: 0;
 	z-index: 2;
 	overflow-x: hidden;
-	overflow-y: auto;
+	overflow-y: scroll;
 	transition: 1s;
 	user-select: none;
 }
@@ -157,7 +155,7 @@ header h1{
 .menu .profile{
 	height: 120px;
 	margin: 130px 5% 130px 5%;
-    background: var(--brighter);
+    background: var(--highlight);
 	padding: 15px;
 	white-space: nowrap;
 }
@@ -194,12 +192,12 @@ header h1{
     right: 25px;
 }
 .menu .links a:hover{
-	background: var(--brighter);
+	background: var(--highlight);
 	cursor: pointer;
 	transition: 0.5s;
 }
 .menu .links a:active{
-	background: var(--evenbrighter);
+	background: var(--evenhighlight);
 	transition: 0.1s;
 }
 
@@ -262,13 +260,13 @@ Note: Tests/dev only
 /* Contenu */
 .main{
 	position: relative;
-	padding: 5%;
-	padding-left: 50px;
+	padding: 0 10%;
+	overflow: hidden;
 	z-index: -1;
 	width: 100%;
 	min-height: 1000px;
 	font-size: 25px;
-    background-image: url("https://www.wallpaperuse.com/wallp/12-123114_m.jpg");
+    background: rgb(20, 20, 20);
 	box-sizing: border-box;
 	text-shadow: 2px 2px 2px black;
 	transition: 1s;
@@ -283,7 +281,7 @@ Note: Tests/dev only
 }
 .main form h1{
 	background: black;
-	color: white;
+	color: var(--textcolor);
 }
 .main input[type="text"], .main textarea{
 	background-color: transparent;

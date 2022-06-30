@@ -1,4 +1,4 @@
-//Ce script a pour rôle d'afficher ou cacher le menu de gauche
+// Ce script a pour rôle d'afficher ou cacher le menu de gauche
 function sideMenu()
 {
     // On convertir les éléments à récupérer dans la page en variables
@@ -61,12 +61,12 @@ function sideMenu()
         header.style.zIndex = '1';
     }
 }
+// Fonction pour les sous-menus
 function spoil(obj)
-// Cette fonction permet de cacher ou afficher la div juste au dessous de l'objet "obj" qui diffère selon les éléments HTML qui appellent la fonction
 {
     // On récupère la première div présente dans la balise parente
     var inner = obj.parentNode.getElementsByTagName("div")[0];
-        // On récupère le premier span présente dans cet objet (obj)
+    // On récupère le premier span présente dans cet objet (obj)
     var arrow = obj.getElementsByTagName("span")[0];
 
     // Si le sous-menu est caché, on le rouvre
