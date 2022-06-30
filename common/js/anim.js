@@ -62,39 +62,21 @@ function sideMenu()
     }
 }
 // Fonction pour les sous-menus
-function spoil(obj)
-{
-    // On récupère la première div présente dans la balise parente
-    var inner = obj.parentNode.getElementsByTagName("div")[0];
-    // On récupère le premier span présente dans cet objet (obj)
-    var arrow = obj.getElementsByTagName("span")[0];
+function dropDownAnimate(link) {
 
-    // Si le sous-menu est caché, on le rouvre
-    if (inner.style.display == "none")
-    {
-        inner.style.display = "";
-        arrow.innerHTML = "◃";
-    }
-    else
-    {
-        inner.style.display = "none";
-        arrow.innerHTML = "▿";
-    }
-}
-function dropDownAnimate(obj) {
-    let menu = obj.nextElementSibling;
+    let arrow = link.children(".dropdown");
+    let menu = link.nextAll('.submenu');
 
-    if (!menu.classList.contains('opened')) {
-        menu.classList.add('opened');
-        menu.classList.remove('closed');
-        spoil(obj);
+    if (!menu.hasClass('opened')) {
+        menu.addClass('opened');
+        menu.removeClass('closed');
+        arrow.html("◃")
+        menu.slideDown();     
         
     } else {
-        menu.classList.remove('opened');
-        menu.classList.add('closed');
-        setTimeout(() =>  {
-            console.log("animation end!");
-            spoil(obj);
-        }, 400);
+        menu.removeClass('opened');
+        menu.addClass('closed');
+        arrow.html("▿")
+        menu.slideUp();
     }
 }
