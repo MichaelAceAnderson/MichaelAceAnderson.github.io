@@ -220,25 +220,19 @@ header h1{
 
 @keyframes dropdownanimation {
 	0% {
-		transform: rotateX(-90deg);
-	}
-	70% {
-		transform: rotateX(20deg);
+		height: 0px;
 	}
 	100% {
-		transform: rotateX(0deg);
+		height: 120px;
 	}
 }
 
 @keyframes dropdownanimationrev {
 	0% {
-		transform: rotateX(0deg);
-	}
-	70% {
-		transform: rotateX(20deg);
+		height: 120px;
 	}
 	100% {
-		transform: rotateX(-90deg);
+		height: 0px;
 	}
 }
 
