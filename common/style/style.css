@@ -211,27 +211,29 @@ header h1{
 }
 
 .submenu.closed {
-	animation: dropdownanimationrev 400ms ease-in-out forwards;
+	animation: closesub 400ms ease-in-out forwards;
 	transform-origin: top center;
+	overflow: hidden;
 }
 
 .submenu.opened {
-	animation: dropdownanimation 400ms ease-in-out forwards;
+	animation: opensub 400ms ease-in-out forwards;
 	transform-origin: top center;
+	overflow: hidden;
 }
 
-@keyframes dropdownanimation {
+@keyframes opensub {
 	0% {
 		height: 0px;
 	}
 	100% {
-		height: 120px;
+		height: 130px;
 	}
 }
 
-@keyframes dropdownanimationrev {
+@keyframes closesub {
 	0% {
-		height: 120px;
+		height: 130px;
 	}
 	100% {
 		height: 0px;

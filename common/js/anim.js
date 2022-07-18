@@ -61,22 +61,26 @@ function sideMenu()
         header.style.zIndex = '1';
     }
 }
-// Fonction pour les sous-menus
-function dropDownAnimate(link) {
 
-    let arrow = link.children(".dropdown");
-    let menu = link.nextAll('.submenu');
+// Afficher/Cacher les sous-menus
+function spoil(obj)
+{
+    // On récupère la première div présente dans la balise parente
+    let inner = obj.parentNode.getElementsByTagName("div")[0];
+    // On récupère le premier span présente dans cet objet (obj)
+    let arrow = obj.getElementsByTagName("span")[0];
 
-    if (!menu.hasClass('opened')) {
-        menu.addClass('opened');
-        menu.removeClass('closed');
-        arrow.html("◃")
-        menu.slideDown();     
-        
-    } else {
-        menu.removeClass('opened');
-        menu.addClass('closed');
-        arrow.html("▿")
-        menu.slideUp();
+    // Si le sous-menu est caché, on le rouvre
+    if (inner.classList.contains('closed'))
+    {
+        arrow.innerHTML = "◃";
+        inner.classList.remove('closed');
+        inner.classList.add('opened');
+    }
+    else
+    {
+        arrow.innerHTML = "▿";
+        inner.classList.remove('opened');
+        inner.classList.add('closed');
     }
 }
