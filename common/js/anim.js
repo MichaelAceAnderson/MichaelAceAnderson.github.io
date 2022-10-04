@@ -1,4 +1,4 @@
-//Ce script a pour rôle d'afficher ou cacher le menu de gauche
+// Ce script a pour rôle d'afficher ou cacher le menu de gauche
 function sideMenu()
 {
     // On convertir les éléments à récupérer dans la page en variables
@@ -61,40 +61,26 @@ function sideMenu()
         header.style.zIndex = '1';
     }
 }
+
+// Afficher/Cacher les sous-menus
 function spoil(obj)
-// Cette fonction permet de cacher ou afficher la div juste au dessous de l'objet "obj" qui diffère selon les éléments HTML qui appellent la fonction
 {
     // On récupère la première div présente dans la balise parente
-    var inner = obj.parentNode.getElementsByTagName("div")[0];
-        // On récupère le premier span présente dans cet objet (obj)
-    var arrow = obj.getElementsByTagName("span")[0];
+    let inner = obj.parentNode.getElementsByTagName("div")[0];
+    // On récupère le premier span présente dans cet objet (obj)
+    let arrow = obj.getElementsByTagName("span")[0];
 
     // Si le sous-menu est caché, on le rouvre
-    if (inner.style.display == "none")
+    if (inner.classList.contains('closed'))
     {
-        inner.style.display = "";
         arrow.innerHTML = "◃";
+        inner.classList.remove('closed');
+        inner.classList.add('opened');
     }
     else
     {
-        inner.style.display = "none";
         arrow.innerHTML = "▿";
-    }
-}
-function dropDownAnimate(obj) {
-    let menu = obj.nextElementSibling;
-
-    if (!menu.classList.contains('opened')) {
-        menu.classList.add('opened');
-        menu.classList.remove('closed');
-        spoil(obj);
-        
-    } else {
-        menu.classList.remove('opened');
-        menu.classList.add('closed');
-        setTimeout(() =>  {
-            console.log("animation end!");
-            spoil(obj);
-        }, 400);
+        inner.classList.remove('opened');
+        inner.classList.add('closed');
     }
 }
