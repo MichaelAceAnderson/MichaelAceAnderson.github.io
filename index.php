@@ -13,6 +13,8 @@
 		<p>Si mes projets suscitent votre intérêt, il est possible de me contacter grâce aux informations dans la rubrique "Contact" 
 		mais également de consulter mon CV et ma lettre de motivation dans la rubrique "CV".
 		</p>
+		<h1>La formation</h1>
+		<p>SLAM: Solutions Logicielles & Applications Métiers</p>
 	</section>
 
 <?php
