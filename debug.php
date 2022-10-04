@@ -4,6 +4,10 @@
 <style>
     b{
         text-shadow: 0 0 1px black;
+        color: red;
+    }
+    span, b{
+        text-shadow: 0px 0px 5px black, 2px 2px 0px black;
     }
 </style>
 <?php
