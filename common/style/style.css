@@ -1,8 +1,5 @@
 /* Propriétés générales du corps de la page */
-@media (prefers-color-scheme: light)
-
-/* À adapter */
-    {
+@media (prefers-color-scheme: light) /* À adapter */ {
 	:root {
 		--textcolor: black;
 		--themecolor: white;
@@ -13,8 +10,7 @@
 	}
 }
 
-@media (prefers-color-scheme: dark),
-(prefers-color-scheme: no-preference) {
+@media (prefers-color-scheme: dark), (prefers-color-scheme: no-preference) {
 	:root {
 		--textcolor: white;
 		--themecolor: rgb(23 24 25);
