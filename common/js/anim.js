@@ -2,15 +2,12 @@
 function sideMenu()
 {
     // On convertir les éléments à récupérer dans la page en variables
-    var menu = document.getElementById('menu');
-    var toggle = document.getElementById("toggle");
-    var fade = document.getElementById("fade");
-    var main = document.getElementById("main");
-    var header = document.getElementsByTagName("header")[0];
+	let infos = document.getElementsByClassName("infos")[0];
 
     // Si le menu est fermé, on l'ouvre et on décale et assombrit le contenu
-    if(menu.style.width == '0px')
-    {
+		// Permettre au texte de se dérouler correctement
+		infos.style.whiteSpace = "normal";
+
         // Mettre le header derrière le reste
         header.style.zIndex = '-1';
 
@@ -36,11 +33,9 @@ function sideMenu()
 
     }
     // Si le menu est ouvert, on le ferme et on rétablit tout en forme initiale ->
-    else
-    {
-        // Mettre le header devant le reste
-        menu.style.width = '0px';
-        menu.style.transition = '0.3s';
+		// Permettre au texte de s'enrouler correctement
+		infos.style.whiteSpace = "nowrap";
+
 
         // Faire tourner le bouton
         toggle.style.transform = "unset";
