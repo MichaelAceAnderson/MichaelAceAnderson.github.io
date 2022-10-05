@@ -27,14 +27,7 @@
 					<a href="/pages/projets/tp.php">TP</a>
 				</div>
 			</div>
-			<div>
-				<!-- Sous-menu -->
-				<a onclick="spoil(this);">Veilles <span class="dropdown">▿</span></a>
-				<div class="submenu closed">
-					<a href="/pages/veille/vt.php">Veille technologique</a>
-					<a href="/pages/veille/vj.php">Veille juridique</a>
-				</div>
-			</div>
+			<a href="/pages/vt.php">Veille technologique</a>
 			<a href="/pages/contact.php">Contact</a>
 		</div>
 	</div>
