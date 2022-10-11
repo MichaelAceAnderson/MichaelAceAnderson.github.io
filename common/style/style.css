@@ -375,6 +375,35 @@ Note: Tests/dev only
 	border: 5px solid rgb(0 0 0 / 30%);
 }
 
+/* Articles/Cartes */
+
+.main article {
+	margin: 20px;
+	width: 340px;
+	box-shadow: 0px 0px 10px 0px black;
+	vertical-align: top;
+	background: rgb(255 255 255 / 90%);
+	display: inline-block;
+	cursor: pointer;
+}
+.main article img {
+	width: 100%;
+	display: block;
+	background: var(--evendarker);
+}
+.main article p {
+	margin: 10px 25px;
+	display: inline-block;
+	font-size: 18px;
+	color: black;
+}
+.main article h1 {
+	font-size: 25px;
+	color: black;
+	margin: 15px 0 0 0;
+	text-align: center;
+}
+
 /* Informations de bas de page */
 footer {
 	position: absolute;
