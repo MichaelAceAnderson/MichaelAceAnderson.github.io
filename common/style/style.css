@@ -268,7 +268,7 @@ Note: Tests/dev only
 /* Contenu */
 .main {
 	position: relative;
-	padding: 0 10%;
+	padding: 0 50px 0 150px;
 	overflow: hidden;
 	z-index: -1;
 	width: 100%;
@@ -278,6 +278,8 @@ Note: Tests/dev only
 	box-sizing: border-box;
 	transition: 1s;
 }
+
+/* Formulaires */
 
 .main form {
 	background: white;
@@ -329,7 +331,6 @@ Note: Tests/dev only
 	transition: 0.2s linear;
 }
 
-/* Style formulaire */
 .main form .error {
 	background: rgb(255 0 0 / 80%);
 	border: 8px solid var(--darker);
@@ -406,11 +407,12 @@ Note: Tests/dev only
 
 /* Informations de bas de page */
 footer {
-	position: absolute;
+	position: relative;
 	bottom: 0;
 	z-index: -1;
 	width: 100%;
-	background: rgba(0, 0, 0, 0.4);
+	background: var(--themecolor);
+	text-shadow: 0 0 4px black;
 	color: white;
 	text-align: center;
 	font-size: 25px;
