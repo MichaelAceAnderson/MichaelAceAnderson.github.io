@@ -4,12 +4,12 @@
 	include_once $_SERVER['DOCUMENT_ROOT'].'/common/includes/head.php';
 	include_once $_SERVER['DOCUMENT_ROOT'].'/common/includes/header.php';
 ?>
-	<!-- Après avoir inclus le code commun à toutes les pages, on rajoute le contenu individuel de celle-ci -->
+<!-- Après avoir inclus le code commun à toutes les pages, on rajoute le contenu individuel de celle-ci -->
 
-	<!-- Cette balise ne sert qu'à mettre un fond foncé par dessus le contenu lorsque le menu est ouvert -->
-	<div class="fade" id="fade"></div>
-	<section class="main" id="main">
-		<h1>Veille technologique</h1>
+<!-- Cette balise ne sert qu'à mettre un fond foncé par dessus le contenu lorsque le menu est ouvert -->
+<div class="fade" id="fade"></div>
+<section class="main" id="main">
+	<h1>Veille technologique</h1>
 	<p>Note: en cours de travaux.</p>
 		<article>
 			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1184px-Vue.js_Logo_2.svg.png">
@@ -76,7 +76,25 @@
 				Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam nibh. 
 			</p>
 		</article>
-	</section>
+</section>
+
+<link href="/common/style/slideshow.css" type="text/css" rel="stylesheet">
+<div class="slideshow fade">
+	<div class="article">
+		<div class="numbertext" id="pageNum"></div>
+		<div class="picture">
+			<img src="">
+		</div>
+		<h1></h1>
+		<div class="description">
+		</div>
+	</div>
+
+  <!-- <a class="prev" onclick="moveSlides(-1)">&#10094;</a>
+  <a class="next" onclick="moveSlides(1)">&#10095;</a> -->
+</div>
+
+<script src="/common/js/slideshow.js"></script>
 
 <?php
 	include_once $_SERVER['DOCUMENT_ROOT'].'/common/includes/footer.php';

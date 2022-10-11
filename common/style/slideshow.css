@@ -1,0 +1,67 @@
+/* Slideshow container */
+.slideshow {
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	z-index: 3;
+	background: rgb(0 0 0 / 95%);
+	color: white;
+	display: none;
+}
+
+.slideshow .article {
+	position: relative;
+	max-width: 80%;
+	height: 100%;
+	display: block;
+	margin: auto;
+	overflow-y: auto;
+	overflow-x: hidden;
+}
+.slideshow .article img {
+	max-width: 90%;
+	max-height: 95%;
+	margin: 30px auto;
+}
+
+.slideshow .picture {
+	font-size: 15px;
+	padding: 8px 12px;
+	text-align: center;
+	height: 65%;
+}
+
+.slideshow .description {
+	font-size: 25px;
+	padding: 8px 12px;
+	text-align: center;
+}
+
+.slideshow h1 {
+	font-size: 25px;
+	text-align: center;
+}
+
+.slideshow .numbertext {
+	text-shadow: 0px 0px 3px black;
+	font-size: 20px;
+	margin: 15px;
+	position: absolute;
+	top: 0;
+}
+
+/* Fading animation */
+.fade {
+	animation-name: fadeIn;
+	animation-duration: 1s;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0.4;
+	}
+	to {
+		opacity: 1;
+	}
+}
