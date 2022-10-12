@@ -379,7 +379,7 @@ Note: Tests/dev only
 /* Articles/Cartes */
 
 .main article {
-	margin: 20px;
+	margin: 15px 30px 15px 0px;
 	width: 340px;
 	box-shadow: 0px 0px 10px 0px black;
 	vertical-align: top;
