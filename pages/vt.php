@@ -6,8 +6,6 @@
 ?>
 <!-- Après avoir inclus le code commun à toutes les pages, on rajoute le contenu individuel de celle-ci -->
 
-<!-- Cette balise ne sert qu'à mettre un fond foncé par dessus le contenu lorsque le menu est ouvert -->
-<div class="fade" id="fade"></div>
 <section class="main" id="main">
 	<h1>Veille technologique</h1>
 	<p>Note: en cours de travaux.</p>
@@ -67,7 +65,7 @@
 			<img src="">
 			<h1>Test sans image</h1>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. 
-				Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor. 
+				Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.
 				Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. 
 				Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. 
 				Duis semper. Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue. 
@@ -80,7 +78,8 @@
 
 <link href="/common/style/slideshow.css" type="text/css" rel="stylesheet">
 <div class="slideshow fade">
-	<div class="article">
+  <a class="close" onclick="hideSlide()">&#10006;</a>
+	<div class="slideFrame">
 		<div class="numbertext" id="pageNum"></div>
 		<div class="picture">
 			<img src="">
@@ -90,8 +89,8 @@
 		</div>
 	</div>
 
-  <!-- <a class="prev" onclick="moveSlides(-1)">&#10094;</a>
-  <a class="next" onclick="moveSlides(1)">&#10095;</a> -->
+  <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
+  <a class="next" onclick="moveSlide(1)">&#10095;</a> -->
 </div>
 
 <script src="/common/js/slideshow.js"></script>

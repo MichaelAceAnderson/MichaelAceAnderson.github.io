@@ -2,8 +2,6 @@
 	include_once $_SERVER['DOCUMENT_ROOT'].'/common/includes/head.php';
 	include_once $_SERVER['DOCUMENT_ROOT'].'/common/includes/header.php';
 ?>
-	<!-- Surcouche foncée -->
-	<div class="fade" id="fade"></div>
 	<!-- Contenu de la page -->
 	<section class="main" id="main">
 		<h1>Présentation</h1>

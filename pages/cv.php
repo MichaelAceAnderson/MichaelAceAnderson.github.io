@@ -4,8 +4,6 @@
 	include_once $_SERVER['DOCUMENT_ROOT'].'/common/includes/head.php';
 	include_once $_SERVER['DOCUMENT_ROOT'].'/common/includes/header.php';
 ?>
-	<!-- Après avoir inclus le code commun à toutes les pages, on rajoute le contenu individuel de celle-ci -->
-	<div class="fade" id="fade"></div>
 	<section class="main" id="main">
 		<h1>CV & Lettre de motivation</h1>
 		<iframe src="/common/files/CV.pdf" width="48%" height="500px" title="CV"></iframe>

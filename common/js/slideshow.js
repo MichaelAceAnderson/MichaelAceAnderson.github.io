@@ -2,19 +2,26 @@
 const articleList = document.getElementsByTagName("article");
 const elementSlideshow = document.getElementsByClassName("slideshow")[0];
 
+let currentSlide = 0;
+
 for (let i = 0; i < articleList.length; i++) {
 	articleList[i].addEventListener("click", () => {
-		showSlide(articleList[i]);
+		showSlide(i);
 	});
 }
-elementSlideshow.addEventListener("click", () => {
-	hideSlide();
-});
 
-function showSlide(element) {
-	const urlImg = element.getElementsByTagName("img")[0].src;
-	const titleText = element.getElementsByTagName("h1")[0].textContent;
-	const descText = element.getElementsByTagName("p")[0].textContent;
+function moveSlide(n) {
+	if (currentSlide + n > articleList.length - 1) currentSlide = 0;
+	else if (currentSlide + n < 0) currentSlide = articleList.length - 1;
+	else currentSlide += n;
+	showSlide(currentSlide);
+}
+
+function showSlide(n) {
+	let slide = articleList[n];
+	const urlImg = slide.getElementsByTagName("img")[0].src;
+	const titleText = slide.getElementsByTagName("h1")[0].textContent;
+	const descText = slide.getElementsByTagName("p")[0].textContent;
 
 	const slideImg = elementSlideshow.getElementsByTagName("img")[0];
 	const slideDesc = elementSlideshow.getElementsByClassName("description")[0];

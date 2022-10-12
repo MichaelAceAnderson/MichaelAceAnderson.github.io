@@ -20,8 +20,6 @@
 	}
 	?>
 	
-	<!-- Cette balise ne sert qu'à mettre un fond foncé par dessus le contenu lorsque le menu est ouvert -->
-	<div class="fade" id="fade"></div>
 	<section class="main" id="main">
 		<h1>Contact</h1>
 		<form action="#" method="post">

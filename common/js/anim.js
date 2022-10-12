@@ -3,7 +3,7 @@ function sideMenu() {
 	// On convertir les éléments à récupérer dans la page en variables
 	let menu = document.getElementById("menu");
 	let toggle = document.getElementById("toggle");
-	let fade = document.getElementById("fade");
+	let cover = document.getElementById("cover");
 	let main = document.getElementById("main");
 	let header = document.getElementsByTagName("header")[0];
 	let infos = document.getElementsByClassName("infos")[0];
@@ -26,10 +26,10 @@ function sideMenu() {
 		menu.style.transition = "0.5s";
 
 		// Décaler la surcouche foncée
-		fade.style.marginLeft = "25%";
-		fade.style.transition = "0.5s";
-		fade.style.background = "rgb(0, 0, 0, 0.7)";
-		fade.style.zIndex = "1";
+		cover.style.marginLeft = "25%";
+		cover.style.transition = "0.5s";
+		cover.style.background = "rgb(0, 0, 0, 0.7)";
+		cover.style.zIndex = "1";
 
 		// Décaler le contenu
 		main.style.paddingLeft = "26%";
@@ -51,10 +51,10 @@ function sideMenu() {
 		toggle.style.position = "fixed";
 
 		// Décaler la surcouche foncée
-		fade.style.marginLeft = "";
-		fade.style.transition = "0.3s";
-		fade.style.background = "";
-		fade.style.zIndex = "-2";
+		cover.style.marginLeft = "";
+		cover.style.transition = "0.3s";
+		cover.style.background = "";
+		cover.style.zIndex = "-2";
 
 		// Décaler le contenu
 		main.style.paddingLeft = "";

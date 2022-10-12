@@ -31,3 +31,5 @@
 			<a href="/pages/contact.php">Contact</a>
 		</div>
 	</div>
+	<!-- Cette balise ne sert qu'à mettre un fond foncé par dessus le contenu lorsque le menu est ouvert -->
+	<div class="cover" id="cover"></div>

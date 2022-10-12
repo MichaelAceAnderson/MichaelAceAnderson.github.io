@@ -10,7 +10,7 @@
 	display: none;
 }
 
-.slideshow .article {
+.slideshow .slideFrame {
 	position: relative;
 	max-width: 80%;
 	height: 100%;
@@ -19,7 +19,7 @@
 	overflow-y: auto;
 	overflow-x: hidden;
 }
-.slideshow .article img {
+.slideshow .slideFrame img {
 	max-width: 90%;
 	max-height: 95%;
 	margin: 30px auto;
@@ -49,6 +49,42 @@
 	margin: 15px;
 	position: absolute;
 	top: 0;
+}
+
+.slideshow .prev,
+.slideshow .next {
+	position: absolute;
+	top: 40%;
+	cursor: pointer;
+	padding: 16px;
+	background-color: var(--highlight2);
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+	-webkit-user-select: none;
+}
+
+.slideshow .next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+.slideshow .close {
+	top: 0;
+	right: 0;
+	position: absolute;
+	margin: 40px;
+	user-select: none;
+}
+.slideshow .close:hover {
+	cursor: pointer;
+}
+
+.slideshow .prev:hover,
+.slideshow .next:hover {
+	background-color: var(--highlight);
 }
 
 /* Fading animation */

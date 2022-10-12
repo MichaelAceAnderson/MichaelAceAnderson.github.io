@@ -250,7 +250,7 @@ header h1 {
 }
 
 /* Surcouche du contenu */
-.fade {
+.cover {
 	height: 100%;
 	width: 100%;
 	z-index: -2;
