@@ -8,7 +8,14 @@
 
 	<section class="main" id="main">
 		<h1>Travaux pratiques</h1>
-		<p>Pas disponible pour le moment.</p>
+		<p>Voici la liste des travaux réalisés au cours de ma formation.</p>
+		<article>
+			<img src="">
+			<h1>Banque</h1>
+			<p>
+				Projet de gestion de comptes Java.
+			</p>
+		</article>
 	</section>
 
 <?php

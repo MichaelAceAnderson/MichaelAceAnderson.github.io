@@ -6,8 +6,8 @@
 ?>
 	<section class="main" id="main">
 		<h1>CV & Lettre de motivation</h1>
-		<iframe src="/common/files/CV.pdf" width="48%" height="500px" title="CV"></iframe>
-		<iframe src="/common/files/LM.pdf" width="48%" height="500px" title="Lettre de motivation"></iframe>
+		<iframe src="/common/files/CV.pdf" title="CV"></iframe>
+		<iframe src="/common/files/LM.pdf" title="LM"></iframe>
 	</section>
 
 <?php

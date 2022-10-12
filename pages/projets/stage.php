@@ -8,8 +8,9 @@
 
 	<section class="main" id="main">
 		<h1>Stage</h1>
-			<p>Pas disponible pour le moment.</p>
-		</section>
+			<p>Mon rapport de stage à Norsys (Juin 2021)</p>
+			<iframe src="/common/files/RapportStage.pdf" title="RS"></iframe>
+	</section>
 
 <?php
 	include_once $_SERVER['DOCUMENT_ROOT'].'/common/includes/footer.php';
