@@ -1,8 +1,5 @@
 /* Propriétés générales du corps de la page */
-@media (prefers-color-scheme: light)
-
-/* À adapter */
-	{
+@media (prefers-color-scheme: light) {
 	:root {
 		--textcolor: black;
 		--themecolor: white;
@@ -144,7 +141,7 @@ header h1 {
 	user-select: none;
 }
 
-/* Bouton contrôle du menu */
+/* Bouton affichage du menu */
 #toggle.disp {
 	position: fixed;
 	top: 30px;
@@ -253,7 +250,7 @@ header h1 {
 	}
 }
 
-/* Surcouche du contenu */
+/* Couche sombre par-dessus le contenu */
 .cover {
 	height: 100%;
 	width: 100%;
@@ -262,11 +259,9 @@ header h1 {
 	top: 0;
 }
 
-/*
-Note: Tests/dev only
-*/
 #main iframe {
 	border: none;
+	/* Tests/dev only */
 	filter: blur(7px);
 }
 
@@ -330,7 +325,7 @@ Note: Tests/dev only
 	height: 20px;
 	transition: 0.2s linear;
 	color: black;
-	font-family: Calibri, sans-serif;
+	font-family: "Agency FB", sans-serif;
 	font-size: 18px;
 	user-select: none;
 	-ms-user-select: none;
@@ -375,21 +370,24 @@ Note: Tests/dev only
 }
 
 .main form button {
-	background: blue;
-	border: 5px solid var(--darker);
+	color: black;
+	background: transparent;
+	border: 5px solid rgb(23 24 25);
 	border-radius: 0;
 	font-size: 20px;
 	padding: 15px;
-	color: white;
 	display: inline;
 	margin: 5px auto 5px auto;
 	transition: 0.5s;
+	font-family: "Agency FB", sans-serif;
 }
 
 .main form button:hover {
+	color: white;
+	background: rgb(23 24 25);
+	border: 5px solid rgb(23 24 25);
 	cursor: pointer;
 	transition: 0.5s;
-	border: 5px solid rgb(0 0 0 / 50%);
 }
 
 .main form button:active {
