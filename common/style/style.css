@@ -401,8 +401,8 @@ Note: Tests/dev only
 /* Articles/Cartes */
 
 .main article {
-	margin: 15px 30px 15px 0px;
-	width: 340px;
+	margin: 15px 25px 15px 0px;
+	width: 300px;
 	box-shadow: 0px 0px 10px 0px black;
 	vertical-align: top;
 	background: rgb(255 255 255 / 90%);
@@ -423,11 +423,25 @@ Note: Tests/dev only
 	color: black;
 }
 
-.main article h1 {
+.main article h1,
+.main article a {
 	font-size: 25px;
 	color: black;
-	margin: 15px 0 0 0;
+	margin: 5px 15px;
 	text-align: center;
+}
+
+.main article h6 {
+	text-align: center;
+	margin: 10px 0 0 0;
+	color: gray;
+}
+
+.main article hr {
+	border: none;
+	background: gray;
+	height: 2px;
+	width: 40px;
 }
 
 /* Informations de bas de page */

@@ -8,57 +8,124 @@
 
 <section class="main" id="main">
 	<h1>Veille technologique</h1>
-	<p>Note: en cours de travaux.</p>
-		<article>
-			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1184px-Vue.js_Logo_2.svg.png">
-			<h1>Vue.js</h1>
+	<p>Note: en cours de travaux.</p><article>
+			<img src="https://img.phonandroid.com/2021/03/Windows-11-1.jpg">
+			<h6>
+				29/07/2022
+			</h6>
+			<hr>
+			<h1>
+				<a target="_blank" href="https://www.phonandroid.com/windows-11-revoit-le-design-de-barre-des-taches-et-inclut-des-widgets-animes-dans-une-nouvelle-mise-a-jour.html">
+					Windows 11 revoit le design de barre des tâches et inclut des Widgets animés dans une nouvelle mise à jour
+				</a>
+			</h1>
 			<p>
-				Vue.js, est un framework JavaScript open-source utilisé pour construire des interfaces utilisateur et des applications web monopages.
-				Vue a été créé par Evan You et est maintenu par lui et le reste des membres actifs de l'équipe principale travaillant sur le projet et son écosystème. 
+				Microsoft vient de publier une nouvelle mise à jour Windows 11 destinée aux Insiders. 
+				Celle-ci apporte tout un tas de nouveautés, comme une barre des tâches revue et corrigée, 
+				des widgets animés ou encore un nouveau design pour certaines fenêtres. 
+				Une grosse amélioration que le grand public pourra sans doute essayer dès octobre.
 			</p>
 		</article><article>
-			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/590px-Node.js_logo.svg.png">
-			<h1>Node.js</h1>
+			<img src="https://www.ginjfo.com/wp-content/webp-express/webp-images/uploads/2022/02/Windows-11-copy-dialogs-fluent-design-02-768x409.jpg.webp">
+			<h6>
+				02/02/2022
+			</h6>
+			<hr>
+			<h1>
+				<a target="_blank" href="https://www.ginjfo.com/actualites/logiciels/windows-11/windows-11-et-son-interface-moderne-il-y-a-encore-du-travail-20220202">
+					Windows 11 et son interface « moderne », il y a encore du travail
+				</a>
+			</h1>
 			<p>
-				Node.js est une plateforme logicielle libre en JavaScript, orientée vers les applications réseau évènementielles hautement concurrentes qui doivent pouvoir monter en charge.
-				Elle utilise la machine virtuelle V8, la librairie libuv pour sa boucle d'évènements, et implémente sous licence MIT les spécifications CommonJS.
+				Windows 11 introduit d’importants changements face à Windows 10. Les plus marquants concernent principalement l’interface et l’environnement du bureau.
 			</p>
 		</article><article>
-			<img src="https://www.finelog-biseum.com/wp-content/uploads/2017/09/Logo-SQL-SERVER.png">
-			<h1>SQL Server</h1>
-			<p>Microsoft SQL Server est un système de gestion de base de données en langage SQL incorporant entre autres un SGBDR développé et commercialisé par la société Microsoft.</p>
-		</article><article>
-			<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/800px-Visual_Studio_Code_1.35_icon.svg.png">
-			<h1>VSCode</h1>
+			<img src="https://img.phonandroid.com/2021/10/Windows-11-10.jpeg">
+			<h6>
+				28/01/2022
+			</h6>
+			<hr>
+			<h1>
+				<a target="_blank" href="https://www.phonandroid.com/windows-11-la-nouvelle-mise-a-jour-ameliore-le-design-par-petites-touches.html">
+					Windows 11 : la nouvelle mise à jour améliore le design par petites touches
+				</a>
+			</h1>
 			<p>
-				Visual Studio Code est un éditeur de code extensible développé par Microsoft pour Windows, Linux et macOS. 
-				Les fonctionnalités incluent la prise en charge du débogage, la mise en évidence de la syntaxe, la complétion intelligente du code, les snippets, la refactorisation du code et Git intégré.
+				Windows 11 accueille une nouvelle mise à jour pour les Insiders.
+				Celle-ci apporte des améliorations de l’interface utilisateur, mais aussi des voix inédites pour le narrateur.
+				Ces nouveautés pourraient être le premier aperçu de la grosse mise à jour d’automne 2022.
 			</p>
 		</article><article>
-			<img src="">
-			<h1>Test sans image</h1>
+			<img src="https://www.presse-citron.net/app/uploads/2021/06/Windows-11.jpg">
+			<h6>
+				01/02/2022
+			</h6>
+			<hr>
+			<h1>
+				<a target="_blank" href="https://www.presse-citron.net/windows-11-un-ancien-directeur-de-microsoft-critique-le-menu-demarrer/">
+					Windows 11 : un ancien directeur de Microsoft critique le menu Démarrer
+				</a>
+			</h1>
+			<p>Cet ex responsable Microsoft de l’expérience utilisateur se dit choqué par le manque d’ergonomie du nouveau menu Démarrer de Windows 11.</p>
+		</article><article>
+			<img src="https://img.phonandroid.com/2022/01/Windows-11.jpg">
+			<h6>
+				21/01/2022
+			</h6>
+			<hr>
+			<h1>
+				<a target="_blank" href="https://www.phonandroid.com/windows-11-le-gestionnaire-des-taches-a-droit-a-un-nouveau-design-plus-moderne.html">
+					Windows 11 : le Gestionnaire des tâches a droit à un nouveau design plus moderne
+				</a>
+			</h1>
 			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. 
-				Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.
-				Cras elementum ultrices diam. Maecenas ligula massa, varius a, semper congue, euismod non, mi. 
-				Proin porttitor, orci nec nonummy molestie, enim est eleifend mi, non fermentum diam nisl sit amet erat. Duis semper. 
-				Duis arcu massa, scelerisque vitae, consequat in, pretium a, enim. Pellentesque congue.
-				Ut in risus volutpat libero pharetra tempor. 
-				Cras vestibulum bibendum augue. Praesent egestas leo in pede. Praesent blandit odio eu enim. 
-				Pellentesque sed dui ut augue blandit sodales. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
-				Aliquam nibh. Mauris ac mauris sed pede pellentesque fermentum. Maecenas adipiscing ante non diam sodales hendrerit.
-				Ut velit mauris, egestas sed, gravida nec, ornare ut, mi. Aenean ut orci vel massa suscipit pulvinar. Nulla sollicitudin.
-				Fusce varius, ligula non tempus aliquam, nunc turpis ullamcorper nibh, in tempus sapien eros vitae ligula.
-				Pellentesque rhoncus nunc et augue. Integer id felis. Curabitur aliquet pellentesque diam. Integer quis metus vitae elit lobortis egestas.
-				Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi vel erat non mauris convallis vehicula. Nulla et sapien. 
-				Integer tortor tellus, aliquam faucibus, convallis id, congue eu, quam. Mauris ullamcorper felis vitae erat. 
-				Proin feugiat, augue non elementum posuere, metus purus iaculis lectus, et tristique ligula justo vitae magna.
-				Aliquam convallis sollicitudin purus. 
-				Praesent aliquam, enim at fermentum mollis, ligula massa adipiscing nisl, ac euismod nibh nisl eu lectus. Fusce vulputate sem at sapien. 
-				Vivamus leo. Aliquam euismod libero eu enim. Nulla nec felis sed leo placerat imperdiet. Aenean suscipit nulla in justo. 
-				Suspendisse cursus rutrum augue. Nulla tincidunt tincidunt mi. 
-				Curabitur iaculis, lorem vel rhoncus faucibus, felis magna fermentum augue, et ultricies lacus lorem varius purus. 
-				Curabitur eu amet. 
+				Microsoft s'apprête à remanier le gestionnaire de tâches dans Windows 11. 
+				Comme le reste du système d'exploitation, le gestionnaire de tâches reçoit enfin 
+				un nouveau design dans la dernière mise à jour qui correspond au nouveau langage Fluent Design de Microsoft.
+			</p>
+		</article><article>
+			<img src="https://www.laptopspirit.fr/wp-content/uploads/new/2021/12/Windows-11-Bloc-Notes-1-600x524.jpg">
+			<h6>
+				08/12/2021
+			</h6>
+			<hr>
+			<h1>
+				<a target="_blank" href="https://www.laptopspirit.fr/300926/windows-11-nouveau-design-pour-le-bloc-notes-notepad.html">
+					Windows 11 – nouveau design pour le Bloc-Notes Notepad
+				</a>
+			</h1>
+			<p>
+				Microsoft offre au bloc-notes de Windows 11 une refonte en matière de design qui colle plus à l’ambiance graphique générale de ce nouveau système d’exploitation.
+			</p>
+		</article><!-- HORS PÉRIODE SCOLAIRE --><article>
+			<img src="https://img.phonandroid.com/2021/06/windows-11-word-paint-explorateur-fichiers.jpg">
+			<h6>
+				28/06/2021
+			</h6>
+			<hr>
+			<h1>
+				<a target="_blank" href="https://www.phonandroid.com/windows-11-microsoft-devoile-nouveau-design-explorateur-fichiers-powerpoint-word.html">
+					Windows 11 : Microsoft dévoile le design de l’explorateur de fichiers, PowerPoint et Word
+				</a>
+			</h1>
+			<p>
+				Windows 11 continue de se dévoiler. Dans la foulée de la présentation des nouvelles fonctionnalités du système d'exploitation,
+				Microsoft a dévoilé le design des applications natives, dont l’explorateur de fichiers, PowerPoint, Paint et Word.
+				Comme le reste de l'OS, Microsoft s'est évertué à simplifier l'interface des applications.
+			</p>
+		</article><article>
+			<img src="https://images.frandroid.com/wp-content/uploads/2021/06/windows-11-nouveau-design-apps-1-1200x675.jpg">
+			<h6>
+				25/06/2021
+			</h6>
+			<hr>
+			<h1>
+				<a target="_blank" href="https://www.frandroid.com/marques/microsoft/983779_windows-11-un-nouveau-design-pour-lexplorateur-de-fichiers-powerpoint-word-et-paint">
+					Windows 11 : un nouveau design pour l’explorateur de fichiers, PowerPoint, Word et Paint
+				</a>
+			</h1>
+			<p>
+				La conférence de Windows 11 est terminée, mais Microsoft continue de distiller quelques informations supplémentaires sur le système.
 			</p>
 		</article>
 </section>
