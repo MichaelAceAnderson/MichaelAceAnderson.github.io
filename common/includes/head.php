@@ -8,5 +8,5 @@
 		<!-- On précise comment est encodée la page -->
 		<meta charset="UTF-8">
 		<!-- <script src="/common/js/vendor/jquery-3.6.0.min.js"></script> -->
-		<script src="/common/js/anim.js"></script>
+		<script src="/common/js/sideMenu.js"></script>
 	</head>
