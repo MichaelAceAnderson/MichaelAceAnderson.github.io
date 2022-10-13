@@ -5,9 +5,11 @@ const elementSlideshow = document.getElementsByClassName("slideshow")[0];
 let currentSlide = 0;
 
 for (let i = 0; i < articleList.length; i++) {
-	articleList[i].addEventListener("click", () => {
-		showSlide(i);
-	});
+	articleList[i]
+		.getElementsByTagName("img")[0]
+		.addEventListener("click", () => {
+			showSlide(i);
+		});
 }
 
 function moveSlide(n) {
