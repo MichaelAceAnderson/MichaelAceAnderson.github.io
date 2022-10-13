@@ -4,17 +4,23 @@
 ?>
 	<!-- Contenu de la page -->
 	<section class="main" id="main">
-		<h1>Présentation</h1>
-		<p>Prénom NOM, 20 ans</p>
-		<p>Actuellement étudiant en développement et design d'applications et sites web dans le cadre d'un Brevet de Technicien Supérieur informatique,
-		j'ai porté de l'intérêt à différents domaines dans lesquels j'ai répondu à mes besoins par les projets que j'ai choisi de répertorier sur ce portfolio.</p>
+		<div class="title">
+			<h1>Présentation</h1>
+			<hr>
+		</div>
+		<p style="text-indent: 0;">Prénom NOM, 20 ans</p>
+		<p>Actuellement étudiant en BTS SIO option option 
+		SLAM<a target="_blank" href="https://www.onisep.fr/Ressources/Univers-Formation/Formations/Post-bac/bts-services-informatiques-aux-organisations-option-b-solutions-logicielles-et-applications-metiers"><sup title="Brevet de Technicien Supérieur - Services Informatiques aux Organisations option Solutions Logicielles & Applicatifs Métiers">[?]</sup></a>,
+		je m'intéresse principalement au développement front-end, à la conception de projet et au design d'expérience utilisateur (UX Design).</p>
 		<p>Si mes projets suscitent votre intérêt, il est possible de me contacter grâce aux informations dans la rubrique "Contact" 
-		mais également de consulter mon CV et ma lettre de motivation dans la rubrique "CV".
+		mais également de consulter mon CV ci-dessous.
 		</p>
-		<h1>La formation</h1>
-		<p>SLAM: Solutions Logicielles & Applications Métiers</p>
+		<div class="title">
+			<h1>Mon CV</h1>
+			<hr>
+		</div>
+		<iframe src="/common/files/CV.pdf" title="CV"></iframe>
 	</section>
-
 <?php
 	include_once $_SERVER['DOCUMENT_ROOT'].'/common/includes/footer.php';
 ?>

@@ -7,7 +7,10 @@
 	<!-- Après avoir inclus le code commun à toutes les pages, on rajoute le contenu individuel de celle-ci -->
 
 	<section class="main" id="main">
-		<h1>Stage</h1>
+		<div class="title">
+			<h1>Stage</h1>
+			<hr>
+		</div>
 			<p>Mon rapport de stage à Norsys (Juin 2021)</p>
 			<iframe src="/common/files/RapportStage.pdf" title="RS"></iframe>
 	</section>

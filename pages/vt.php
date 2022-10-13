@@ -7,9 +7,21 @@
 <!-- Après avoir inclus le code commun à toutes les pages, on rajoute le contenu individuel de celle-ci -->
 
 <section class="main" id="main">
-	<h1>Veille technologique</h1>
-	<p>Note: en cours de travaux.</p><article>
-			<img src="https://img.phonandroid.com/2021/03/Windows-11-1.jpg">
+		<div class="title">
+			<h1>Veille technologique</h1>
+			<hr>
+		</div>
+	<p>
+		On parle de veille technologique pour désigner le fait de se tenir informé des dernières nouvelles dans un domaine choisi,
+		afin d'être plus en phase avec les technologies d'aujourd'hui, avoir un panel de connaissances plus élargi et trouver plus 
+		efficacement des solutions dans le milieu professionnel. Cette veille porte sur l'évolution du design de Windows 11.
+	</p>
+	<p>
+		En tant que designer, il est important de rester à l'affût des dernières tendances, non pas par simple phénomène de mode, mais pour
+		concevoir des interfaces avec lesquelles les utilisateurs seront déjà familiers, constituant alors un gain de temps considérable à la fois
+		pour l'utilisateur et pour le designer, qui pourra suivre des normes déjà existantes plutôt que de créer les siennes.
+	</p><article>
+			<img src="https://img.phonandroid.com/2022/07/new-open-with.jpg">
 			<h6>
 				29/07/2022
 			</h6>
@@ -40,6 +52,18 @@
 				Windows 11 introduit d’importants changements face à Windows 10. Les plus marquants concernent principalement l’interface et l’environnement du bureau.
 			</p>
 		</article><article>
+			<img src="https://www.presse-citron.net/app/uploads/2021/06/Windows-11.jpg">
+			<h6>
+				01/02/2022
+			</h6>
+			<hr>
+			<h1>
+				<a target="_blank" href="https://www.presse-citron.net/windows-11-un-ancien-directeur-de-microsoft-critique-le-menu-demarrer/">
+					Windows 11 : un ancien directeur de Microsoft critique le menu Démarrer
+				</a>
+			</h1>
+			<p>Cet ex responsable Microsoft de l’expérience utilisateur se dit choqué par le manque d’ergonomie du nouveau menu Démarrer de Windows 11.</p>
+		</article><article>
 			<img src="https://img.phonandroid.com/2021/10/Windows-11-10.jpeg">
 			<h6>
 				28/01/2022
@@ -56,19 +80,7 @@
 				Ces nouveautés pourraient être le premier aperçu de la grosse mise à jour d’automne 2022.
 			</p>
 		</article><article>
-			<img src="https://www.presse-citron.net/app/uploads/2021/06/Windows-11.jpg">
-			<h6>
-				01/02/2022
-			</h6>
-			<hr>
-			<h1>
-				<a target="_blank" href="https://www.presse-citron.net/windows-11-un-ancien-directeur-de-microsoft-critique-le-menu-demarrer/">
-					Windows 11 : un ancien directeur de Microsoft critique le menu Démarrer
-				</a>
-			</h1>
-			<p>Cet ex responsable Microsoft de l’expérience utilisateur se dit choqué par le manque d’ergonomie du nouveau menu Démarrer de Windows 11.</p>
-		</article><article>
-			<img src="https://img.phonandroid.com/2022/01/Windows-11.jpg">
+			<img src="https://img.phonandroid.com/2022/01/Gestionnaire-des-taches-Windows-11.jpg">
 			<h6>
 				21/01/2022
 			</h6>
@@ -98,7 +110,7 @@
 				Microsoft offre au bloc-notes de Windows 11 une refonte en matière de design qui colle plus à l’ambiance graphique générale de ce nouveau système d’exploitation.
 			</p>
 		</article><!-- HORS PÉRIODE SCOLAIRE --><article>
-			<img src="https://img.phonandroid.com/2021/06/windows-11-word-paint-explorateur-fichiers.jpg">
+			<img src="https://img.phonandroid.com/2021/06/Windows-11-Nouveau-Explorateur-de-fichiers.jpg">
 			<h6>
 				28/06/2021
 			</h6>
@@ -147,7 +159,7 @@
   <a class="next" onclick="moveSlide(1)">&#10095;</a> -->
 </div>
 
-<script src="/common/js/slideshow.js"></script>
+<script src="/common/js/slideShow.js"></script>
 
 <?php
 	include_once $_SERVER['DOCUMENT_ROOT'].'/common/includes/footer.php';

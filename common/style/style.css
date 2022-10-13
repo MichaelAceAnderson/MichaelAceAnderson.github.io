@@ -152,7 +152,7 @@ header h1 {
 	z-index: 3;
 	transition: 0.5s;
 	transform: unset;
-	text-shadow: 2px 2px 5px black;
+	text-shadow: 0px 0px 5px black;
 	color: white;
 }
 
@@ -266,13 +266,10 @@ header h1 {
 }
 
 #main iframe[title="CV"] {
-	min-height: 500px;
-	width: 48%;
-}
-
-#main iframe[title="LM"] {
-	min-height: 500px;
-	width: 48%;
+	min-height: 800px;
+	width: 100%;
+	margin: auto;
+	display: block;
 }
 
 #main iframe[title="RS"] {
@@ -294,6 +291,34 @@ header h1 {
 	background: var(--themecolor);
 	box-sizing: border-box;
 	transition: 1s;
+}
+
+.main p {
+	text-indent: 20px;
+	text-align: justify;
+	text-shadow: 0 0 1px black;
+}
+
+.main p sup {
+	font-size: 15px;
+	color: lightblue;
+}
+
+.main p sup:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.main .title hr {
+	border: none;
+	height: 5px;
+	width: 10%;
+	background: var(--textcolor);
+	margin: 15px 0px;
+}
+
+.main .title h1 {
+	margin: 10px auto;
 }
 
 /* Formulaires */
@@ -345,6 +370,7 @@ header h1 {
 .main input[type="text"]:focus,
 .main textarea:focus {
 	background-color: rgb(0 0 0 / 5%);
+	box-shadow: inset 0 0 2px var(--evendarker);
 	transition: 0.2s linear;
 }
 
@@ -370,8 +396,8 @@ header h1 {
 }
 
 .main form button {
-	color: black;
-	background: transparent;
+	color: white;
+	background: rgb(23 24 25);
 	border: 5px solid rgb(23 24 25);
 	border-radius: 0;
 	font-size: 20px;
@@ -385,33 +411,35 @@ header h1 {
 .main form button:hover {
 	color: white;
 	background: rgb(23 24 25);
-	border: 5px solid rgb(23 24 25);
+	border: 5px solid var(--highlight2);
 	cursor: pointer;
 	transition: 0.5s;
 }
 
 .main form button:active {
-	background: radial-gradient(#005aff, #0042bb);
+	background: rgb(23 24 25);
+	border: 5px solid var(--highlight);
 	cursor: pointer;
-	border: 5px solid rgb(0 0 0 / 30%);
 }
 
 /* Articles/Cartes */
 
 .main article {
+	display: inline-block;
+	background: rgb(255 255 255 / 90%);
 	margin: 15px 25px 15px 0px;
 	width: 300px;
-	box-shadow: 0px 0px 10px 0px black;
+	min-height: 500px;
 	vertical-align: top;
-	background: rgb(255 255 255 / 90%);
-	display: inline-block;
-	cursor: pointer;
+	text-align: justify;
+	box-shadow: 0px 0px 10px 0px var(--darker);
 }
 
 .main article img {
 	width: 100%;
 	display: block;
 	background: var(--evendarker);
+	cursor: pointer;
 }
 
 .main article p {
@@ -419,6 +447,7 @@ header h1 {
 	display: inline-block;
 	font-size: 18px;
 	color: black;
+	text-shadow: none;
 }
 
 .main article h1,
@@ -427,6 +456,10 @@ header h1 {
 	color: black;
 	margin: 5px 15px;
 	text-align: center;
+}
+
+.main article a:hover {
+	text-decoration: underline;
 }
 
 .main article h6 {
@@ -445,16 +478,17 @@ header h1 {
 /* Informations de bas de page */
 footer {
 	position: relative;
+	color: white;
+	background: rgb(23 24 25);
+	text-shadow: 0 0 4px black;
 	bottom: 0;
 	z-index: -1;
 	width: 100%;
-	background: var(--themecolor);
-	text-shadow: 0 0 4px black;
-	color: white;
 	text-align: center;
 	font-size: 25px;
 	padding: 15px;
 	box-sizing: border-box;
+	box-shadow: 0 0 2px black;
 }
 
 /* Responsive design */

@@ -21,7 +21,10 @@
 	?>
 	
 	<section class="main" id="main">
-		<h1>Contact</h1>
+		<div class="title">
+			<h1>Contact</h1>
+			<hr>
+		</div>
 		<form action="#" method="post">
 			<h1>Envoyer un message</h1>
 			<?php
