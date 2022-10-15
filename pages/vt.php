@@ -13,13 +13,13 @@
 		</div>
 	<p>
 		On parle de veille technologique pour désigner le fait de se tenir informé des dernières nouvelles dans un domaine choisi,
-		afin d'être plus en phase avec les technologies d'aujourd'hui, avoir un panel de connaissances plus élargi et trouver plus 
+		afin d'être plus en phase avec l'actualité, avoir un panel de connaissances plus élargi et trouver plus 
 		efficacement des solutions dans le milieu professionnel. Cette veille porte sur l'évolution du design de Windows 11.
 	</p>
 	<p>
 		En tant que designer, il est important de rester à l'affût des dernières tendances, non pas par simple phénomène de mode, mais pour
 		concevoir des interfaces avec lesquelles les utilisateurs seront déjà familiers, constituant alors un gain de temps considérable à la fois
-		pour l'utilisateur et pour le designer, qui pourra suivre des normes déjà existantes plutôt que de créer les siennes.
+		pour l'utilisateur qui s'orientera plus rapidement et pour le designer qui pourra suivre des normes déjà existantes plutôt que de créer les siennes.
 	</p><article>
 			<img src="https://img.phonandroid.com/2022/07/new-open-with.jpg">
 			<h6>
