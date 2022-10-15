@@ -69,18 +69,24 @@ function sideMenu() {
 // Afficher/Cacher les sous-menus
 function spoil(obj) {
 	// On récupère la première div présente dans la balise parente
-	let inner = obj.parentNode.getElementsByTagName("div")[0];
+	let submenu = obj.parentNode.getElementsByClassName("submenu")[0];
 	// On récupère le premier span présente dans cet objet (obj)
 	let arrow = obj.getElementsByTagName("span")[0];
 
 	// Si le sous-menu est caché, on le rouvre
-	if (inner.classList.contains("closed")) {
-		arrow.innerHTML = "◃";
-		inner.classList.remove("closed");
-		inner.classList.add("opened");
+	if (submenu.classList.contains("closed")) {
+		arrow.textContent = "◃";
+		submenu.classList.remove("closed");
+		submenu.classList.add("opened");
+
+		submenu.style.height =
+			submenu.getElementsByTagName("a")[0].offsetHeight *
+				submenu.childElementCount +
+			"px";
 	} else {
-		arrow.innerHTML = "▿";
-		inner.classList.remove("opened");
-		inner.classList.add("closed");
+		arrow.textContent = "▿";
+		submenu.classList.remove("opened");
+		submenu.classList.add("closed");
+		submenu.style.height = null;
 	}
 }
