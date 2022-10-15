@@ -1,3 +1,11 @@
+/* Rappels: 
+IE/Edge CSS-prefix: -ms
+Firefox CSS-prefix: -moz 
+Opera CSS prefix: -o (Presto) and -webkit (Blink) 
+Safari CSS prefix: -webkit 
+Chrome CSS prefix: -webkit
+*/
+
 /* Propriétés générales du corps de la page */
 @media (prefers-color-scheme: light) {
 	:root {
