@@ -320,7 +320,7 @@ header h1 {
 .main .title hr {
 	border: none;
 	height: 5px;
-	width: 10%;
+	width: 75px;
 	background: var(--textcolor);
 	margin: 15px 0px;
 }
@@ -343,6 +343,7 @@ header h1 {
 .main form h1 {
 	background: black;
 	color: white;
+	padding: 15px;
 }
 
 .main input[type="text"],
@@ -425,8 +426,8 @@ header h1 {
 }
 
 .main form button:active {
-	background: rgb(23 24 25);
-	border: 5px solid var(--highlight);
+	background: radial-gradient(rgb(40 40 40), rgb(23 24 25));
+	border: 5px solid var(--evendarker);
 	cursor: pointer;
 }
 
