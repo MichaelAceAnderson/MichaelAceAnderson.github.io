@@ -9,8 +9,10 @@ Chrome CSS prefix: -webkit
 /* Propriétés générales du corps de la page */
 @media (prefers-color-scheme: light) {
 	:root {
+		/* Text colors */
 		--textcolor: black;
 		--themecolor: white;
+		/* Element/Background colors */
 		--darker: rgb(0, 0, 0, 0.2);
 		--evendarker: rgb(0, 0, 0, 0.4);
 		--highlight: rgb(0, 0, 0, 0.1);
@@ -278,12 +280,14 @@ header h1 {
 	text-align: center;
 }
 
+/* Paragraphes */
 .main p {
 	text-indent: 20px;
 	text-align: justify;
 	text-shadow: 0 0 1px black;
 }
 
+/* Exposants */
 .main p sup {
 	font-size: 15px;
 	color: lightblue;
@@ -294,6 +298,7 @@ header h1 {
 	text-decoration: underline;
 }
 
+/* Titre de page */
 .main .title hr {
 	border: none;
 	height: 5px;

@@ -26,19 +26,19 @@
 			<hr>
 		</div>
 		<div class="content">
-		<form action="#" method="post">
-			<h1>Envoyer un message</h1>
-			<?php
-				if(isset($error))
-				{
-					if($error) echo '<p class="error">'.$error.'</p>'; 
-					elseif(!$error) echo '<div class="success"><h3>Votre adresse:</h3>'.htmlentities($mail).'<h3>Message envoyé:</h3>'.htmlentities($msg).'<p>Note: cette fonction n\'envoie pas encore le message au destinataire.</p></div>';
-				}
-			?>
-			<input type="text" name="mail" placeholder="Votre e-mail"/>
-			<textarea placeholder="Votre message" name="msg"></textarea>
-			<button type="submit" name="submit">Envoyer</button>
-		</form>
+			<form action="#" method="post">
+				<h1>Envoyer un message</h1>
+				<?php
+					if(isset($error))
+					{
+						if($error) echo '<p class="error">'.$error.'</p>'; 
+						elseif(!$error) echo '<div class="success"><h3>Votre adresse:</h3>'.htmlentities($mail).'<h3>Message envoyé:</h3>'.htmlentities($msg).'<p>Note: cette fonction n\'envoie pas encore le message au destinataire.</p></div>';
+					}
+				?>
+				<input type="text" name="mail" placeholder="Votre e-mail"/>
+				<textarea placeholder="Votre message" name="msg"></textarea>
+				<button type="submit" name="submit">Envoyer</button>
+			</form>
 		</div>
 	</section>
 
