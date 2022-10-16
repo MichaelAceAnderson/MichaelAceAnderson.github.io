@@ -4,11 +4,11 @@
 		<a href="#"><h1>Portfolio</h1></a>
 	</header>
 	<!-- Cette balise ne sert qu'à mettre un fond foncé par dessus le contenu lorsque le menu est ouvert -->
-	<div class="cover" id="cover"></div>
+	<div class="cover"></div>
 	<!-- Menu de gauche -->
-	<div id="menu" class="menu" style="width: 0px;">
+	<div class="menu">
 		<!-- Bouton affichage menu -->
-		<div class="disp" id="toggle" onclick="sideMenu()">☰</div>
+		<div class="menu-btn close" onclick="sideMenu()">☰</div>
 			<div class="profile">
 				<img src="/common/img/profile.jpg" alt="Photo de profil"/>
 				<div class="infos">
@@ -20,7 +20,7 @@
 			<div class="links">
 				<a href="/">Accueil</a>
 				<div>
-					<a onclick="spoil(this);">Projets <span class="dropdown">▿</span></a>
+					<a onclick="subMenu(this);">Projets <span class="dropdown">▿</span></a>
 						<!-- Sous-menu -->
 					<div class="submenu closed">
 						<a href="/pages/projets/stage.php">Stage</a>

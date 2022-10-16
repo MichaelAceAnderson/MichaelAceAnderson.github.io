@@ -97,7 +97,7 @@ header {
 	width: 100%;
 	position: relative;
 	top: 0;
-	z-index: 1;
+	z-index: 0;
 	text-align: center;
 	text-shadow: 2px 2px 0px black;
 	background-color: var(--evendarker);
@@ -152,21 +152,19 @@ header h1 {
 }
 
 /* Bouton affichage du menu */
-#toggle.disp {
+.menu-btn {
 	position: fixed;
 	top: 30px;
 	left: 60px;
 	font-size: 60px;
-	width: 60px;
 	user-select: none;
 	z-index: 3;
 	transition: 0.5s;
-	transform: unset;
 	text-shadow: 0px 0px 5px black;
 	color: white;
 }
 
-#toggle.disp:hover {
+.menu-btn:hover {
 	cursor: pointer;
 }
 
@@ -503,7 +501,7 @@ footer a:focus {
 		right: 5px;
 	}
 
-	#toggle.disp {
+	.menu-btn {
 		left: 30px;
 	}
 }
