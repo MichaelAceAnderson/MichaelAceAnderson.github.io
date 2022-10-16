@@ -9,6 +9,9 @@
     span, b{
         text-shadow: 0px 0px 5px black, 2px 2px 0px black;
     }
+    *{
+        font-size: 25px;
+    }
 </style>
 <?php
     //SERVER VARS
