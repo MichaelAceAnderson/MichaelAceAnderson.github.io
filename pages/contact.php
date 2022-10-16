@@ -25,6 +25,7 @@
 			<h1>Contact</h1>
 			<hr>
 		</div>
+		<div class="content">
 		<form action="#" method="post">
 			<h1>Envoyer un message</h1>
 			<?php
@@ -38,7 +39,7 @@
 			<textarea placeholder="Votre message" name="msg"></textarea>
 			<button type="submit" name="submit">Envoyer</button>
 		</form>
-		
+		</div>
 	</section>
 
 <?php

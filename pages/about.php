@@ -5,30 +5,34 @@
 	include_once $_SERVER['DOCUMENT_ROOT'].'/common/includes/header.php';
 ?>
 	<!-- Après avoir inclus le code commun à toutes les pages, on rajoute le contenu individuel de celle-ci -->
-
+	
+	<?php
+	if(isset($_POST["submit"]))
+	{
+		if(empty($_POST["mail"])) $error = "L'adresse mail ne peut pas être vide !";
+		elseif(empty($_POST["msg"])) $error = "Le message doit comporter un contenu !";
+		else
+		{
+			$mail = $_POST["mail"];
+			$msg = $_POST["msg"];
+			$error = false;
+		}
+	}
+	?>
+	
 	<section class="main" id="main">
 		<div class="title">
-			<h1>Projets</h1>
+			<h1>À propos</h1>
 			<hr>
 		</div>
-		<p>Voici la liste des travaux réalisés au cours de mon parcours.</p>
 		
 		<div class="content">
-			<article>
-				<img src="" alt="Image à venir">
-				<h1>NewBlog</h1>
-				<p>
-					Mini-CMS destiné à créer un blog (fonctionne sans base de données et n'est pas sécurisé).
-				</p>
-			</article>
-			<article>
-				<img src="" alt="Image à venir">
-				<h1>Portfolio</h1>
-				<p>
-					<i><q>Mais enfin les enfants ! On est dedans !</q></i>
-				</p>
-			</article>
+			<p>
+				Ce site a été réalisé entièrement avec HTML5, CSS3, JavaScript ES 2020. Sans Framework. À la mano. Et ça c'est la classe.
+			</p>
+			<img src="https://i.kym-cdn.com/entries/icons/original/000/028/021/work.jpg"/>
 		</div>
+		
 	</section>
 
 <?php

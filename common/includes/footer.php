@@ -1,5 +1,7 @@
-	<!-- Ici se trouvera le footer avec les informations légales -->
+		<!-- Script d'animation du menu  -->
+		<script src="/common/js/sideMenu.js"></script>
+		<!-- Ici se trouvera le footer avec les informations légales -->
 	<footer>
-		<p>Copyright © 2021</p>
+		<p><?php echo date("Y"); ?> | <a href="/pages/about.php">À propos</a></p>
 	</footer>
 </html>

@@ -11,8 +11,11 @@
 			<h1>Stage</h1>
 			<hr>
 		</div>
-			<p>Mon rapport de stage à Norsys (Juin 2021)</p>
-			<iframe src="/common/files/RapportStage.pdf" title="RS"></iframe>
+		<p>Mon rapport de stage à Norsys (Juin 2021)</p>
+		<div class="content">
+			<iframe src="/common/files/RSW.pdf" title="RS Word">Rapport de stage Word</iframe>
+			<iframe src="/common/files/RSP.pdf" title="RS PowerPoint">Rapport de stage PowerPoint</iframe>
+		</div>
 	</section>
 
 <?php

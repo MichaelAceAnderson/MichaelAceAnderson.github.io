@@ -19,7 +19,9 @@
 			<h1>Mon CV</h1>
 			<hr>
 		</div>
-		<iframe src="/common/files/CV.pdf" title="CV"></iframe>
+		<div class="content">
+			<iframe src="/common/files/CV.pdf" title="CV"></iframe>
+		</div>
 	</section>
 <?php
 	include_once $_SERVER['DOCUMENT_ROOT'].'/common/includes/footer.php';

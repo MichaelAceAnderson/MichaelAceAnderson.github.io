@@ -251,22 +251,13 @@ header h1 {
 
 #main iframe {
 	border: none;
+	margin: 10px;
 	/* Tests/dev only */
 	filter: blur(7px);
-}
-
-#main iframe[title="CV"] {
-	min-height: 800px;
-	width: 100%;
-	margin: auto;
-	display: block;
-}
-
-#main iframe[title="RS"] {
-	min-height: 500px;
 	width: 80%;
+	min-height: 500px;
 	display: block;
-	margin: auto auto;
+	margin: 10px auto;
 }
 
 /* Contenu */
@@ -281,6 +272,10 @@ header h1 {
 	background: var(--themecolor);
 	box-sizing: border-box;
 	transition: 1s;
+}
+
+.content {
+	text-align: center;
 }
 
 .main p {
@@ -481,6 +476,11 @@ footer {
 	padding: 15px;
 	box-sizing: border-box;
 	box-shadow: 0 0 2px black;
+}
+
+footer a:hover,
+footer a:focus {
+	text-decoration: underline;
 }
 
 /* Responsive design */

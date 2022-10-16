@@ -27,7 +27,7 @@
 						<a href="/pages/projets/travaux.php">Travaux</a>
 					</div>
 				</div>
-				<a href="/pages/vt.php">Veille technologique</a>
+				<a href="/pages/veille.php">Veille technologique</a>
 				<a href="/pages/contact.php">Contact</a>
 			</div>
 		</div>
