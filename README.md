@@ -1,5 +1,9 @@
 # À faire (classés par catégorie puis par priorité)
 
+## Contenu
+
+Fonction contact
+
 ## Sécurité & Technique
 
 Fichier .htaccess
