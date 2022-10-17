@@ -307,6 +307,7 @@ header h1 {
 
 .main .title h1 {
 	margin: 10px auto;
+	text-align: left;
 }
 
 /* Formulaires */
