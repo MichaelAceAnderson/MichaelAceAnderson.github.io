@@ -4,7 +4,11 @@
 		<!-- On définit le titre de la page -->
 		<title>Portfolio</title>
 		<!-- On relie la feuille de style avec la page -->
-		<link href="/common/style/style.css" type="text/css" rel="stylesheet">
+		<script src="/common/js/styleDebug.js"></script>
+		<link rel="preload" href="/common/fonts/agencyfb.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+		<link href="/common/style/styleMobile.css" rel="stylesheet" media="screen and (max-width: 600px)" onload="sheetLoaded('mobile')" onerror="sheetError('mobile')">
+		<link href="/common/style/stylePrint.css" type="text/css" rel="stylesheet" media="print" onload="sheetLoaded('print')" onerror="sheetError('print')">
+		<link href="/common/style/styleGeneral.css" type="text/css" rel="stylesheet" onload="sheetLoaded('general')" onerror="sheetError('general')">
 		<!-- On précise comment est encodée la page -->
 		<meta charset="UTF-8">
 	</head>
