@@ -142,7 +142,7 @@ header h1 {
 	position: fixed;
 	width: 0px;
 	height: 100%;
-	background: var(--themecolor);
+	background: var(--darker);
 	top: 0;
 	z-index: 2;
 	overflow-x: hidden;

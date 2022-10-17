@@ -12,8 +12,6 @@ Mapping URL
 
 ## Style
 
-Menu Fluent Design (backdrop-filter flou)
-
 Chargement de la feuille de style selon le thème (sombre/clair/...)
 
 Calcul de couleurs pour définition de thèmes personnalisés

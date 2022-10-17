@@ -19,6 +19,7 @@ function sideMenu() {
 		/* Agrandir le menu */
 		menu.style.width = "25%";
 		menu.style.transition = "0.5s";
+		menu.style.backdropFilter = "blur(7px)";
 
 		/* Poser le bouton d'affichage du menu */
 		toggleBtn.style.position = "absolute";
@@ -42,6 +43,7 @@ function sideMenu() {
 		/* Réduire le menu */
 		menu.style.width = "0px";
 		menu.style.transition = "0.3s";
+		menu.style.backdropFilter = null;
 
 		/* Rétablir le bouton d'affichage du menu */
 		toggleBtn.style.position = "fixed";
