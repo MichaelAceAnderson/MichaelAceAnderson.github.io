@@ -1,9 +1,5 @@
 # À faire (classés par catégorie puis par priorité)
 
-## Contenu
-
-Ajouter des infos sur les slides de stage
-
 ## Sécurité & Technique
 
 Fichier .htaccess

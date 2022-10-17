@@ -23,17 +23,19 @@ function showSlide(n) {
 	let slide = articleList[n];
 	const urlImg = slide.getElementsByTagName("img")[0].src;
 	const titleText = slide.getElementsByTagName("h1")[0].textContent;
-	const descText = slide.getElementsByTagName("p")[0].textContent;
 
 	const slideImg = elementSlideshow.getElementsByTagName("img")[0];
 	const slideDesc = elementSlideshow.getElementsByClassName("description")[0];
 	const slideTitle = elementSlideshow.getElementsByTagName("h1")[0];
 	const pageNum = elementSlideshow.getElementsByClassName("pagenum")[0];
 
+	if (document.body.contains(slide.getElementsByTagName("p")[0])) {
+		const descText = slide.getElementsByTagName("p")[0].textContent;
+		slideDesc.textContent = descText;
+	}
 	document.body.style.overflow = "hidden";
 	elementSlideshow.style.display = "block";
 	slideTitle.textContent = titleText;
-	slideDesc.textContent = descText;
 	slideImg.src = urlImg;
 	pageNum.textContent = n + 1 + "/" + articleList.length;
 }
@@ -49,5 +51,5 @@ function hideSlide() {
 	slideTitle.textContent = null;
 	slideDesc.textContent = null;
 	pageNum.textContent = null;
-	slideImg.src = null;
+	slideImg.src = "";
 }
