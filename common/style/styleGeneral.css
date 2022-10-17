@@ -6,32 +6,17 @@ Safari CSS prefix: -webkit
 Chrome CSS prefix: -webkit
 */
 
-/* Propriétés générales du corps de la page */
-@media (prefers-color-scheme: light) {
-	:root {
-		/* Text colors */
-		--textcolor: black;
-		--themecolor: white;
-		/* Element/Background colors */
-		--darker: rgb(0, 0, 0, 0.2);
-		--evendarker: rgb(0, 0, 0, 0.4);
-		--highlight: rgb(0, 0, 0, 0.1);
-		--highlight2: rgb(0, 0, 0, 0.2);
-	}
-}
-
-@media (prefers-color-scheme: dark),
-(prefers-color-scheme: no-preference) {
+/* Default element/Background colors */
 	:root {
 		--textcolor: white;
 		--themecolor: rgb(23 24 25);
 		--darker: rgb(0, 0, 0, 0.2);
-		--evendarker: rgb(0, 0, 0, 0.4);
-		--highlight: rgb(255, 255, 255, 0.1);
-		--highlight2: rgb(255, 255, 255, 0.2);
-	}
+	--darker2: rgb(0, 0, 0, 0.4);
+	--ligther: rgb(255, 255, 255, 0.1);
+	--ligther2: rgb(255, 255, 255, 0.2);
 }
 
+/* Propriétés générales du corps de la page */
 @font-face {
 	font-family: "Agency FB";
 	font-style: normal;
@@ -75,15 +60,15 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-	background: var(--highlight);
+	background: var(--ligther);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-	background: var(--highlight2);
+	background: var(--ligther2);
 }
 
 ::-webkit-scrollbar-thumb:active {
-	background: var(--highlight);
+	background: var(--ligther);
 }
 
 /* Styliser tous les liens */
@@ -100,7 +85,7 @@ header {
 	z-index: 0;
 	text-align: center;
 	text-shadow: 2px 2px 0px black;
-	background-color: var(--evendarker);
+	background-color: var(--darker2);
 	background-size: cover;
 }
 
@@ -124,7 +109,7 @@ header a:hover {
 }
 
 header a:active {
-	background: var(--highlight2);
+	background: var(--ligther2);
 	border: 2px solid gray;
 	transition: 0.1s;
 }
@@ -171,7 +156,7 @@ header h1 {
 /* Cadre du profil */
 .menu .profile {
 	margin: 130px 5% 30px 5%;
-	background: var(--highlight);
+	background: var(--ligther);
 	padding: 15px;
 }
 
@@ -210,13 +195,13 @@ header h1 {
 
 .menu .links a:hover,
 .menu .links a:focus-visible {
-	background: var(--highlight);
+	background: var(--ligther);
 	cursor: pointer;
 	transition: 0.5s;
 }
 
 .menu .links a:active {
-	background: var(--highlight2);
+	background: var(--ligther2);
 	transition: 0.1s;
 }
 
@@ -360,7 +345,7 @@ header h1 {
 .main input[type="text"]:focus,
 .main textarea:focus {
 	background-color: rgb(0 0 0 / 5%);
-	box-shadow: inset 0 0 2px var(--evendarker);
+	box-shadow: inset 0 0 2px var(--darker2);
 	transition: 0.2s linear;
 }
 
@@ -401,19 +386,18 @@ header h1 {
 .main form button:hover {
 	color: white;
 	background: rgb(23 24 25);
-	border: 5px solid var(--highlight2);
+	border: 5px solid var(--ligther2);
 	cursor: pointer;
 	transition: 0.5s;
 }
 
 .main form button:active {
 	background: radial-gradient(rgb(40 40 40), rgb(23 24 25));
-	border: 5px solid var(--evendarker);
+	border: 5px solid var(--darker2);
 	cursor: pointer;
 }
 
 /* Articles/Cartes */
-
 .main article {
 	display: inline-block;
 	background: rgb(255 255 255 / 90%);
@@ -428,7 +412,7 @@ header h1 {
 .main article img {
 	width: 100%;
 	display: block;
-	background: var(--evendarker);
+	background: var(--darker2);
 	cursor: pointer;
 }
 
