@@ -12,6 +12,14 @@ function sheetLoaded(type) {
 			console.log("Feuille de style d'impression chargée !");
 			break;
 		}
+		case "light": {
+			console.log("Feuille de style claire chargée !");
+			break;
+		}
+		case "dark": {
+			console.log("Feuille de style sombre chargée !");
+			break;
+		}
 		default: {
 			console.log("Feuille de style chargée !");
 			break;
@@ -36,6 +44,18 @@ function sheetError(type) {
 		case "print": {
 			console.log(
 				"Erreur lors du chargement de la feuille de style d'impression !"
+			);
+			break;
+		}
+		case "light": {
+			console.log(
+				"Erreur lors du chargement de la feuille de style claire !"
+			);
+			break;
+		}
+		case "dark": {
+			console.log(
+				"Erreur lors du chargement de la feuille de style sombre !"
 			);
 			break;
 		}
