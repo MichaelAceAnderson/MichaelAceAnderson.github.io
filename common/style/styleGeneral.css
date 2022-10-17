@@ -386,17 +386,15 @@ header h1 {
 }
 
 .main form button:hover {
-	color: white;
 	background: rgb(23 24 25);
 	border: 5px solid var(--lighter2);
 	cursor: pointer;
-	transition: 0.5s;
+	transition: 0.3s;
 }
 
 .main form button:active {
 	background: radial-gradient(rgb(40 40 40), rgb(23 24 25));
 	border: 5px solid var(--darker2);
-	cursor: pointer;
 }
 
 /* Articles/Cartes */
