@@ -3,7 +3,7 @@
 <div class="slideshow fade">
   <a class="close" onclick="hideSlide()">&#10006;</a>
 	<div class="slideFrame">
-		<div class="numbertext" id="pageNum"></div>
+		<div class="pagenum"></div>
 		<div class="picture">
 			<img src="">
 		</div>

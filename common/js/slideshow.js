@@ -28,22 +28,26 @@ function showSlide(n) {
 	const slideImg = elementSlideshow.getElementsByTagName("img")[0];
 	const slideDesc = elementSlideshow.getElementsByClassName("description")[0];
 	const slideTitle = elementSlideshow.getElementsByTagName("h1")[0];
+	const pageNum = elementSlideshow.getElementsByClassName("pagenum")[0];
 
 	document.body.style.overflow = "hidden";
 	elementSlideshow.style.display = "block";
 	slideTitle.textContent = titleText;
 	slideDesc.textContent = descText;
 	slideImg.src = urlImg;
+	pageNum.textContent = n + 1 + "/" + articleList.length;
 }
 
 function hideSlide() {
 	const slideImg = elementSlideshow.getElementsByTagName("img")[0];
 	const slideDesc = elementSlideshow.getElementsByClassName("description")[0];
 	const slideTitle = elementSlideshow.getElementsByTagName("h1")[0];
+	const pageNum = elementSlideshow.getElementsByClassName("pagenum")[0];
 
-	document.body.style.overflow = "auto";
+	document.body.style.overflow = null;
 	elementSlideshow.style.display = "none";
-	slideTitle.textContent = "";
-	slideDesc.textContent = "";
-	slideImg.src = "";
+	slideTitle.textContent = null;
+	slideDesc.textContent = null;
+	pageNum.textContent = null;
+	slideImg.src = null;
 }
