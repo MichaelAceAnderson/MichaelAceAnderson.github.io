@@ -1,16 +1,16 @@
 /* Rappels: 
-IE/Edge CSS-prefix: -ms
-Firefox CSS-prefix: -moz 
+IE/Edge CSS prefix: -ms
+Firefox CSS prefix: -moz 
 Opera CSS prefix: -o (Presto) and -webkit (Blink) 
 Safari CSS prefix: -webkit 
 Chrome CSS prefix: -webkit
 */
 
 /* Default element/Background colors */
-	:root {
-		--textcolor: white;
-		--themecolor: rgb(23 24 25);
-		--darker: rgb(0, 0, 0, 0.2);
+:root {
+	--textcolor: white;
+	--themecolor: rgb(23 24 25);
+	--darker: rgb(0, 0, 0, 0.2);
 	--darker2: rgb(0, 0, 0, 0.4);
 	--ligther: rgb(255, 255, 255, 0.1);
 	--ligther2: rgb(255, 255, 255, 0.2);
@@ -234,7 +234,7 @@ header h1 {
 	top: 0;
 }
 
-#main iframe {
+.main iframe {
 	border: none;
 	margin: 10px;
 	/* Tests/dev only */
@@ -248,11 +248,11 @@ header h1 {
 /* Contenu */
 .main {
 	position: relative;
-	padding: 0 50px 0 150px;
+	padding: 0 50px 50px 150px;
 	overflow: hidden;
 	z-index: -1;
 	width: 100%;
-	min-height: 1000px;
+	min-height: 100vh;
 	font-size: 25px;
 	background: var(--themecolor);
 	box-sizing: border-box;
@@ -407,6 +407,10 @@ header h1 {
 	vertical-align: top;
 	text-align: justify;
 	box-shadow: 0px 0px 10px 0px var(--darker);
+}
+
+.main article.no-align {
+	min-height: unset;
 }
 
 .main article img {
