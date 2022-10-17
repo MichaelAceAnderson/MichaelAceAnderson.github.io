@@ -10,8 +10,8 @@ Mapping URL
 
 Chargement de la feuille de style selon le thème (sombre/clair/...)
 
-Calcul de couleurs pour définition de thèmes personnalisés
-
 Feuille de style responsive (mobile, ...)
+
+Calcul de couleurs pour définition de thèmes personnalisés
 
 Feuille de style d'impression

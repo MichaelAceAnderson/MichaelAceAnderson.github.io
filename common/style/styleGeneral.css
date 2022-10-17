@@ -12,8 +12,8 @@ Chrome CSS prefix: -webkit
 	--themecolor: rgb(23 24 25);
 	--darker: rgb(0, 0, 0, 0.2);
 	--darker2: rgb(0, 0, 0, 0.4);
-	--ligther: rgb(255, 255, 255, 0.1);
-	--ligther2: rgb(255, 255, 255, 0.2);
+	--lighter: rgb(255, 255, 255, 0.1);
+	--lighter2: rgb(255, 255, 255, 0.2);
 }
 
 /* Propriétés générales du corps de la page */
@@ -29,9 +29,11 @@ Chrome CSS prefix: -webkit
 	outline: none;
 }
 
-/* Déplacement plus fluide de la page */
 html {
+	/* Déplacement plus fluide de la page */
 	scroll-behavior: smooth;
+	/* Antialiasing des polices */
+	-webkit-font-smoothing: antialiased;
 }
 
 /* Position, couleur, police et image de fond du corps */
@@ -60,15 +62,15 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-	background: var(--ligther);
+	background: var(--lighter);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-	background: var(--ligther2);
+	background: var(--lighter2);
 }
 
 ::-webkit-scrollbar-thumb:active {
-	background: var(--ligther);
+	background: var(--lighter);
 }
 
 /* Styliser tous les liens */
@@ -109,7 +111,7 @@ header a:hover {
 }
 
 header a:active {
-	background: var(--ligther2);
+	background: var(--lighter2);
 	border: 2px solid gray;
 	transition: 0.1s;
 }
@@ -145,7 +147,7 @@ header h1 {
 	user-select: none;
 	z-index: 3;
 	transition: 0.5s;
-	text-shadow: 0px 0px 5px black;
+	text-shadow: 0px 0px 2px black;
 	color: white;
 }
 
@@ -156,7 +158,7 @@ header h1 {
 /* Cadre du profil */
 .menu .profile {
 	margin: 130px 5% 30px 5%;
-	background: var(--ligther);
+	background: var(--lighter);
 	padding: 15px;
 }
 
@@ -195,13 +197,13 @@ header h1 {
 
 .menu .links a:hover,
 .menu .links a:focus-visible {
-	background: var(--ligther);
+	background: var(--lighter);
 	cursor: pointer;
 	transition: 0.5s;
 }
 
 .menu .links a:active {
-	background: var(--ligther2);
+	background: var(--lighter2);
 	transition: 0.1s;
 }
 
@@ -386,7 +388,7 @@ header h1 {
 .main form button:hover {
 	color: white;
 	background: rgb(23 24 25);
-	border: 5px solid var(--ligther2);
+	border: 5px solid var(--lighter2);
 	cursor: pointer;
 	transition: 0.5s;
 }

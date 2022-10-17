@@ -8,4 +8,8 @@
 	.menu {
 		background: var(--darker2);
 	}
+
+	.menu-btn {
+		text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+	}
 }

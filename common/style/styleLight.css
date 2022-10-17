@@ -8,4 +8,22 @@
 	.menu {
 		background: var(--ligther2);
 	}
+
+	.menu .profile {
+		background: var(--darker);
+		text-shadow: -1px -1px 0 white, 1px -1px 0 white, -1px 1px 0 white, 1px 1px 0 white;
+	}
+
+	.menu .links a:hover,
+	.menu .links a:focus-visible {
+		background: var(--darker);
+	}
+
+	.menu .links a:active {
+		background: var(--darker2);
+	}
+
+	.menu-btn {
+		text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+	}
 }
