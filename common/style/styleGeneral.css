@@ -351,21 +351,20 @@ header h1 {
 	transition: 0.2s linear;
 }
 
-.main form .error {
-	background: rgb(255 0 0 / 80%);
-	border: 8px solid var(--darker);
-	margin: 25px;
-	padding: 10px;
+.main form .response {
 	color: white;
-	display: inline-block;
+	border-left: 8px solid var(--darker);
+	margin: 10px;
+	padding: 10px;
+	display: block;
 }
 
-.main form .success {
+.main form .response.error {
+	background: rgb(150 0 0 / 80%);
+}
+
+.main form .response.success {
 	background: rgb(0 100 0 / 80%);
-	border: 8px solid var(--darker);
-	padding: 10px;
-	color: white;
-	display: inline-block;
 }
 
 .main form h3 {

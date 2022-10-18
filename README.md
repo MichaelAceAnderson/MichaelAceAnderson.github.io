@@ -2,7 +2,7 @@
 
 ## Contenu
 
-Fonction contact
+/
 
 ## Sécurité & Technique
 
