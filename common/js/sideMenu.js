@@ -1,7 +1,7 @@
 const toggleBtn = document.getElementsByClassName("menu-btn")[0];
 const cover = document.getElementsByClassName("cover")[0];
 
-/* Cacher le menu au clic */
+/* Cacher le menu au clic sur la surcouche foncée */
 cover.addEventListener("click", sideMenu);
 
 /* Afficher/Cacher le menu de gauche */
@@ -9,55 +9,24 @@ function sideMenu() {
 	/* On convertir les éléments à récupérer dans la page en variables */
 	const menu = document.getElementsByClassName("menu")[0];
 	const main = document.getElementsByClassName("main")[0];
-	const infos = document.getElementsByClassName("infos")[0];
+	const cover = document.getElementsByClassName("cover")[0];
 
 	/* Si le menu est fermé, on l'ouvre et on décale et assombrit le contenu */
-	if (menu.offsetWidth == "0") {
-		/* Permettre au texte de se dérouler correctement */
-		infos.style.whiteSpace = "normal";
-
+	if (!menu.classList.contains("opened")) {
 		/* Agrandir le menu */
-		menu.style.width = "25%";
-		menu.style.transition = "0.5s";
-		menu.style.backdropFilter = "blur(7px)";
-
-		/* Poser le bouton d'affichage du menu */
-		toggleBtn.style.position = "absolute";
-		toggleBtn.style.transform = "rotate(360deg)";
-
-		/* Afficher la surcouche foncée */
-		cover.style.marginLeft = "25%";
-		cover.style.transition = "0.5s";
-		cover.style.background = "rgb(0, 0, 0, 0.7)";
-		cover.style.zIndex = "1";
-
+		menu.classList.add("opened");
 		/* Décaler le contenu */
-		main.style.paddingLeft = "26%";
-		main.style.transition = "0.5s";
+		main.classList.add("opened");
+		/* Afficher la surcouche foncée */
+		cover.classList.add("opened");
 	} else {
 		/* Si le menu est ouvert, on le ferme et on rétablit tout en forme initiale */
-
-		/* Permettre au texte de s'enrouler correctement */
-		infos.style.whiteSpace = "nowrap";
-
 		/* Réduire le menu */
-		menu.style.width = "0px";
-		menu.style.transition = "0.3s";
-		menu.style.backdropFilter = null;
-
-		/* Rétablir le bouton d'affichage du menu */
-		toggleBtn.style.position = "fixed";
-		toggleBtn.style.transform = null;
-
-		/* Cacher la surcouche foncée */
-		cover.style.marginLeft = null;
-		cover.style.transition = "0.3s";
-		cover.style.background = null;
-		cover.style.zIndex = "-2";
-
-		/* Décaler le contenu */
-		main.style.paddingLeft = null;
-		main.style.transition = "0.3s";
+		menu.classList.remove("opened");
+		/* Rétablir le contenu */
+		main.classList.remove("opened");
+		/* Retirer la surcouche foncée */
+		cover.classList.remove("opened");
 	}
 }
 
@@ -70,18 +39,23 @@ function subMenu(obj) {
 
 	/* Si le sous-menu est caché, on le rouvre */
 	if (submenu.classList.contains("closed")) {
+		/* Changer le sens de la flèche du titre du sous-menu */
 		arrow.textContent = "◃";
+		/* On ouvre le sous-menu */
 		submenu.classList.remove("closed");
 		submenu.classList.add("opened");
-
+		/* Calculer la taille du sous-menu à partir du nombre de liens */
 		submenu.style.height =
 			submenu.getElementsByTagName("a")[0].offsetHeight *
 				submenu.childElementCount +
 			"px";
 	} else {
+		/* Changer le sens de la flèche du titre du sous-menu */
 		arrow.textContent = "▿";
+		/* On ferme le sous-menu */
 		submenu.classList.remove("opened");
 		submenu.classList.add("closed");
+		/* Mettre la taille du sous-menu à 0 */
 		submenu.style.height = "0px";
 	}
 }

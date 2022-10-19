@@ -124,7 +124,7 @@ header h1 {
 	color: white;
 }
 
-/* Menu de gauche */
+/* Menu de gauche (fermé) */
 .menu {
 	position: fixed;
 	width: 0px;
@@ -134,11 +134,43 @@ header h1 {
 	z-index: 2;
 	overflow-x: hidden;
 	overflow-y: scroll;
-	transition: 1s;
 	user-select: none;
+	transition: 0.3s;
 }
 
-/* Bouton affichage du menu */
+/* Menu de gauche (ouvert) */
+.menu.opened {
+	width: 25%;
+	transition: 0.5s;
+	backdrop-filter: blur(7px);
+}
+
+/* Bouton affichage du menu (ouvert) */
+.menu.opened .menu-btn {
+	position: absolute;
+	transform: rotate(360deg);
+}
+
+/* Texte du profil (menu ouvert) */
+.menu.opened .profile .infos {
+	white-space: normal;
+}
+
+/* Contenu (menu fermé) */
+.main.opened {
+	padding-left: 26%;
+	transition: 0.5s;
+}
+
+/* Couche sombre par-dessus le contenu (menu fermé) */
+.cover.opened {
+	margin-left: 25%;
+	z-index: 1;
+	background: rgb(0, 0, 0, 0.7);
+	transition: 0.5s;
+}
+
+/* Bouton affichage du menu (fermé) */
 .menu-btn {
 	position: fixed;
 	top: 30px;
@@ -151,6 +183,7 @@ header h1 {
 	color: white;
 }
 
+/* Survol du bouton affichage du menu */
 .menu-btn:hover {
 	cursor: pointer;
 }
@@ -234,6 +267,7 @@ header h1 {
 	z-index: -2;
 	position: fixed;
 	top: 0;
+	transition: 0.3s;
 }
 
 .main iframe {
@@ -250,7 +284,10 @@ header h1 {
 /* Contenu */
 .main {
 	position: relative;
-	padding: 0 50px 50px 150px;
+	padding-top: 0px;
+	padding-right: 50px;
+	padding-bottom: 50px;
+	padding-left: 150px;
 	overflow: hidden;
 	z-index: -1;
 	width: 100%;
@@ -258,7 +295,7 @@ header h1 {
 	font-size: 25px;
 	background: var(--themecolor);
 	box-sizing: border-box;
-	transition: 1s;
+	transition: 0.3s;
 }
 
 .content {
