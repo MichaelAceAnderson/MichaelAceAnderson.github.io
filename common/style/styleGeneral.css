@@ -179,7 +179,6 @@ header h1 {
 	user-select: none;
 	z-index: 3;
 	transition: 0.5s;
-	text-shadow: 0px 0px 2px black;
 	color: white;
 }
 
@@ -248,14 +247,14 @@ header h1 {
 	transition: 1s;
 }
 
-.submenu,
-.submenu.closed {
+.menu .submenu,
+.menu.submenu.closed {
 	transition: 1s cubic-bezier(0, 1, 1, 1);
 	overflow: hidden;
 	height: 0px;
 }
 
-.submenu.opened {
+.menu .submenu.opened {
 	transition: 1s cubic-bezier(0, 0, 0, 1);
 	overflow: hidden;
 }
@@ -298,7 +297,8 @@ header h1 {
 	transition: 0.3s;
 }
 
-.content {
+.main .content,
+.main .content p {
 	text-align: center;
 }
 
@@ -306,7 +306,6 @@ header h1 {
 .main p {
 	text-indent: 20px;
 	text-align: justify;
-	text-shadow: 0 0 1px black;
 }
 
 /* Exposants */
@@ -434,7 +433,7 @@ header h1 {
 }
 
 /* Articles/Cartes */
-.main article {
+.main .content article {
 	display: inline-block;
 	background: rgb(255 255 255 / 90%);
 	margin: 15px 25px 15px 0px;
@@ -443,20 +442,26 @@ header h1 {
 	vertical-align: top;
 	text-align: justify;
 	box-shadow: 0px 0px 10px 0px var(--darker);
+	transition: 0.5s;
+}
+
+.main .content article:hover {
+	transform: scale(1.05);
+	transition: 1s;
 }
 
 .main article.no-align {
 	min-height: unset;
 }
 
-.main article img {
+.main .content article img {
 	width: 100%;
 	display: block;
 	background: var(--darker2);
 	cursor: pointer;
 }
 
-.main article p {
+.main .content article p {
 	margin: 10px 25px;
 	display: inline-block;
 	font-size: 18px;
@@ -464,26 +469,26 @@ header h1 {
 	text-shadow: none;
 }
 
-.main article h1,
-.main article a {
+.main .content article h1,
+.main .content article a {
 	font-size: 25px;
 	color: black;
 	margin: 5px 15px;
 	text-align: center;
 }
 
-.main article a:hover,
-.main article a:focus {
+.main .content article a:hover,
+.main .content article a:focus {
 	text-decoration: underline;
 }
 
-.main article h6 {
+.main .content article h6 {
 	text-align: center;
 	margin: 10px 0 0 0;
 	color: gray;
 }
 
-.main article hr {
+.main .content article hr {
 	border: none;
 	background: gray;
 	height: 2px;
