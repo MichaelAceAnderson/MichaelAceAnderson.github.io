@@ -1,8 +1,25 @@
-//var slideImg = document.getElementById("youtubeimg").src
 const articleList = document.getElementsByTagName("article");
 const elementSlideshow = document.getElementsByClassName("slideshow")[0];
 
-let currentSlide = 0;
+document.addEventListener("keydown", slideKeyboard);
+
+let currentSlide = -1;
+
+function slideKeyboard() {
+	if (currentSlide != -1) {
+		switch (event.key) {
+			case "ArrowLeft": {
+				moveSlide(-1);
+				break;
+			}
+			case "ArrowRight": {
+				moveSlide(1);
+				break;
+			}
+		}
+	}
+	event.preventDefault();
+}
 
 for (let i = 0; i < articleList.length; i++) {
 	articleList[i]
@@ -21,6 +38,7 @@ function moveSlide(n) {
 
 function showSlide(n) {
 	let slide = articleList[n];
+	currentSlide = n;
 	const urlImg = slide.getElementsByTagName("img")[0].src;
 	const titleText = slide.getElementsByTagName("h1")[0].textContent;
 
@@ -52,4 +70,5 @@ function hideSlide() {
 	slideDesc.textContent = null;
 	pageNum.textContent = null;
 	slideImg.src = "";
+	currentSlide = -1;
 }

@@ -2,7 +2,9 @@
 
 ## Contenu
 
-/
+## Fonctionnalités
+
+Slide zoom avec clic
 
 ## Sécurité & Technique
 
