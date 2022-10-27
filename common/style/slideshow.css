@@ -17,7 +17,7 @@
 	display: block;
 	margin: auto;
 	overflow-y: auto;
-	overflow-x: hidden;
+	overflow-x: auto;
 }
 
 .slideshow .slideFrame img {
@@ -62,8 +62,9 @@
 	font-weight: bold;
 	font-size: 18px;
 	transition: 0.5s;
-	user-select: none;
+	-ms-user-select: none;
 	-webkit-user-select: none;
+	user-select: none;
 }
 
 .slideshow .prev {
@@ -91,6 +92,8 @@
 	right: 0;
 	font-size: 20px;
 	padding: 7px 20px;
+	-ms-user-select: none;
+	-webkit-user-select: none;
 	user-select: none;
 }
 

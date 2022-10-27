@@ -5,7 +5,7 @@
 	<div class="slideFrame">
 		<div class="pagenum"></div>
 		<div class="picture">
-			<img src="">
+			<img src="" alt="" title="">
 		</div>
 		<h1></h1>
 		<div class="description">

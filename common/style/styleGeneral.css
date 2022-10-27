@@ -134,6 +134,8 @@ header h1 {
 	z-index: 2;
 	overflow-x: hidden;
 	overflow-y: scroll;
+	-ms-user-select: none;
+	-webkit-user-select: none;
 	user-select: none;
 	transition: 0.3s;
 }
@@ -142,6 +144,7 @@ header h1 {
 .menu.opened {
 	width: 25%;
 	transition: 0.5s;
+	-webkit-backdrop-filter: blur(7px);
 	backdrop-filter: blur(7px);
 }
 
@@ -176,6 +179,8 @@ header h1 {
 	top: 30px;
 	left: 60px;
 	font-size: 60px;
+	-ms-user-select: none;
+	-webkit-user-select: none;
 	user-select: none;
 	z-index: 3;
 	transition: 0.5s;
@@ -365,9 +370,9 @@ header h1 {
 	color: black;
 	font-family: "Agency FB", sans-serif;
 	font-size: 18px;
-	user-select: none;
 	-ms-user-select: none;
 	-webkit-user-select: none;
+	user-select: none;
 }
 
 .main textarea {

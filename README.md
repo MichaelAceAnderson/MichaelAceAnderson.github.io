@@ -4,8 +4,6 @@
 
 ## Fonctionnalités
 
-Slide zoom avec clic
-
 ## Sécurité & Technique
 
 Fichier .htaccess

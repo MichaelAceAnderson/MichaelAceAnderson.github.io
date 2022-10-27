@@ -1,9 +1,23 @@
 const articleList = document.getElementsByTagName("article");
 const elementSlideshow = document.getElementsByClassName("slideshow")[0];
+const slideImg = elementSlideshow.getElementsByTagName("img")[0];
+const slideDesc = elementSlideshow.getElementsByClassName("description")[0];
+const slideTitle = elementSlideshow.getElementsByTagName("h1")[0];
+const pageNum = elementSlideshow.getElementsByClassName("pagenum")[0];
 
-document.addEventListener("keydown", slideKeyboard);
+slideImg.addEventListener("click", () => {
+	toggleZoomImg(slideImg);
+});
 
 let currentSlide = -1;
+
+function toggleZoomImg(img, forceClose = false) {
+	if (forceClose == true || img.style.transform == "scale(1.5)") {
+		img.style.transform = null;
+	} else {
+		img.style.transform = "scale(1.5)";
+	}
+}
 
 function slideKeyboard() {
 	if (currentSlide != -1) {
@@ -42,10 +56,7 @@ function showSlide(n) {
 	const urlImg = slide.getElementsByTagName("img")[0].src;
 	const titleText = slide.getElementsByTagName("h1")[0].textContent;
 
-	const slideImg = elementSlideshow.getElementsByTagName("img")[0];
-	const slideDesc = elementSlideshow.getElementsByClassName("description")[0];
-	const slideTitle = elementSlideshow.getElementsByTagName("h1")[0];
-	const pageNum = elementSlideshow.getElementsByClassName("pagenum")[0];
+	document.removeEventListener("keydown", slideKeyboard);
 
 	if (document.body.contains(slide.getElementsByTagName("p")[0])) {
 		const descText = slide.getElementsByTagName("p")[0].textContent;
@@ -55,20 +66,21 @@ function showSlide(n) {
 	elementSlideshow.style.display = "block";
 	slideTitle.textContent = titleText;
 	slideImg.src = urlImg;
+	slideImg.alt = titleText;
 	pageNum.textContent = n + 1 + "/" + articleList.length;
+
+	document.addEventListener("keydown", slideKeyboard);
 }
 
 function hideSlide() {
-	const slideImg = elementSlideshow.getElementsByTagName("img")[0];
-	const slideDesc = elementSlideshow.getElementsByClassName("description")[0];
-	const slideTitle = elementSlideshow.getElementsByTagName("h1")[0];
-	const pageNum = elementSlideshow.getElementsByClassName("pagenum")[0];
-
 	document.body.style.overflow = null;
 	elementSlideshow.style.display = "none";
 	slideTitle.textContent = null;
 	slideDesc.textContent = null;
 	pageNum.textContent = null;
 	slideImg.src = "";
+	slideImg.alt = "";
 	currentSlide = -1;
+	toggleZoomImg(slideImg, true);
+	document.removeEventListener("keydown", slideKeyboard);
 }
