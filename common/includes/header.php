@@ -13,7 +13,7 @@
 				<img src="/common/img/profile.jpg" alt="Photo de profil"/>
 				<div class="infos">
 					<h1>Prénom NOM</h1>
-					<h3>BTS SIO1</h3>
+					<h3>BTS SIO</h3>
 				</div>
 			</div>
 			<!-- Menu des liens  -->
