@@ -24,6 +24,7 @@
 	max-width: 90%;
 	max-height: 95%;
 	margin: 30px auto;
+	cursor: zoom-in;
 }
 
 .slideshow .picture {

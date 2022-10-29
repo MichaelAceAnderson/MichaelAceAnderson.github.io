@@ -14,8 +14,10 @@ let currentSlide = -1;
 function toggleZoomImg(img, forceClose = false) {
 	if (forceClose == true || img.style.transform == "scale(1.5)") {
 		img.style.transform = null;
+		img.style.cursor = null;
 	} else {
 		img.style.transform = "scale(1.5)";
+		img.style.cursor = "zoom-out";
 	}
 }
 
