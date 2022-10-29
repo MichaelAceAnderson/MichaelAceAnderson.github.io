@@ -1,5 +1,5 @@
 
-<link href="/common/style/slideshow.css" type="text/css" rel="stylesheet">
+<link href="/common/style/slideShow.css" type="text/css" rel="stylesheet">
 <div class="slideshow fade">
   <a class="close" onclick="hideSlide()">&#10006;</a>
 	<div class="slideFrame">

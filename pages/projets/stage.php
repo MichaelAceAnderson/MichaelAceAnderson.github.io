@@ -72,7 +72,7 @@
 		</div>
 	</section>
 <?php
-	include_once $_SERVER['DOCUMENT_ROOT'].'/common/includes/slideshow.php';
+	include_once $_SERVER['DOCUMENT_ROOT'].'/common/includes/slideShow.php';
 ?>
 <?php
 	include_once $_SERVER['DOCUMENT_ROOT'].'/common/includes/footer.php';

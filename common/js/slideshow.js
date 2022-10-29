@@ -1,9 +1,9 @@
 const articleList = document.getElementsByTagName("article");
-const elementSlideshow = document.getElementsByClassName("slideshow")[0];
-const slideImg = elementSlideshow.getElementsByTagName("img")[0];
-const slideDesc = elementSlideshow.getElementsByClassName("description")[0];
-const slideTitle = elementSlideshow.getElementsByTagName("h1")[0];
-const pageNum = elementSlideshow.getElementsByClassName("pagenum")[0];
+const elementSlideShow = document.getElementsByClassName("slideshow")[0];
+const slideImg = elementSlideShow.getElementsByTagName("img")[0];
+const slideDesc = elementSlideShow.getElementsByClassName("description")[0];
+const slideTitle = elementSlideShow.getElementsByTagName("h1")[0];
+const pageNum = elementSlideShow.getElementsByClassName("pagenum")[0];
 
 slideImg.addEventListener("click", () => {
 	toggleZoomImg(slideImg);
@@ -65,7 +65,7 @@ function showSlide(n) {
 		slideDesc.textContent = descText;
 	}
 	document.body.style.overflow = "hidden";
-	elementSlideshow.style.display = "block";
+	elementSlideShow.style.display = "block";
 	slideTitle.textContent = titleText;
 	slideImg.src = urlImg;
 	slideImg.alt = titleText;
@@ -76,7 +76,7 @@ function showSlide(n) {
 
 function hideSlide() {
 	document.body.style.overflow = null;
-	elementSlideshow.style.display = "none";
+	elementSlideShow.style.display = "none";
 	slideTitle.textContent = null;
 	slideDesc.textContent = null;
 	pageNum.textContent = null;
