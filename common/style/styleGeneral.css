@@ -466,18 +466,29 @@ header h1 {
 	cursor: pointer;
 }
 
-.main .content article p {
+.main .content article p,
+.main .content article i,
+.main .content article q {
 	margin: 10px 25px;
 	display: inline-block;
 	font-size: 18px;
 	color: black;
 	text-shadow: none;
+	text-align: justify;
 }
 
 .main .content article h1,
-.main .content article a {
-	font-size: 25px;
+.main .content article h1 a {
 	color: black;
+}
+
+.main .content article p a {
+	color: blue;
+	font-weight: bolder;
+}
+
+.main .content article h1 {
+	font-size: 25px;
 	margin: 5px 15px;
 	text-align: center;
 }

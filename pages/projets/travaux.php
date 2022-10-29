@@ -15,17 +15,22 @@
 		
 		<div class="content">
 			<article>
-				<img src="" alt="Image à venir">
+				<img src="/common/img/portfolio.jpg" alt="Portfolio">
+				<h1>Portfolio</h1>
+					<p>Présente vitrine de mes projets et de mon parcours qui vous permet également de <a href="/pages/contact.php">me contacter</a>
+			</article>
+			<article>
+				<img src="/common/img/newblog.jpg" alt="NewBlog">
 				<h1>NewBlog</h1>
 				<p>
-					Mini-CMS destiné à créer un blog (fonctionne sans base de données et n'est pas sécurisé).
+					Mini-CMS créé à l'âge de 15 ans permettant de créer un blog (obsolète, fonctionne sans base de données et n'est pas sécurisé).
 				</p>
 			</article>
 			<article>
-				<img src="" alt="Image à venir">
-				<h1>Portfolio</h1>
+				<img src="/common/img/pluginfr.jpg" alt="PluginFR">
+				<h1>PluginFR</h1>
 				<p>
-					<i><q>Mais enfin les enfants ! On est dedans !</q></i>
+					Site réalisé à l'âge de 15 ans destiné au partage de plugins Minecraft traduits, disposant d'une interface admin d'upload et d'une interface de commentaires.
 				</p>
 			</article>
 		</div>
