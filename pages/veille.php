@@ -23,7 +23,7 @@
 	</p>
 	<div class="content">
 			<article>
-				<img src="https://img.phonandroid.com/2022/07/new-open-with.jpg" alt="https://img.phonandroid.com/2022/07/new-open-with.jpg" title="https://img.phonandroid.com/2022/07/new-open-with.jpg"" alt="" title="">
+				<img src="https://img.phonandroid.com/2022/07/new-open-with.jpg" alt="https://img.phonandroid.com/2022/07/new-open-with.jpg" title="https://img.phonandroid.com/2022/07/new-open-with.jpg" alt="Windows 11 revoit le design de barre des tâches et inclut des Widgets animés dans une nouvelle mise à jour" title="Windows 11 revoit le design de barre des tâches et inclut des Widgets animés dans une nouvelle mise à jour">
 				<h6>
 					29/07/2022
 				</h6>
@@ -36,7 +36,7 @@
 					Une grosse amélioration que le grand public pourra sans doute essayer dès octobre.
 				</p>
 			</article><article>
-				<img src="https://www.ginjfo.com/wp-content/webp-express/webp-images/uploads/2022/02/Windows-11-copy-dialogs-fluent-design-02-768x409.jpg.webp" alt="https://www.ginjfo.com/wp-content/webp-express/webp-images/uploads/2022/02/Windows-11-copy-dialogs-fluent-design-02-768x409.jpg.webp" title="https://www.ginjfo.com/wp-content/webp-express/webp-images/uploads/2022/02/Windows-11-copy-dialogs-fluent-design-02-768x409.jpg.webp"">
+				<img src="https://www.ginjfo.com/wp-content/webp-express/webp-images/uploads/2022/02/Windows-11-copy-dialogs-fluent-design-02-768x409.jpg.webp" alt="https://www.ginjfo.com/wp-content/webp-express/webp-images/uploads/2022/02/Windows-11-copy-dialogs-fluent-design-02-768x409.jpg.webp" title="https://www.ginjfo.com/wp-content/webp-express/webp-images/uploads/2022/02/Windows-11-copy-dialogs-fluent-design-02-768x409.jpg.webp">
 				<h6>
 					02/02/2022
 				</h6>
@@ -46,7 +46,7 @@
 					Windows 11 introduit d’importants changements face à Windows 10. Les plus marquants concernent principalement l’interface et l’environnement du bureau.
 				</p>
 			</article><article>
-				<img src="https://www.presse-citron.net/app/uploads/2021/06/Windows-11.jpg" alt="https://www.presse-citron.net/app/uploads/2021/06/Windows-11.jpg" title="https://www.presse-citron.net/app/uploads/2021/06/Windows-11.jpg"">
+				<img src="https://www.presse-citron.net/app/uploads/2021/06/Windows-11.jpg" alt="https://www.presse-citron.net/app/uploads/2021/06/Windows-11.jpg" title="https://www.presse-citron.net/app/uploads/2021/06/Windows-11.jpg">
 				<h6>
 					01/02/2022
 				</h6>
@@ -54,7 +54,7 @@
 				<h1><a target="_blank" href="https://www.presse-citron.net/windows-11-un-ancien-directeur-de-microsoft-critique-le-menu-demarrer/">Windows 11 : un ancien directeur de Microsoft critique le menu Démarrer</a></h1>
 				<p>Cet ex responsable Microsoft de l’expérience utilisateur se dit choqué par le manque d’ergonomie du nouveau menu Démarrer de Windows 11.</p>
 			</article><article>
-				<img src="https://img.phonandroid.com/2021/10/Windows-11-10.jpeg" alt="https://img.phonandroid.com/2021/10/Windows-11-10.jpeg" title="https://img.phonandroid.com/2021/10/Windows-11-10.jpeg"">
+				<img src="https://img.phonandroid.com/2021/10/Windows-11-10.jpeg" alt="https://img.phonandroid.com/2021/10/Windows-11-10.jpeg" title="https://img.phonandroid.com/2021/10/Windows-11-10.jpeg">
 				<h6>
 					28/01/2022
 				</h6>
@@ -66,7 +66,7 @@
 					Ces nouveautés pourraient être le premier aperçu de la grosse mise à jour d’automne 2022.
 				</p>
 			</article><article>
-				<img src="https://img.phonandroid.com/2022/01/Gestionnaire-des-taches-Windows-11.jpg" alt="https://img.phonandroid.com/2022/01/Gestionnaire-des-taches-Windows-11.jpg" title="https://img.phonandroid.com/2022/01/Gestionnaire-des-taches-Windows-11.jpg"">
+				<img src="https://img.phonandroid.com/2022/01/Gestionnaire-des-taches-Windows-11.jpg" alt="https://img.phonandroid.com/2022/01/Gestionnaire-des-taches-Windows-11.jpg" title="https://img.phonandroid.com/2022/01/Gestionnaire-des-taches-Windows-11.jpg">
 				<h6>
 					21/01/2022
 				</h6>
@@ -78,7 +78,7 @@
 					un nouveau design dans la dernière mise à jour qui correspond au nouveau langage Fluent Design de Microsoft.
 				</p>
 			</article><article>
-				<img src="https://www.laptopspirit.fr/wp-content/uploads/new/2021/12/Windows-11-Bloc-Notes-1-600x524.jpg" alt="https://www.laptopspirit.fr/wp-content/uploads/new/2021/12/Windows-11-Bloc-Notes-1-600x524.jpg" title="https://www.laptopspirit.fr/wp-content/uploads/new/2021/12/Windows-11-Bloc-Notes-1-600x524.jpg"">
+				<img src="https://www.laptopspirit.fr/wp-content/uploads/new/2021/12/Windows-11-Bloc-Notes-1-600x524.jpg" alt="https://www.laptopspirit.fr/wp-content/uploads/new/2021/12/Windows-11-Bloc-Notes-1-600x524.jpg" title="https://www.laptopspirit.fr/wp-content/uploads/new/2021/12/Windows-11-Bloc-Notes-1-600x524.jpg">
 				<h6>
 					08/12/2021
 				</h6>
@@ -88,7 +88,7 @@
 					Microsoft offre au bloc-notes de Windows 11 une refonte en matière de design qui colle plus à l’ambiance graphique générale de ce nouveau système d’exploitation.
 				</p>
 			</article><!-- HORS PÉRIODE SCOLAIRE --><article>
-				<img src="https://img.phonandroid.com/2021/06/Windows-11-Nouveau-Explorateur-de-fichiers.jpg" alt="https://img.phonandroid.com/2021/06/Windows-11-Nouveau-Explorateur-de-fichiers.jpg" title="https://img.phonandroid.com/2021/06/Windows-11-Nouveau-Explorateur-de-fichiers.jpg"">
+				<img src="https://img.phonandroid.com/2021/06/Windows-11-Nouveau-Explorateur-de-fichiers.jpg" alt="https://img.phonandroid.com/2021/06/Windows-11-Nouveau-Explorateur-de-fichiers.jpg" title="https://img.phonandroid.com/2021/06/Windows-11-Nouveau-Explorateur-de-fichiers.jpg">
 				<h6>
 					28/06/2021
 				</h6>
@@ -100,7 +100,7 @@
 					Comme le reste de l'OS, Microsoft s'est évertué à simplifier l'interface des applications.
 				</p>
 			</article><article>
-				<img src="https://images.frandroid.com/wp-content/uploads/2021/06/windows-11-nouveau-design-apps-1-1200x675.jpg" alt="https://images.frandroid.com/wp-content/uploads/2021/06/windows-11-nouveau-design-apps-1-1200x675.jpg" title="https://images.frandroid.com/wp-content/uploads/2021/06/windows-11-nouveau-design-apps-1-1200x675.jpg"">
+				<img src="https://images.frandroid.com/wp-content/uploads/2021/06/windows-11-nouveau-design-apps-1-1200x675.jpg" alt="https://images.frandroid.com/wp-content/uploads/2021/06/windows-11-nouveau-design-apps-1-1200x675.jpg" title="https://images.frandroid.com/wp-content/uploads/2021/06/windows-11-nouveau-design-apps-1-1200x675.jpg">
 				<h6>
 					25/06/2021
 				</h6>
