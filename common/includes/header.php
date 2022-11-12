@@ -1,7 +1,12 @@
-	
+	<?php 
+		$nomComplet = "Prénom NOM";
+		$age = date_diff(date_create("13-07-2001"), date_create(date("Y-m-d")))->format('%y').' ans';
+	?>
 	<!-- En-tête  -->
 	<header>
-		<a href="#"><h1>Portfolio</h1></a>
+		<a href="#"><h1>Portfolio</h1>
+		<!-- <h4><?php echo $nomComplet; ?></h4>-->
+		</a> 
 	</header>
 	<!-- Cette balise ne sert qu'à mettre un fond foncé par dessus le contenu lorsque le menu est ouvert -->
 	<div class="cover"></div>
@@ -12,7 +17,7 @@
 			<div class="profile">
 				<img src="/common/img/profile.jpg" alt="Photo de profil"/>
 				<div class="infos">
-					<h1>Prénom NOM</h1>
+					<h1><?php echo $nomComplet; ?></h1>
 					<h3>BTS SIO</h3>
 				</div>
 			</div>
