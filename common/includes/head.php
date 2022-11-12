@@ -9,7 +9,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<!-- On relie la feuille de style avec la page -->
 		<script src="/common/js/styleDebug.js"></script>
-		
+		<link rel="icon" type="image/x-icon" href="/favicon.ico">
 		<link rel="preload" href="/common/fonts/agencyfb.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 		<link href="/common/style/styleGeneral.css" rel="stylesheet" onload="sheetLoaded('general')" onerror="sheetError('general')">
 		<link href="/common/style/styleLight.css" rel="stylesheet" media="(prefers-color-scheme: light)" onload="sheetLoaded('light')" onerror="sheetError('light')">
