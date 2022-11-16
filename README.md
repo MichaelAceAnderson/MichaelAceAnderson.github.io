@@ -12,9 +12,7 @@ Mapping URL
 
 ## Style
 
-Chargement de la feuille de style selon le thème (sombre/clair/...)
-
-Feuille de style responsive (mobile, ...)
+Adaptation responsive design (tablettes, mobile, ...)
 
 Calcul de couleurs pour définition de thèmes personnalisés
 

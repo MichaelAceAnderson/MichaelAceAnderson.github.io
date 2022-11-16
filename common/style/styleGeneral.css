@@ -96,7 +96,6 @@ header a {
 	display: inline-block;
 	padding: 20px;
 	position: relative;
-	font-size: 30px;
 	text-transform: uppercase;
 	vertical-align: middle;
 	box-sizing: border-box;
@@ -543,24 +542,4 @@ footer a {
 footer a:hover,
 footer a:focus {
 	text-decoration: underline;
-}
-
-/* Responsive design */
-
-@media screen and (min-device-width: 0px) and (max-width: 1130px) {
-	.menu .profile {
-		text-align: center;
-	}
-
-	.menu .profile .infos {
-		position: relative;
-	}
-
-	.menu .links a .dropdown {
-		right: 5px;
-	}
-
-	.menu-btn {
-		left: 30px;
-	}
 }

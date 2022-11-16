@@ -14,7 +14,8 @@
 		<link href="/common/style/styleGeneral.css" rel="stylesheet" onload="sheetLoaded('general')" onerror="sheetError('general')">
 		<link href="/common/style/styleLight.css" rel="stylesheet" media="(prefers-color-scheme: light)" onload="sheetLoaded('light')" onerror="sheetError('light')">
 		<link href="/common/style/styleDark.css" rel="stylesheet" media="(prefers-color-scheme: dark)" onload="sheetLoaded('dark')" onerror="sheetError('dark')">
-		<link href="/common/style/styleMobile.css" rel="stylesheet" media="screen and (max-width: 600px)" onload="sheetLoaded('mobile')" onerror="sheetError('mobile')">
+		<!-- <link href="/common/style/styleMobile.css" rel="stylesheet" media="screen and (max-width: 600px)" onload="sheetLoaded('mobile')" onerror="sheetError('mobile')"> -->
+		<link href="/common/style/styleMobile.css" rel="stylesheet" onload="sheetLoaded('mobile')" onerror="sheetError('mobile')">
 		<link href="/common/style/stylePrint.css" rel="stylesheet" media="print" onload="sheetLoaded('print')" onerror="sheetError('print')">
 
 	</head>

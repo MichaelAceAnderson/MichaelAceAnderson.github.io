@@ -8,6 +8,49 @@ Chrome CSS prefix: -webkit
 
 /* Responsive design */
 
+/* Petits écrans */
+@media screen and (min-width: 0px) and (max-width: 399px) {
+	.menu-btn {
+		top: 30px;
+	}
+
+	.menu.opened {
+		width: 75%;
+	}
+
+	.main {
+		padding-left: 50px;
+	}
+
+	header {
+		text-align: right;
+	}
+
+	header h1 {
+		font-size: 70px;
+	}
+}
+
+/* Moyens écrans */
+@media screen and (min-width: 400px) and (max-width: 900px) {
+	.menu.opened {
+		width: 50%;
+	}
+
+	.main {
+		padding-left: 50px;
+	}
+
+	header {
+		text-align: right;
+	}
+
+	header h1 {
+		font-size: 75px;
+	}
+}
+
+/* Moyens+ écrans */
 @media screen and (min-device-width: 0px) and (max-width: 1130px) {
 	.menu .profile {
 		text-align: center;
@@ -24,4 +67,5 @@ Chrome CSS prefix: -webkit
 	.menu-btn {
 		left: 30px;
 	}
+
 }
