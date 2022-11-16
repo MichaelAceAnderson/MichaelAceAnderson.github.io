@@ -6,6 +6,13 @@ Safari CSS prefix: -webkit
 Chrome CSS prefix: -webkit
 */
 
+/* Tests/dev only */
+iframe,
+.infos,
+h4 {
+	filter: blur(7px);
+}
+
 /* Default element/Background colors */
 :root {
 	--textcolor: white;
@@ -282,8 +289,6 @@ header h1 {
 .main iframe {
 	border: none;
 	margin: 10px;
-	/* Tests/dev only */
-	filter: blur(7px);
 	width: 80%;
 	min-height: 500px;
 	display: block;
