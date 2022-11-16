@@ -33,6 +33,20 @@
 					Site réalisé à l'âge de 15 ans destiné au partage de plugins Minecraft traduits, disposant d'une interface admin d'upload et d'une interface de commentaires.
 				</p>
 			</article>
+			<article>
+				<img src="/common/img/GuessWhat.jpg" alt="GuessWhat">
+				<h1>GuessWhat</h1>
+				<p>
+					Projet NodeJS réalisé en cours de formation en ligne de commandes sous forme de jeu de carte à deviner.
+				</p>
+			</article>
+			<article>
+				<img src="/common/img/TP_Banque.jpg" alt="TP_Banque">
+				<h1>Gestion de portefeuille</h1>
+				<p>
+					Projet java réalisé en cours de formation, permet la gestion de portefeuilles contenant des comptes clients (courant & épargne).
+				</p>
+			</article>
 		</div>
 	</section>
 
