@@ -23,7 +23,32 @@
 	</p>
 	<div class="content">
 			<article>
-				<img src="https://img.phonandroid.com/2022/07/new-open-with.jpg" alt="https://img.phonandroid.com/2022/07/new-open-with.jpg" title="https://img.phonandroid.com/2022/07/new-open-with.jpg" alt="Windows 11 revoit le design de barre des tâches et inclut des Widgets animés dans une nouvelle mise à jour" title="Windows 11 revoit le design de barre des tâches et inclut des Widgets animés dans une nouvelle mise à jour">
+				<img src="https://img.phonandroid.com/2022/11/windows-11-bouton-recherche.jpg" alt="Windows 11 : le bouton recherche de la barre des tâches adopte un nouveau look imposant" title="Windows 11 : le bouton recherche de la barre des tâches adopte un nouveau look imposant">
+				<h6>
+					28/10/2022
+				</h6>
+				<hr>
+				<h1><a target="_blank" href="https://www.phonandroid.com/windows-11-revoit-le-design-de-barre-des-taches-et-inclut-des-widgets-animes-dans-une-nouvelle-mise-a-jour.html">Windows 11 : le bouton recherche de la barre des tâches adopte un nouveau look imposant</a></h1>
+				<p>
+					Microsoft teste actuellement un tout nouveau design du bouton recherche sur Windows 11, 
+					et celui-ci risque de ne pas plaire à tout le monde. Depuis aujourd’hui, les utilisateurs 
+					peuvent ainsi découvrir sur leur barre des tâches un bouton recherche plus imposant, inspiré de celui de Windows 10, 
+					venant remplacer la discrète icône loupe présente précédemment. Heureusement, il est possible de le faire disparaître.
+				</p>
+			</article><article>
+				<img src="https://img.phonandroid.com/2022/10/Capture-decran-2022-10-28-145121.jpg" alt="Windows 11 : Microsoft introduit un nouveau design pour la fenêtre de réinitialisation" title="Windows 11 : Microsoft introduit un nouveau design pour la fenêtre de réinitialisation">
+				<h6>
+					28/10/2022
+				</h6>
+				<hr>
+				<h1><a target="_blank" href="https://www.phonandroid.com/windows-11-revoit-le-design-de-barre-des-taches-et-inclut-des-widgets-animes-dans-une-nouvelle-mise-a-jour.html">Windows 11 : Microsoft introduit un nouveau design pour la fenêtre de réinitialisation</a></h1>
+				<p>
+					La nouvelle Build de Windows 11 pour les Insiders est disponible. 
+					Elle apporte des changements discrets, dont un qui concerne la fenêtre de réinitialisation. 
+					Désormais, elle est plus en phase avec le reste de l’OS au niveau du design.
+				</p>
+			</article><article>
+				<img src="https://img.phonandroid.com/2022/07/new-open-with.jpg" alt=">Windows 11 revoit le design de barre des tâches et inclut des Widgets animés dans une nouvelle mise à jour" title=">Windows 11 revoit le design de barre des tâches et inclut des Widgets animés dans une nouvelle mise à jour">
 				<h6>
 					29/07/2022
 				</h6>
