@@ -91,6 +91,7 @@
 	transition: 0.5s;
 	top: 0;
 	right: 0;
+	color: white;
 	font-size: 20px;
 	padding: 7px 20px;
 	-ms-user-select: none;
