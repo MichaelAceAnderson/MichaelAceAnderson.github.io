@@ -8,8 +8,16 @@
 			<center class="main">
 				<h1 class="response error">
 				<?php
-				echo "Erreur ".$_GET['error'].": <br>";
-				switch($_GET['error'])
+				if(isset($_GET['error']))
+				{
+					$error = $_GET['error'];
+				}
+				else
+				{
+					$error = "";
+				}
+				echo "Erreur $error: <br>";
+				switch($error)
 				{
 					case '400':
 					echo 'Échec de l\'analyse HTTP !';
