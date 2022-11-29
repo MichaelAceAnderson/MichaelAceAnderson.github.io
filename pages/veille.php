@@ -23,17 +23,16 @@
 	</p>
 	<div class="content">
 			<article>
-				<img src="https://img.phonandroid.com/2022/11/windows-11-bouton-recherche.jpg" alt="Windows 11 : le bouton recherche de la barre des tâches adopte un nouveau look imposant" title="Windows 11 : le bouton recherche de la barre des tâches adopte un nouveau look imposant">
+				<img src="https://img.phonandroid.com/2022/11/windows-11-bouton-recherche.jpg" alt="Windows 11 : un ex-cadre de Microsoft « choqué » par l’expérience du menu Démarrer" title="Windows 11 : un ex-cadre de Microsoft « choqué » par l’expérience du menu Démarrer">
 				<h6>
 					28/10/2022
 				</h6>
 				<hr>
 				<h1><a target="_blank" href="https://www.phonandroid.com/windows-11-revoit-le-design-de-barre-des-taches-et-inclut-des-widgets-animes-dans-une-nouvelle-mise-a-jour.html">Windows 11 : le bouton recherche de la barre des tâches adopte un nouveau look imposant</a></h1>
 				<p>
-					Microsoft teste actuellement un tout nouveau design du bouton recherche sur Windows 11, 
-					et celui-ci risque de ne pas plaire à tout le monde. Depuis aujourd’hui, les utilisateurs 
-					peuvent ainsi découvrir sur leur barre des tâches un bouton recherche plus imposant, inspiré de celui de Windows 10, 
-					venant remplacer la discrète icône loupe présente précédemment. Heureusement, il est possible de le faire disparaître.
+					Microsoft vient de publier une nouvelle mise à jour Windows 11 destinée aux Insiders. 
+					Celle-ci apporte tout un tas de nouveautés, comme une barre des tâches revue et corrigée, 
+					des widgets animés ou encore un nouveau design pour certaines fenêtres. Une grosse amélioration que le grand public pourra sans doute essayer dès octobre.
 				</p>
 			</article><article>
 				<img src="https://img.phonandroid.com/2022/10/Capture-decran-2022-10-28-145121.jpg" alt="Windows 11 : Microsoft introduit un nouveau design pour la fenêtre de réinitialisation" title="Windows 11 : Microsoft introduit un nouveau design pour la fenêtre de réinitialisation">
@@ -46,6 +45,18 @@
 					La nouvelle Build de Windows 11 pour les Insiders est disponible. 
 					Elle apporte des changements discrets, dont un qui concerne la fenêtre de réinitialisation. 
 					Désormais, elle est plus en phase avec le reste de l’OS au niveau du design.
+				</p>
+			</article>
+			<article>
+				<img src="https://images.frandroid.com/wp-content/uploads/2022/05/hp-spectre-x360-16-tablet-windows-11-1200x1020.jpg" alt="Windows 11 : le bouton recherche de la barre des tâches adopte un nouveau look imposant" title="Windows 11 : le bouton recherche de la barre des tâches adopte un nouveau look imposant">
+				<h6>
+					02/09/2022
+				</h6>
+				<hr>
+				<h1><a target="_blank" href="https://www.frandroid.com/os/windows/1455740_windows-11-un-ex-cadre-de-microsoft-choque-par-lexperience-du-menu-demarrer">Windows 11 : un ex-cadre de Microsoft « choqué » par l’expérience du menu Démarrer</a></h1>
+				<p>
+					« Choqué » par l'expérience utilisateur offerte par le menu Démarrer de Windows 11, un ex-cadre de Microsoft s'est exprimé sur Twitter. 
+					Sa prise de parole met en évidence les lacunes du nouveau menu.. et laisse entrevoir de belles pistes d'amélioration.
 				</p>
 			</article><article>
 				<img src="https://img.phonandroid.com/2022/07/new-open-with.jpg" alt=">Windows 11 revoit le design de barre des tâches et inclut des Widgets animés dans une nouvelle mise à jour" title=">Windows 11 revoit le design de barre des tâches et inclut des Widgets animés dans une nouvelle mise à jour">
