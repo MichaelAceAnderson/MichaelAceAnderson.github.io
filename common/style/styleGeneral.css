@@ -479,7 +479,7 @@ header h1 {
 .main .content article p,
 .main .content article i,
 .main .content article q {
-	margin: 10px 25px;
+	margin: 10px 25px 20px 25px;
 	display: inline-block;
 	font-size: 18px;
 	color: black;
