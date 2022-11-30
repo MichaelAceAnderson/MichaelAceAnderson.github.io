@@ -20,6 +20,11 @@
 					<p>Présente vitrine de mes projets et de mon parcours qui vous permet également de <a href="/pages/contact.php">me contacter</a>
 			</article>
 			<article>
+				<img src="/common/img/intrachat.jpg" alt="IntraChat">
+				<h1>IntraChat</h1>
+					<p>Projet en ligne de commandes (Batch) permettant de tchatter entre ordinateurs partageant un même lecteur réseau</a>
+			</article>
+			<article>
 				<img src="/common/img/newblog.jpg" alt="NewBlog">
 				<h1>NewBlog</h1>
 				<p>
