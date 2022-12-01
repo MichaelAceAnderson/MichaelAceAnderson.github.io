@@ -12,7 +12,7 @@
 			<hr>
 		</div>
 		<div class="content">
-			<form action="#" method="post">
+			<form action="#" method="post" class="contact">
 				<h1>Envoyer un message</h1>
 				<?php
 					if(isset($_POST["submit"]))
