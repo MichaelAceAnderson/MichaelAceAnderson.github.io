@@ -22,6 +22,8 @@ function toggleZoomImg(img, forceClose = false) {
 }
 
 function slideKeyboard() {
+	// event.preventDefault(); // Empêcher les actions par défaut (Ex: F5 actualiser)
+
 	if (currentSlide != -1) {
 		switch (event.key) {
 			case "ArrowLeft": {
@@ -32,9 +34,13 @@ function slideKeyboard() {
 				moveSlide(1);
 				break;
 			}
+			case "Escape":
+			{
+				hideSlide();
+				break;
+			}
 		}
 	}
-	event.preventDefault();
 }
 
 for (let i = 0; i < articleList.length; i++) {
