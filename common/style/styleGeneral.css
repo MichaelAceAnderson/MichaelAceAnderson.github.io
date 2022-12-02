@@ -453,20 +453,35 @@ header h1 {
 	background: rgb(255 255 255 / 90%);
 	margin: 15px 25px 15px 0px;
 	width: 300px;
-	min-height: 500px;
+	height: 500px;
+	position: relative;
+	overflow: hidden;
 	vertical-align: top;
 	text-align: justify;
 	box-shadow: 0px 0px 10px 0px var(--darker);
 	transition: 0.5s;
 }
 
+/* Dégradé cachant le texte qui déborde */
+.main .content article::before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 40px;
+	width: 100%;
+	background: linear-gradient(rgba(0, 0, 0, 0), white);
+}
+
+/* Survol curseur sur article */
 .main .content article:hover {
 	transform: scale(1.05);
 	transition: 1s;
 }
 
+/* Option pour ne pas aligner la hauteur des articles */
 .main article.no-align {
-	min-height: unset;
+	height: unset;
 }
 
 .main .content article img {
