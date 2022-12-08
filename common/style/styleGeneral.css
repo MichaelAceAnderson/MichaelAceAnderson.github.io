@@ -542,6 +542,14 @@ header h1 {
 	width: 40px;
 }
 
+.main .content .tags {
+	text-indent: initial;
+	margin-top: 15px;
+	color: gray;
+	display: block;
+	font-size: 17px;
+}
+
 .error {
 	color: white;
 	border-left: 8px solid var(--darker);
