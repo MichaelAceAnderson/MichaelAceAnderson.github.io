@@ -15,6 +15,13 @@ include_once $_SERVER['DOCUMENT_ROOT'] . '/common/includes/header.php';
 
 	<div class="content">
 		<article>
+			<img src="/common/img/wichat.jpg" alt="WiChat">
+			<h1>WiChat</h1>
+			<p>
+				Permet à des utilisateurs de tchatter de façon anonyme sans authentification
+			</p>
+		</article>
+		<article>
 			<img src="/common/img/portfolio.jpg" alt="Portfolio">
 			<h1>Portfolio</h1>
 			<p>
