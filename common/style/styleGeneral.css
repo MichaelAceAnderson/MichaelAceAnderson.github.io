@@ -473,6 +473,12 @@ header h1 {
 	background: linear-gradient(rgba(0, 0, 0, 0), white);
 }
 
+/* Ne pas appliquer le dégradé sur les articles non alignés */
+.main .content article.no-align::before {
+	content: "";
+	background: none;
+}
+
 /* Survol curseur sur article */
 .main .content article:hover {
 	transform: scale(1.05);
