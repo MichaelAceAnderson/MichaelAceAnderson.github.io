@@ -4,6 +4,8 @@
 
 ## Fonctionnalités
 
+Utiliser Edge DevTools pour détecter les problèmes divers (accessibilité, sécurité, ...)
+
 ## Sécurité & Technique
 
 Fichier .htaccess

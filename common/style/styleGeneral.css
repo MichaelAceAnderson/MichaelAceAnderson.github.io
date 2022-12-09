@@ -155,8 +155,13 @@ header h1 {
 .menu.opened {
 	width: 25%;
 	transition: 0.5s;
-	-webkit-backdrop-filter: blur(7px);
-	backdrop-filter: blur(7px);
+}
+
+@supports((backdrop-filter: blur(7px)) or (-webkit-backdrop-filter: blur(7px))) {
+	.menu.opened {
+		-webkit-backdrop-filter: blur(7px);
+		backdrop-filter: blur(7px);
+	}
 }
 
 /* Bouton affichage du menu (ouvert) */
@@ -224,7 +229,7 @@ header h1 {
 }
 
 .menu .profile .infos h1,
-.menu .profile .infos h3 {
+.menu .profile .infos h2 {
 	margin: 0;
 }
 
@@ -330,7 +335,7 @@ header h1 {
 }
 
 .main p sup:hover {
-	cursor: pointer;
+	cursor: help;
 	text-decoration: underline;
 }
 
