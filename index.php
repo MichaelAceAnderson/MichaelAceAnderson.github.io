@@ -14,12 +14,17 @@ include_once $_SERVER['DOCUMENT_ROOT'] . '/common/includes/header.php';
 	<p>Si mes projets suscitent votre intérêt, il est possible de me contacter grâce aux informations dans la rubrique "Contact"
 		mais également de consulter mon CV ci-dessous.
 	</p>
-	<div class="title">
-		<h1>Mon CV</h1>
-		<hr>
-	</div>
 	<div class="content">
+		<div class="title">
+			<h1>Mon CV</h1>
+			<hr>
+		</div>
 		<iframe src="/common/files/CV.pdf" title="CV"></iframe>
+		<div class="title">
+			<h1>Ma certification Pix</h1>
+			<hr>
+		</div>
+		<iframe src="/common/files/Pix.pdf" title="CV"></iframe>
 	</div>
 </section>
 <?php
