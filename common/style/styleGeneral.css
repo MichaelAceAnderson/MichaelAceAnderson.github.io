@@ -30,6 +30,7 @@ h4 {
 	font-weight: 400;
 	src: local("Agency FB"), local("AgencyFB-Regular"),
 		url(/common/fonts/agencyfb.ttf) format("truetype");
+	font-display: swap;
 }
 
 * {
