@@ -312,12 +312,14 @@ header h1 {
 	z-index: -1;
 	width: 100%;
 	min-height: 100vh;
-	font-size: 25px;
 	background: var(--themecolor);
 	box-sizing: border-box;
 	transition: 0.3s;
+	font-size: 0;
 }
-
+.main *{
+	font-size: 25px;
+}
 .main .content,
 .main .content p {
 	text-align: center;
@@ -350,6 +352,7 @@ header h1 {
 }
 
 .main .title h1 {
+	font-size: 30px;
 	margin: 10px auto;
 	text-align: left;
 }
@@ -537,8 +540,9 @@ header h1 {
 
 .main .content article h6 {
 	text-align: center;
-	margin: 10px 0 0 0;
+	margin: 5px auto;
 	color: gray;
+	font-size: 17px;
 }
 
 .main .content article hr {
