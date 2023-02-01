@@ -26,15 +26,15 @@
 	    <div class="links">
 	        <a href="/">Accueil</a>
 	        <div>
-	            <a href="#" onclick="subMenu(this);">Projets <span class="dropdown">▿</span></a>
+	            <a onclick="subMenu(this);">Projets <span class="dropdown">▿</span></a>
 	            <!-- Sous-menu -->
 	            <div class="submenu closed">
-	                <a href="/pages/projets/stage.php">Stage</a>
+	                <a href="/pages/projets/stage1.php">Stage 1</a>
+	                <a href="/pages/projets/stage2.php">Stage 2</a>
 	                <a href="/pages/projets/travaux.php">Travaux</a>
 	            </div>
 	        </div>
 	        <a href="/pages/veille.php">Veille informationnelle</a>
 	        <a href="/pages/contact.php">Contact</a>
 	    </div>
-	</div>
 	</div>
