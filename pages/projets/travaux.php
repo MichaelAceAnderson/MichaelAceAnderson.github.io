@@ -16,13 +16,13 @@ include_once $_SERVER['DOCUMENT_ROOT'] . '/common/includes/header.php';
 	<div class="content">
 		<article>
 			<img src="/common/img/wichat.jpg" alt="WiChat">
-			<h1>WiChat</h1>
+			<h1><a target="_blank" href="http://wichat.localhost">WiChat</a></h1>
 			<h6>
 				2022
 			</h6>
 			<p>
 				Permet à des utilisateurs de tchatter de façon anonyme sans authentification
-				<span class="tags">#HTML #CSS #PHP #JS #Axios #MySQL #Git #UML</span>
+				<span class=" tags">#HTML #CSS #PHP #JS #Axios #MySQL #Git #UML</span>
 			</p>
 		</article>
 		<article>
