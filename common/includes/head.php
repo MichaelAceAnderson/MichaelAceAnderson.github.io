@@ -11,20 +11,23 @@
     <!-- On précise la description du site pour les moteurs de recherche -->
     <meta name="description"
         content="Ce Portfolio est une interface de découverte de mes projets, de mes compétences et de mon parcours">
+    <!-- Selon si le thème est sombre ou clair, on modifie la couleur du thème du navigateur (Chrome mobile) -->
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#333" />
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="white" />
     <!-- On relie la feuille de style avec la page -->
     <script src="/common/js/styleDebug.js"></script>
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="preload" href="/common/fonts/agencyfb.ttf" as="font" type="font/ttf" crossorigin="anonymous">
-    <link href="/common/style/styleGeneral.css" rel="stylesheet" onload="sheetLoaded('general')"
-        onerror="sheetError('general')">
-    <link href="/common/style/styleLight.css" rel="stylesheet" media="(prefers-color-scheme: light)"
-        onload="sheetLoaded('light')" onerror="sheetError('light')">
-    <link href="/common/style/styleDark.css" rel="stylesheet" media="(prefers-color-scheme: dark)"
-        onload="sheetLoaded('dark')" onerror="sheetError('dark')">
+    <link rel="preload" type="font/ttf" href="/common/fonts/agencyfb.ttf" as="font" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="/common/style/styleGeneral.css" media="screen"
+        onload="sheetLoaded('general')" onerror="sheetError('general')">
+    <link rel="stylesheet" type="text/css" href="/common/style/styleLight.css"
+        media="screen and (prefers-color-scheme: light)" onload="sheetLoaded('light')" onerror="sheetError('light')">
+    <link rel="stylesheet" type="text/css" href="/common/style/styleDark.css"
+        media="screen and (prefers-color-scheme: dark)" onload="sheetLoaded('dark')" onerror="sheetError('dark')">
     <!-- <link href="/common/style/styleMobile.css" rel="stylesheet" media="screen and (max-width: 600px)" onload="sheetLoaded('mobile')" onerror="sheetError('mobile')"> -->
-    <link href="/common/style/styleMobile.css" rel="stylesheet" onload="sheetLoaded('mobile')"
+    <link rel="stylesheet" type="text/css" href="/common/style/styleMobile.css" onload="sheetLoaded('mobile')"
         onerror="sheetError('mobile')">
-    <link href="/common/style/stylePrint.css" rel="stylesheet" media="print" onload="sheetLoaded('print')"
-        onerror="sheetError('print')">
+    <link rel="stylesheet" type="text/css" href="/common/style/stylePrint.css" media="print"
+        onload="sheetLoaded('print')" onerror="sheetError('print')">
 
 </head>
