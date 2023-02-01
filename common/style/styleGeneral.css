@@ -316,9 +316,11 @@ header h1 {
 	transition: 0.3s;
 	font-size: 0;
 }
-.main *{
+
+.main * {
 	font-size: 25px;
 }
+
 .main .content,
 .main .content p {
 	text-align: center;
@@ -524,6 +526,7 @@ header h1 {
 .main .content article p a {
 	color: blue;
 	font-weight: bolder;
+	font-size: 18px;
 }
 
 .main .content article h1 {
