@@ -12,8 +12,6 @@ ErrorDocument 503 /pages/error.php?error=503
 ErrorDocument 504 /pages/error.php?error=504
 ErrorDocument 505 /pages/error.php?error=505
 
-# Redirections mapping URL
-#RewriteEngine On
-#RewriteCond %{REQUEST_URI} ^/pageSaisie
-#RewriteRule ^(.*)$ /pageAffichee
-
+# Redirect requests for PDF files to pages/error.php?error=404&static=true
+RewriteCond %{REQUEST_URI} \.pdf$
+RewriteRule ^(.*)$ /pages/error.php?error=404&static=true [R=301,L]
