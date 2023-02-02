@@ -1,8 +1,8 @@
 <?php
 
-	//Les includes permettent d'intégrer du code provenant d'autres pages pour éviter de répeter un même code dans plusieurs pages, surtout si celui-ci doit changer régulièrement
-	include_once $_SERVER['DOCUMENT_ROOT'].'/common/includes/head.php';
-	include_once $_SERVER['DOCUMENT_ROOT'].'/common/includes/header.php';
+//Les includes permettent d'intégrer du code provenant d'autres pages pour éviter de répeter un même code dans plusieurs pages, surtout si celui-ci doit changer régulièrement
+include_once $_SERVER['DOCUMENT_ROOT'] . '/common/includes/head.php';
+include_once $_SERVER['DOCUMENT_ROOT'] . '/common/includes/header.php';
 ?>
 <!-- Après avoir inclus le code commun à toutes les pages, on rajoute le contenu individuel de celle-ci -->
 
@@ -28,31 +28,48 @@
     </p>
     <div class="content">
         <article>
-            <img src="https://www.ginjfo.com/wp-content/webp-express/webp-images/uploads/2023/01/Windows-11-popups-2-ModernI.jpg.webp"
-                alt="Windows 11, il est temps d’abandonner le design de l’ère Windows 7 et 8"
-                title="Windows 11, il est temps d’abandonner le design de l’ère Windows 7 et 8">
+            <img src="https://img.phonandroid.com/2023/01/Explorateur-de-fichiers-modernise-Windows-11.jpg" alt=" Windows 11 : Microsoft introduit un nouveau design pour la fenêtre de réinitialisation" title="Windows 11 : Microsoft introduit un nouveau design pour la fenêtre de réinitialisation">
+            <h6>
+                23/01/2022
+            </h6>
+            <hr>
+            <h1>
+                <a target="_blank" href="https://www.phonandroid.com/windows-11-decouvrez-le-tout-nouveau-look-de-lexplorateur-de-fichiers.html">
+                    Windows 11 : découvrez le tout nouveau look de l’explorateur de fichiers
+                </a>
+            </h1>
+            <p>
+                Microsoft travaille sur une importante mise à jour de l'explorateur de fichiers dans Windows 11,
+                qui apportera un design modernisé et des fonctionnalités supplémentaires.
+            </p>
+        </article>
+        <article>
+            <img src="https://www.ginjfo.com/wp-content/webp-express/webp-images/uploads/2023/01/Windows-11-popups-2-ModernI.jpg.webp" alt="Windows 11, il est temps d’abandonner le design de l’ère Windows 7 et 8" title="Windows 11, il est temps d’abandonner le design de l’ère Windows 7 et 8">
             <h6>
                 02/01/2023
             </h6>
             <hr>
-            <h1><a target="_blank"
-                    href="https://www.ginjfo.com/actualites/logiciels/windows-11/windows-11-il-est-temps-dabandonner-le-design-de-lere-windows-7-et-8-20230102">Windows 11, il est temps d’abandonner le design de l’ère Windows 7 et 8</a></h1>
+            <h1>
+                <a target="_blank" href="https://www.ginjfo.com/actualites/logiciels/windows-11/windows-11-il-est-temps-dabandonner-le-design-de-lere-windows-7-et-8-20230102">
+                    Windows 11, il est temps d’abandonner le design de l’ère Windows 7 et 8
+                </a>
+            </h1>
             <p>
-				Nous savons que Microsoft a prévu plusieurs mises à jour “Moment” pour Windows 11 en 2023. 
-				Elles vont apporter des nouveautés et poursuivre la transformation physique du système d’exploitation.
+                Nous savons que Microsoft a prévu plusieurs mises à jour “Moment” pour Windows 11 en 2023.
+                Elles vont apporter des nouveautés et poursuivre la transformation physique du système d’exploitation.
             </p>
         </article>
         <article>
-            <img src="https://img.phonandroid.com/2022/11/windows-11-bouton-recherche.jpg"
-                alt="Windows 11 : un ex-cadre de Microsoft « choqué » par l’expérience du menu Démarrer"
-                title="Windows 11 : un ex-cadre de Microsoft « choqué » par l’expérience du menu Démarrer">
+            <img src="https://img.phonandroid.com/2022/11/windows-11-bouton-recherche.jpg" alt="Windows 11 : un ex-cadre de Microsoft « choqué » par l’expérience du menu Démarrer" title="Windows 11 : un ex-cadre de Microsoft « choqué » par l’expérience du menu Démarrer">
             <h6>
                 14/11/2022
             </h6>
             <hr>
-            <h1><a target="_blank"
-                    href="https://www.phonandroid.com/windows-11-revoit-le-design-de-barre-des-taches-et-inclut-des-widgets-animes-dans-une-nouvelle-mise-a-jour.html">Windows
-                    11 : le bouton recherche de la barre des tâches adopte un nouveau look imposant</a></h1>
+            <h1>
+                <a target="_blank" href="https://www.phonandroid.com/windows-11-revoit-le-design-de-barre-des-taches-et-inclut-des-widgets-animes-dans-une-nouvelle-mise-a-jour.html">
+                    Windows 11 : le bouton recherche de la barre des tâches adopte un nouveau look imposant
+                </a>
+            </h1>
             <p>
                 Microsoft vient de publier une nouvelle mise à jour Windows 11 destinée aux Insiders.
                 Celle-ci apporte tout un tas de nouveautés, comme une barre des tâches revue et corrigée,
@@ -61,16 +78,16 @@
             </p>
         </article>
         <article>
-            <img src="https://img.phonandroid.com/2022/10/Capture-decran-2022-10-28-145121.jpg"
-                alt="Windows 11 : Microsoft introduit un nouveau design pour la fenêtre de réinitialisation"
-                title="Windows 11 : Microsoft introduit un nouveau design pour la fenêtre de réinitialisation">
+            <img src="https://img.phonandroid.com/2022/10/Capture-decran-2022-10-28-145121.jpg" alt="Windows 11 : Microsoft introduit un nouveau design pour la fenêtre de réinitialisation" title="Windows 11 : Microsoft introduit un nouveau design pour la fenêtre de réinitialisation">
             <h6>
                 28/10/2022
             </h6>
             <hr>
-            <h1><a target="_blank"
-                    href="https://www.phonandroid.com/windows-11-revoit-le-design-de-barre-des-taches-et-inclut-des-widgets-animes-dans-une-nouvelle-mise-a-jour.html">Windows
-                    11 : Microsoft introduit un nouveau design pour la fenêtre de réinitialisation</a></h1>
+            <h1>
+                <a target="_blank" href="https://www.phonandroid.com/windows-11-revoit-le-design-de-barre-des-taches-et-inclut-des-widgets-animes-dans-une-nouvelle-mise-a-jour.html">
+                    Windows 11 : Microsoft introduit un nouveau design pour la fenêtre de réinitialisation
+                </a>
+            </h1>
             <p>
                 La nouvelle Build de Windows 11 pour les Insiders est disponible.
                 Elle apporte des changements discrets, dont un qui concerne la fenêtre de réinitialisation.
@@ -78,16 +95,16 @@
             </p>
         </article>
         <article>
-            <img src="https://images.frandroid.com/wp-content/uploads/2022/05/hp-spectre-x360-16-tablet-windows-11-1200x1020.jpg"
-                alt="Windows 11 : le bouton recherche de la barre des tâches adopte un nouveau look imposant"
-                title="Windows 11 : le bouton recherche de la barre des tâches adopte un nouveau look imposant">
+            <img src="https://images.frandroid.com/wp-content/uploads/2022/05/hp-spectre-x360-16-tablet-windows-11-1200x1020.jpg" alt="Windows 11 : le bouton recherche de la barre des tâches adopte un nouveau look imposant" title="Windows 11 : le bouton recherche de la barre des tâches adopte un nouveau look imposant">
             <h6>
                 02/09/2022
             </h6>
             <hr>
-            <h1><a target="_blank"
-                    href="https://www.frandroid.com/os/windows/1455740_windows-11-un-ex-cadre-de-microsoft-choque-par-lexperience-du-menu-demarrer">Windows
-                    11 : un ex-cadre de Microsoft « choqué » par l’expérience du menu Démarrer</a></h1>
+            <h1>
+                <a target="_blank" href="https://www.frandroid.com/os/windows/1455740_windows-11-un-ex-cadre-de-microsoft-choque-par-lexperience-du-menu-demarrer">
+                    Windows 11 : un ex-cadre de Microsoft « choqué » par l’expérience du menu Démarrer
+                </a>
+            </h1>
             <p>
                 « Choqué » par l'expérience utilisateur offerte par le menu Démarrer de Windows 11, un ex-cadre de
                 Microsoft s'est exprimé sur Twitter.
@@ -96,17 +113,17 @@
             </p>
         </article>
         <article>
-            <img src="https://img.phonandroid.com/2022/07/new-open-with.jpg"
-                alt=">Windows 11 revoit le design de barre des tâches et inclut des Widgets animés dans une nouvelle mise à jour"
-                title=">Windows 11 revoit le design de barre des tâches et inclut des Widgets animés dans une nouvelle mise à jour">
+            <img src="https://img.phonandroid.com/2022/07/new-open-with.jpg" alt=">Windows 11 revoit le design de barre des tâches et inclut des Widgets animés dans une nouvelle mise à jour" title=">Windows 11 revoit le design de barre des tâches et inclut des Widgets animés dans une nouvelle mise à jour">
             <h6>
                 29/07/2022
             </h6>
             <hr>
-            <h1><a target="_blank"
-                    href="https://www.phonandroid.com/windows-11-revoit-le-design-de-barre-des-taches-et-inclut-des-widgets-animes-dans-une-nouvelle-mise-a-jour.html">Windows
+            <h1>
+                <a target="_blank" href="https://www.phonandroid.com/windows-11-revoit-le-design-de-barre-des-taches-et-inclut-des-widgets-animes-dans-une-nouvelle-mise-a-jour.html">Windows
                     11 revoit le design de barre des tâches et inclut des Widgets animés dans une nouvelle mise à
-                    jour</a></h1>
+                    jour
+                </a>
+            </h1>
             <p>
                 Microsoft vient de publier une nouvelle mise à jour Windows 11 destinée aux Insiders.
                 Celle-ci apporte tout un tas de nouveautés, comme une barre des tâches revue et corrigée,
@@ -115,46 +132,46 @@
             </p>
         </article>
         <article>
-            <img src="https://www.ginjfo.com/wp-content/webp-express/webp-images/uploads/2022/02/Windows-11-copy-dialogs-fluent-design-02-768x409.jpg.webp"
-                alt="Windows 11 et son interface « moderne », il y a encore du travail"
-                title="Windows 11 et son interface « moderne », il y a encore du travail">
+            <img src="https://www.ginjfo.com/wp-content/webp-express/webp-images/uploads/2022/02/Windows-11-copy-dialogs-fluent-design-02-768x409.jpg.webp" alt="Windows 11 et son interface « moderne », il y a encore du travail" title="Windows 11 et son interface « moderne », il y a encore du travail">
             <h6>
                 02/02/2022
             </h6>
             <hr>
-            <h1><a target="_blank"
-                    href="https://www.ginjfo.com/actualites/logiciels/windows-11/windows-11-et-son-interface-moderne-il-y-a-encore-du-travail-20220202">Windows
-                    11 et son interface « moderne », il y a encore du travail</a></h1>
+            <h1>
+                <a target="_blank" href="https://www.ginjfo.com/actualites/logiciels/windows-11/windows-11-et-son-interface-moderne-il-y-a-encore-du-travail-20220202">
+                    Windows 11 et son interface « moderne », il y a encore du travail
+                </a>
+            </h1>
             <p>
                 Windows 11 introduit d’importants changements face à Windows 10. Les plus marquants concernent
                 principalement l’interface et l’environnement du bureau.
             </p>
         </article>
         <article>
-            <img src="https://www.presse-citron.net/app/uploads/2021/06/Windows-11.jpg"
-                alt="Windows 11 : un ancien directeur de Microsoft critique le menu Démarrer"
-                title="Windows 11 : un ancien directeur de Microsoft critique le menu Démarrer">
+            <img src="https://www.presse-citron.net/app/uploads/2021/06/Windows-11.jpg" alt="Windows 11 : un ancien directeur de Microsoft critique le menu Démarrer" title="Windows 11 : un ancien directeur de Microsoft critique le menu Démarrer">
             <h6>
                 01/02/2022
             </h6>
             <hr>
-            <h1><a target="_blank"
-                    href="https://www.presse-citron.net/windows-11-un-ancien-directeur-de-microsoft-critique-le-menu-demarrer/">Windows
-                    11 : un ancien directeur de Microsoft critique le menu Démarrer</a></h1>
+            <h1>
+                <a target="_blank" href="https://www.presse-citron.net/windows-11-un-ancien-directeur-de-microsoft-critique-le-menu-demarrer/">
+                    Windows 11 : un ancien directeur de Microsoft critique le menu Démarrer
+                </a>
+            </h1>
             <p>Cet ex responsable Microsoft de l’expérience utilisateur se dit choqué par le manque d’ergonomie du
                 nouveau menu Démarrer de Windows 11.</p>
         </article>
         <article>
-            <img src="https://img.phonandroid.com/2021/10/Windows-11-10.jpeg"
-                alt="Windows 11 : la nouvelle mise à jour améliore le design par petites touches"
-                title="Windows 11 : la nouvelle mise à jour améliore le design par petites touches">
+            <img src="https://img.phonandroid.com/2021/10/Windows-11-10.jpeg" alt="Windows 11 : la nouvelle mise à jour améliore le design par petites touches" title="Windows 11 : la nouvelle mise à jour améliore le design par petites touches">
             <h6>
                 28/01/2022
             </h6>
             <hr>
-            <h1><a target="_blank"
-                    href="https://www.phonandroid.com/windows-11-la-nouvelle-mise-a-jour-ameliore-le-design-par-petites-touches.html">Windows
-                    11 : la nouvelle mise à jour améliore le design par petites touches</a></h1>
+            <h1>
+                <a target="_blank" href="https://www.phonandroid.com/windows-11-la-nouvelle-mise-a-jour-ameliore-le-design-par-petites-touches.html">
+                    Windows 11 : la nouvelle mise à jour améliore le design par petites touches
+                </a>
+            </h1>
             <p>
                 Windows 11 accueille une nouvelle mise à jour pour les Insiders.
                 Celle-ci apporte des améliorations de l’interface utilisateur, mais aussi des voix inédites pour le
@@ -163,16 +180,16 @@
             </p>
         </article>
         <article>
-            <img src="https://img.phonandroid.com/2022/01/Gestionnaire-des-taches-Windows-11.jpg"
-                alt="Windows 11 : le Gestionnaire des tâches a droit à un nouveau design plus moderne"
-                title="Windows 11 : le Gestionnaire des tâches a droit à un nouveau design plus moderne">
+            <img src="https://img.phonandroid.com/2022/01/Gestionnaire-des-taches-Windows-11.jpg" alt="Windows 11 : le Gestionnaire des tâches a droit à un nouveau design plus moderne" title="Windows 11 : le Gestionnaire des tâches a droit à un nouveau design plus moderne">
             <h6>
                 21/01/2022
             </h6>
             <hr>
-            <h1><a target="_blank"
-                    href="https://www.phonandroid.com/windows-11-le-gestionnaire-des-taches-a-droit-a-un-nouveau-design-plus-moderne.html">Windows
-                    11 : le Gestionnaire des tâches a droit à un nouveau design plus moderne</a></h1>
+            <h1>
+                <a target="_blank" href="https://www.phonandroid.com/windows-11-le-gestionnaire-des-taches-a-droit-a-un-nouveau-design-plus-moderne.html">
+                    Windows 11 : le Gestionnaire des tâches a droit à un nouveau design plus moderne
+                </a>
+            </h1>
             <p>
                 Microsoft s'apprête à remanier le gestionnaire de tâches dans Windows 11.
                 Comme le reste du système d'exploitation, le gestionnaire de tâches reçoit enfin
@@ -181,32 +198,32 @@
             </p>
         </article>
         <article>
-            <img src="https://www.laptopspirit.fr/wp-content/uploads/new/2021/12/Windows-11-Bloc-Notes-1-600x524.jpg"
-                alt="Windows 11 – nouveau design pour le Bloc-Notes Notepad"
-                title="Windows 11 – nouveau design pour le Bloc-Notes Notepad">
+            <img src="https://www.laptopspirit.fr/wp-content/uploads/new/2021/12/Windows-11-Bloc-Notes-1-600x524.jpg" alt="Windows 11 – nouveau design pour le Bloc-Notes Notepad" title="Windows 11 – nouveau design pour le Bloc-Notes Notepad">
             <h6>
                 08/12/2021
             </h6>
             <hr>
-            <h1><a target="_blank"
-                    href="https://www.laptopspirit.fr/300926/windows-11-nouveau-design-pour-le-bloc-notes-notepad.html">Windows
-                    11 – nouveau design pour le Bloc-Notes Notepad</a></h1>
+            <h1>
+                <a target="_blank" href="https://www.laptopspirit.fr/300926/windows-11-nouveau-design-pour-le-bloc-notes-notepad.html">
+                    Windows 11 – nouveau design pour le Bloc-Notes Notepad
+                </a>
+            </h1>
             <p>
                 Microsoft offre au bloc-notes de Windows 11 une refonte en matière de design qui colle plus à l’ambiance
                 graphique générale de ce nouveau système d’exploitation.
             </p>
         </article><!-- HORS PÉRIODE SCOLAIRE -->
         <article>
-            <img src="https://img.phonandroid.com/2021/06/Windows-11-Nouveau-Explorateur-de-fichiers.jpg"
-                alt="Windows 11 : Microsoft dévoile le design de l’explorateur de fichiers, PowerPoint et Word"
-                title="Windows 11 : Microsoft dévoile le design de l’explorateur de fichiers, PowerPoint et Word">
+            <img src="https://img.phonandroid.com/2021/06/Windows-11-Nouveau-Explorateur-de-fichiers.jpg" alt="Windows 11 : Microsoft dévoile le design de l’explorateur de fichiers, PowerPoint et Word" title="Windows 11 : Microsoft dévoile le design de l’explorateur de fichiers, PowerPoint et Word">
             <h6>
                 28/06/2021
             </h6>
             <hr>
-            <h1><a target="_blank"
-                    href="https://www.phonandroid.com/windows-11-microsoft-devoile-nouveau-design-explorateur-fichiers-powerpoint-word.html">Windows
-                    11 : Microsoft dévoile le design de l’explorateur de fichiers, PowerPoint et Word</a></h1>
+            <h1>
+                <a target="_blank" href="https://www.phonandroid.com/windows-11-microsoft-devoile-nouveau-design-explorateur-fichiers-powerpoint-word.html">
+                    Windows 11 : Microsoft dévoile le design de l’explorateur de fichiers, PowerPoint et Word
+                </a>
+            </h1>
             <p>
                 Windows 11 continue de se dévoiler. Dans la foulée de la présentation des nouvelles fonctionnalités du
                 système d'exploitation,
@@ -216,16 +233,16 @@
             </p>
         </article>
         <article>
-            <img src="https://images.frandroid.com/wp-content/uploads/2021/06/windows-11-nouveau-design-apps-1-1200x675.jpg"
-                alt="Windows 11 : un nouveau design pour l’explorateur de fichiers, PowerPoint, Word et Paint"
-                title="Windows 11 : un nouveau design pour l’explorateur de fichiers, PowerPoint, Word et Paint">
+            <img src="https://images.frandroid.com/wp-content/uploads/2021/06/windows-11-nouveau-design-apps-1-1200x675.jpg" alt="Windows 11 : un nouveau design pour l’explorateur de fichiers, PowerPoint, Word et Paint" title="Windows 11 : un nouveau design pour l’explorateur de fichiers, PowerPoint, Word et Paint">
             <h6>
                 25/06/2021
             </h6>
             <hr>
-            <h1><a target="_blank"
-                    href="https://www.frandroid.com/marques/microsoft/983779_windows-11-un-nouveau-design-pour-lexplorateur-de-fichiers-powerpoint-word-et-paint">Windows
-                    11 : un nouveau design pour l’explorateur de fichiers, PowerPoint, Word et Paint</a></h1>
+            <h1>
+                <a target="_blank" href="https://www.frandroid.com/marques/microsoft/983779_windows-11-un-nouveau-design-pour-lexplorateur-de-fichiers-powerpoint-word-et-paint">
+                    Windows 11 : un nouveau design pour l’explorateur de fichiers, PowerPoint, Word et Paint
+                </a>
+            </h1>
             <p>
                 La conférence de Windows 11 est terminée, mais Microsoft continue de distiller quelques informations
                 supplémentaires sur le système.
@@ -235,8 +252,8 @@
 </section>
 
 <?php
-	include_once $_SERVER['DOCUMENT_ROOT'].'/common/includes/slideShow.php';
+include_once $_SERVER['DOCUMENT_ROOT'] . '/common/includes/slideShow.php';
 ?>
 <?php
-	include_once $_SERVER['DOCUMENT_ROOT'].'/common/includes/footer.php';
+include_once $_SERVER['DOCUMENT_ROOT'] . '/common/includes/footer.php';
 ?>
