@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html xml:lang="fr" xmlns="http://www.w3.org/1999/xhtml" lang="fr">
-<?php include_once("" . $_SERVER['DOCUMENT_ROOT'] . "/common/includes/head.php"); ?>
-<?php include_once("" . $_SERVER['DOCUMENT_ROOT'] . "/common/includes/header.php"); ?>
+<?php include_once($_SERVER['DOCUMENT_ROOT'] . "/common/includes/head.php"); ?>
+<?php include_once($_SERVER['DOCUMENT_ROOT'] . "/common/includes/header.php"); ?>
 
 <body>
 
-	<?php if (isset($_GET['static']) && $_GET['static'] == true) {
+	<?php if (!(isset($_GET['static']) && $_GET['static'] == false)) {
 		header("Refresh:5; url=/");
 		echo '<META http-equiv="refresh" content="5; URL=/">';
 	} ?>
@@ -74,13 +74,11 @@
 				default:
 					echo 'Erreur inconnue !';
 			}
-			if (isset($_GET['static']) && $_GET['static'] == true) {
+			if (!(isset($_GET['static']) && $_GET['static'] == false)) {
 				echo '<br>Vous allez être redirigé vers la page d\'accueil dans 5 secondes.';
 			}
 
 			?>
 		</h1>
 	</center>
-</body>
-
-</html>
+	<?php include_once($_SERVER['DOCUMENT_ROOT'] . "/common/includes/footer.php"); ?>
