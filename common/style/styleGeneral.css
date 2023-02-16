@@ -65,6 +65,11 @@ body {
 	z-index: 0;
 }
 
+.hidden {
+	display: none !important;
+	visibility: hidden !important;
+}
+
 /* Code destiné à styliser la barre de défilement sur les navigateurs à moteur Chromium (webkit) */
 ::-webkit-scrollbar {
 	width: 20px;
