@@ -16,7 +16,7 @@ include_once $_SERVER['DOCUMENT_ROOT'] . '/common/includes/header.php';
     <div class="content">
         <article>
             <img src="/common/img/WiChat.jpg" alt="WiChat">
-            <h1><a target="_blank" href="#WiChat">WiChat</a></h1>
+            <h1><a target="_blank" href="https://gitlab.com/Adrien_Sv/WiChat">WiChat</a></h1>
             <h6>
                 2022
             </h6>
@@ -26,8 +26,8 @@ include_once $_SERVER['DOCUMENT_ROOT'] . '/common/includes/header.php';
             </p>
         </article>
         <article>
-            <img src="/common/img/intrachat.jpg" alt="IntraChat">
-            <h1>IntraChat</h1>
+            <img src="/common/img/IntraChat.jpg" alt="IntraChat">
+            <h1><a target="_blank" href="/common/files/IntraChat.bat">IntraChat</a></h1>
             <h6>
                 2022
             </h6>
@@ -38,7 +38,7 @@ include_once $_SERVER['DOCUMENT_ROOT'] . '/common/includes/header.php';
         </article>
         <article>
             <img src="/common/img/TP_Banque.jpg" alt="TP_Banque">
-            <h1>Gestion de portefeuille</h1>
+            <h1><a target="_blank" href="https://gitlab.com/Adrien_Sv/TP_Banque">Gestion de portefeuille</a></h1>
             <h6>
                 2022
             </h6>
@@ -50,7 +50,7 @@ include_once $_SERVER['DOCUMENT_ROOT'] . '/common/includes/header.php';
         </article>
         <article>
             <img src="/common/img/GuessWhat.jpg" alt="GuessWhat">
-            <h1>GuessWhat</h1>
+            <h1><a target="_blank" href="https://gitlab.com/Adrien_Sv/devinecarte_js">GuessWhat</a></h1>
             <h6>
                 2022
             </h6>
@@ -60,19 +60,18 @@ include_once $_SERVER['DOCUMENT_ROOT'] . '/common/includes/header.php';
             </p>
         </article>
         <article>
-            <img src="/common/img/portfolio.jpg" alt="Portfolio">
+            <img src="/common/img/Portfolio.jpg" alt="Portfolio">
             <h1>Portfolio</h1>
             <h6>
                 2021-2022
             </h6>
             <p>
-                Présente vitrine de mes projets et de mon parcours qui vous permet également de <a
-                    href="/pages/contact.php">me contacter</a>
+                Présente vitrine de mes projets et de mon parcours qui vous permet également de <a href="/pages/contact.php">me contacter</a>
                 <span class="tags">#HTML #CSS #PHP #JS #Git #Office #Graphisme</span>
             </p>
         </article>
         <article>
-            <img src="/common/img/newblog.jpg" alt="NewBlog">
+            <img src="/common/img/NewBlog.jpg" alt="NewBlog">
             <h1>NewBlog</h1>
             <h6>
                 2016
@@ -84,7 +83,7 @@ include_once $_SERVER['DOCUMENT_ROOT'] . '/common/includes/header.php';
             </p>
         </article>
         <article>
-            <img src="/common/img/pluginfr.jpg" alt="PluginFR">
+            <img src="/common/img/PluginFR.jpg" alt="PluginFR">
             <h1>PluginFR</h1>
             <h6>
                 2016
