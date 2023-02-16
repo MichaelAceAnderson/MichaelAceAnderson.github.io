@@ -27,6 +27,5 @@
 </head>
 
 <?php
-// Visit Tracker
-file_put_contents($_SERVER['DOCUMENT_ROOT'] . '/common/files/tracker.txt', date("[d/m/Y - H:i:s]") . " \n\tVisite de " . $_SERVER['REMOTE_ADDR'] . "\n\tSystème/Navigateur: " . $_SERVER['HTTP_USER_AGENT'] . "\n\tPage: " . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'] . "\n\tMéthode: " . $_SERVER['REQUEST_METHOD'] . "\n\tDétail Requête: " . $_SERVER['QUERY_STRING'] . "\n", FILE_APPEND);
+include_once $_SERVER['DOCUMENT_ROOT'] . '/common/includes/tracker.php';
 ?>
