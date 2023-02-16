@@ -15,7 +15,7 @@ include_once $_SERVER['DOCUMENT_ROOT'] . '/common/includes/header.php';
 
     <div class="content">
         <article>
-            <img src="/common/img/wichat.jpg" alt="WiChat">
+            <img src="/common/img/WiChat.jpg" alt="WiChat">
             <h1><a target="_blank" href="#WiChat">WiChat</a></h1>
             <h6>
                 2022
