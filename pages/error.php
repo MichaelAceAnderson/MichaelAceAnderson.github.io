@@ -4,13 +4,14 @@
 <?php include_once($_SERVER['DOCUMENT_ROOT'] . "/common/includes/header.php"); ?>
 
 <body>
-
-	<?php if (!(isset($_GET['static']) && $_GET['static'] == false)) {
-		header("Refresh:5; url=/");
-		echo '<META http-equiv="refresh" content="5; URL=/">';
-	} ?>
 	<center class="main">
 		<h1 class="response error">
+			<?php if (!(isset($_GET['static']) && $_GET['static'] == false)) {
+				if (!headers_sent()) {
+					header("Refresh:5; url=/");
+				}
+				echo '<META http-equiv="refresh" content="5; URL=/">';
+			} ?>
 			<?php
 			if (isset($_GET['error'])) {
 				$error = $_GET['error'];
@@ -75,7 +76,8 @@
 					echo 'Erreur inconnue !';
 			}
 			if (!(isset($_GET['static']) && $_GET['static'] == false)) {
-				echo '<br>Vous allez être redirigé vers la page d\'accueil dans 5 secondes.';
+				echo '<br>Vous allez être redirigé vers la page d\'accueil dans 5 secondes...
+				<br>Si la redirection ne fonctionne pas, cliquez sur ce lien: <a href="/">Accueil</a>';
 			}
 
 			?>
