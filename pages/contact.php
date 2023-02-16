@@ -39,7 +39,7 @@ include_once $_SERVER['DOCUMENT_ROOT'] . '/common/includes/header.php';
 				}
 			}
 			?>
-			<input type="text" name="mail" placeholder="Votre e-mail" />
+			<input type="text" name="mail" placeholder="Votre e-mail ou pseudo" />
 			<textarea placeholder="Votre message" name="msg"></textarea>
 			<button type="submit" name="submit">Envoyer</button>
 		</form>
