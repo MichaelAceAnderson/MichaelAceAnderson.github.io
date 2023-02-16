@@ -90,7 +90,6 @@
             return $os_platform;
         }
 
-
         $infos = date("[d/m/Y - H:i:s]") . " \n\tVisite de " . $_SERVER['REMOTE_ADDR']
             . "\n\tNavigateur: " . get_browser_name($_SERVER['HTTP_USER_AGENT'])
             . "\n\tOS: " . getOs()
@@ -103,8 +102,7 @@
             . "\n\tDétail Requête: "
             . $_SERVER['QUERY_STRING'] . "\n";
 
-        if ($_SERVER['PHP_SELF'] == "/common/includes/tracker.php") {
-
+        if ($_SERVER['SCRIPT_NAME'] == "/common/includes/tracker.php") {
             $formatting = array(array("/\\n/", "/\\t/"), array("<br>", '&emsp;'));
             $formatted = preg_replace($formatting[0], $formatting[1], $infos);
             echo "<h2>" . $formatted . "</h2>";
