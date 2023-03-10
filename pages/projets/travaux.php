@@ -21,7 +21,7 @@ include_once $_SERVER['DOCUMENT_ROOT'] . '/common/includes/header.php';
                 2022
             </h6>
             <p>
-                Permet à des utilisateurs de tchatter de façon anonyme sans authentification
+                Permet à des utilisateurs de tchatter de façon anonyme sans authentification.
                 <span class=" tags">#HTML #CSS #PHP #JS #Axios #MySQL #Git #UML</span>
             </p>
         </article>
@@ -32,7 +32,11 @@ include_once $_SERVER['DOCUMENT_ROOT'] . '/common/includes/header.php';
                 2022
             </h6>
             <p>
-                Projet en ligne de commandes permettant de tchatter entre ordinateurs partageant un même lecteur réseau
+                Projet en ligne de commandes permettant de tchatter entre ordinateurs partageant un même lecteur réseau.
+                <br>
+                Version <a href="/common/files/IntraChat.bat">CMD (Windows)</a>
+                <br>
+                Version <a href="/common/files/IntraChat.sh">Bash (Linux)</a>
                 <span class="tags">#Batch</span>
             </p>
         </article>
@@ -66,7 +70,8 @@ include_once $_SERVER['DOCUMENT_ROOT'] . '/common/includes/header.php';
                 2021-2022
             </h6>
             <p>
-                Présente vitrine de mes projets et de mon parcours qui vous permet également de <a href="/pages/contact.php">me contacter</a>
+                Présente vitrine de mes projets et de mon parcours qui vous permet également de <a
+                    href="/pages/contact.php">me contacter</a>.
                 <span class="tags">#HTML #CSS #PHP #JS #Git #Office #Graphisme</span>
             </p>
         </article>
