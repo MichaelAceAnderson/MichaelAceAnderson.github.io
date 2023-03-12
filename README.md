@@ -6,10 +6,6 @@
 
 ## Sécurité & Technique
 
-Fichier .htaccess
-
-Mapping URL
-
 ## Style
 
 Adaptation responsive design (tablettes, mobile, ...)
