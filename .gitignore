@@ -1,0 +1,8 @@
+# Ignorer les fichiers MacOS
+**/.DS_Store
+# Ne pas suivre les fichiers de configuration de l'IDE
+.vscode/
+
+# Ne pas ignorer les répertoires contenant un fichier .gitkeep
+# (pour garder les répertoires vides dans le dépôt)
+!**/.gitkeep
