@@ -1,0 +1,80 @@
+server {
+	# Port d'écoute du serveur
+	listen 80;
+	# Domaine du serveur
+	server_name localhost;
+
+	# Emplacement des fichiers du site
+	root /var/www/html/public;
+
+	# Fichiers de journalisation
+	error_log /var/log/nginx/error_php.log;
+	access_log /var/log/nginx/access_php.log;
+
+	# Fichier index par défaut
+	index  index.php index.html index.htm;
+
+	# Encodage des caractères à utiliser pour les fichiers statiques
+	charset utf-8;
+
+	location / {
+		# Essayer de servir l'URI demandé en premier, sinon utiliser index.php avec les arguments de la requête
+        try_files $uri $uri/ /index.php?page=$uri&$args;
+	}
+
+	location ~ ^/index\.php(/|$) {
+		# Emplacement du fichier index FCGI
+		fastcgi_index  index.php;
+
+		# Emplacement de la socket de traitement du script PHP (nom-du-service-docker:port)
+		fastcgi_pass ${PHP_SERVICE_HOST}:${PHP_SERVICE_PORT};
+		# Séparation du chemin du script et des arguments
+		fastcgi_split_path_info ^(.+\.php)(/.*)$;
+		# Paramètres de traitement du script PHP
+		include fastcgi_params;
+
+		##
+		# Personnalisation des paramètres FastCGI
+		##
+		# Paramètres d'emplacement du fichier demandé (utile pour les redirections et le routage)
+		fastcgi_param REQUEST_URI $request_uri;
+		fastcgi_param DOCUMENT_URI $document_uri;
+		# Emplacement du fichier PHP à traiter
+		fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+		# Informations sur le chemin du script
+		fastcgi_param PATH_INFO $fastcgi_path_info;
+		# Répertoire racine du site
+		fastcgi_param DOCUMENT_ROOT $document_root;
+		# Protocole de la requête
+		fastcgi_param SERVER_PROTOCOL $server_protocol;
+		# Traiter toutes les requêtes comme si elles étaient HTTP
+		fastcgi_param HTTPS off;
+		# Nombre et taille des tampons FastCGI
+		fastcgi_buffers 16 16k;
+		# Taille maximale des tampons FastCGI
+		fastcgi_buffer_size 32k;
+	}
+
+    error_page 400 /pages/error?error=400&static=false;
+    error_page 401 /pages/error?error=401&static=false;
+    error_page 402 /pages/error?error=402&static=false;
+    error_page 403 /pages/error?error=403&static=false;
+    error_page 404 /pages/error?error=404&static=false;
+    error_page 405 /pages/error?error=405&static=false;
+    error_page 500 /pages/error?error=500&static=false;
+    error_page 501 /pages/error?error=501&static=false;
+    error_page 502 /pages/error?error=502&static=false;
+    error_page 503 /pages/error?error=503&static=false;
+    error_page 504 /pages/error?error=504&static=false;
+    error_page 505 /pages/error?error=505&static=false;
+
+	location ~ /\.ht {
+		# Refuser l'accès aux fichiers .ht
+		deny all;
+	}
+
+	location ~ \.php$ {
+		# Refuser l'accès direct aux fichiers PHP
+		return 404;
+	}
+}

@@ -1,0 +1,38 @@
+/* Tests/dev only */
+iframe,
+.infos,
+h4 {
+	filter: blur(7px);
+}
+
+/* Pour l'impression, mettre en thème clair peu importe la préférence utilisateur */
+@media (prefers-color-scheme: dark),
+(prefers-color-scheme: light),
+(prefers-color-scheme: no-preference) {
+	:root {
+		--textcolor: black;
+		--themecolor: white;
+		
+		--darker: rgb(0, 0, 0, 0.2);
+		--evendarker: rgb(0, 0, 0, 0.4);
+		--highlight: rgb(0, 0, 0, 0.1);
+		--highlight2: rgb(0, 0, 0, 0.2);
+	}
+}
+
+
+@font-face {
+	font-family: "Agency FB";
+	font-style: normal;
+	font-weight: 400;
+	src: local("Agency FB"), local("AgencyFB-Regular"),
+		url(/fonts/agencyfb.ttf) format("truetype");
+	font-display: swap;
+}
+
+* {
+	outline: none;
+	break-after: avoid-page;
+	break-before: avoid-page;
+	break-inside: avoid-page;
+}

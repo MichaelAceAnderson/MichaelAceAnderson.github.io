@@ -1,0 +1,38 @@
+# NOTE : Docker ne peut pas récupérer des fichiers en dehors du contexte de build
+# Par conséquent, nous construisons cette image depuis le répertoire racine du projet
+
+# Image de base
+# Pour communiquer avec le conteneur Nginx, FPM est nécessaire
+# Alpine est une version légère de Linux qui aide à réduire la taille de l'image
+FROM php:8.2-fpm-alpine
+
+# Définir le répertoire de travail
+WORKDIR /var/www/html/
+
+# Installer les dépendances système nécessaires pour toutes les opérations
+RUN apk update && apk add --no-cache \
+	curl \
+	bash
+
+# Installer les extensions PHP requises
+RUN docker-php-ext-install pdo pdo_mysql
+# Copier les fichiers de configuration PHP
+COPY .docker/php/conf/ /usr/local/etc/php/
+
+# Puisque Nginx passe les requêtes à PHP-FPM, il doit contenir le code source de l'application
+COPY app/ ./
+
+# Copier le script d'entrée
+COPY .docker/php/init/prod/entrypoint.sh /usr/local/bin/entrypoint.sh
+# Accorder les droits d'exécution au script d'entrée
+RUN chmod +x /usr/local/bin/entrypoint.sh
+# Exécuter le script d'entrée à chaque démarrage du conteneur
+# NOTE : Ajouter un ENTRYPOINT dans le Dockerfile remplace l'ENTRYPOINT de l'image parente
+ENTRYPOINT [ "entrypoint.sh" ]
+# Démarrer PHP-FPM
+# NOTE : Spécifier un nouvel ENTRYPOINT annule le CMD de l'image parente
+# et nécessite de redéfinir la commande de démarrage du conteneur
+CMD [ "php-fpm" ]
+
+# Rendre le serveur PHP accessible sur le port 9000
+EXPOSE 9000

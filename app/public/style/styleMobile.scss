@@ -1,0 +1,97 @@
+/* Responsive design */
+
+/* Petits écrans */
+@media screen and (min-width: 0px) and (max-width: 399px) {
+
+	.menu {
+		&.opened {
+			width: 75%;
+		}
+
+		&-btn {
+			top: 25px;
+		}
+	}
+
+	.main {
+		padding-left: 50px;
+		
+		* {
+			font-size: 15px;
+		}
+
+		.title {
+			h1 {
+				font-size: 25px;
+			}
+
+			hr {
+				height: 3px;
+			}
+		}
+		
+		.content {
+			article {
+				width: 100%;
+				h1 {
+					font-size: 20px;
+				}
+			}
+		}
+
+	}
+
+	header {
+		text-align: right;
+		h1 {
+			font-size: 60px;
+		}
+	}
+}
+
+/* Moyens écrans */
+@media screen and (min-width: 400px) and (max-width: 900px) {
+	.menu{
+		&.opened {
+			width: 50%;
+		}
+	}
+
+	.main {
+		padding-left: 50px;
+	}
+
+	header{
+		text-align: right;
+		
+		 h1 {
+			font-size: 75px;
+		}
+	}
+}
+
+/* Moyens+ écrans */
+@media screen and (min-device-width: 0px) and (max-width: 1130px) {
+	.menu {
+		.profile {
+			text-align: center;
+
+			.infos {
+				position: relative;
+			}
+		}
+		.links {
+			a {
+				text-align: center;
+
+				.dropdown {
+					right: 5px;
+				}
+			}
+		}
+
+		&-btn {
+			left: 30px;
+		}
+	}
+}

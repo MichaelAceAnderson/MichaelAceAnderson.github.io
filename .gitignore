@@ -2,6 +2,17 @@
 **/.DS_Store
 # Ne pas suivre les fichiers de configuration de l'IDE
 .vscode/
+# Ne pas suivre les journaux
+**/*.log*
+/app/files/tracker.txt
+/app/files/message.txt
+
+# Ne pas suivre les pages de test
+/app/src/pages/test.php
+
+# Ne pas suivre les fichiers de compilation de style
+**/*.css.map
+**/*.css
 
 # Ne pas ignorer les répertoires contenant un fichier .gitkeep
 # (pour garder les répertoires vides dans le dépôt)

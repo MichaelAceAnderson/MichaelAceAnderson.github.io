@@ -1,0 +1,18 @@
+@media (prefers-color-scheme: dark), (prefers-color-scheme: no-preference) {
+	:root {
+		--textcolor: white;
+		--themecolor: rgb(23, 24, 25);
+	}
+
+	.menu {
+		background: var(--darker2);
+	}
+
+	.menu-btn,
+	.menu .links a,
+	.main p,
+	.title h1,
+	.title hr {
+		text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+	}
+}

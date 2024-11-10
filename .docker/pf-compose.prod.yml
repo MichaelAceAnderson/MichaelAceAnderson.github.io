@@ -1,0 +1,32 @@
+services:
+  pf-php-s:
+    container_name: "pf-php-c"
+    build:
+      context: ../
+      dockerfile: ".docker/php/Dockerfile.prod"
+    env_file:
+      - "php/.env.prod"
+    restart: always
+    ports:
+      - "9000:9000"
+    networks:
+      - pf-network
+
+  pf-nginx-s:
+    container_name: "pf-nginx-c"
+    build:
+      context: ../
+      dockerfile: ".docker/nginx/Dockerfile.prod"
+    env_file:
+      - "nginx/.env.prod"
+    restart: always
+    ports:
+      - "80:80"
+    networks:
+      - pf-network
+    depends_on:
+      - pf-php-s
+
+networks:
+  pf-network:
+    driver: bridge

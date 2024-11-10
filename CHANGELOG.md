@@ -27,5 +27,14 @@ Types de changements :
 
 - [Journal des modifications](#journal-des-modifications)
   - [Table des matières](#table-des-matières)
+  - [\[1.0.0\] - 2024-09-11](#100---2024-09-11)
+    - [Added](#added)
 
 <!-- ## [Non publié] -->
+
+## [1.0.0] - 2024-09-11
+
+### Added
+
+- Import du projet initial
+- Ajout de la conteneurisation avec Docker

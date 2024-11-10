@@ -1,0 +1,22 @@
+# NOTE: Ces règles sont spécifiques à Apache. Si vous utilisez un autre serveur web, vous devrez adapter ces règles.
+
+RewriteEngine On
+
+# Rediriger toutes les requêtes vers index.php avec le paramètre page
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?page=$1 [L,QSA]
+
+# Redirection sur les pages d'erreur
+ErrorDocument 400 /pages/error?error=400&static=false
+ErrorDocument 401 /pages/error?error=401&static=false
+ErrorDocument 402 /pages/error?error=402&static=false
+ErrorDocument 403 /pages/error?error=403&static=false
+ErrorDocument 404 /pages/error?error=404&static=false
+ErrorDocument 405 /pages/error?error=405&static=false
+ErrorDocument 500 /pages/error?error=500&static=false
+ErrorDocument 501 /pages/error?error=501&static=false
+ErrorDocument 502 /pages/error?error=502&static=false
+ErrorDocument 503 /pages/error?error=503&static=false
+ErrorDocument 504 /pages/error?error=504&static=false
+ErrorDocument 505 /pages/error?error=505&static=false
