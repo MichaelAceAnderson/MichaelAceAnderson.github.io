@@ -27,5 +27,14 @@ Types de changements :
 
 - [Journal des modifications](#journal-des-modifications)
   - [Table des matières](#table-des-matières)
+  - [\[0.0.1\] - 2024-11-11](#001---2024-11-11)
+    - [Added](#added)
 
 <!-- ## [Non publié] -->
+
+## [0.0.1] - 2024-11-11
+
+### Added
+
+- Site vide
+- Conteneurisation de l'application

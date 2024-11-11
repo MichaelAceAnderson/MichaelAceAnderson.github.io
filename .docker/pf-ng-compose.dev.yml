@@ -1,0 +1,25 @@
+services:
+  pf-ng-angular-s:
+    build:
+      context: ../
+      dockerfile: ".docker/angular/Dockerfile.dev"
+    container_name: pf-ng-angular-c
+    env_file:
+    - "angular/.env.dev"
+    volumes:
+    - type: bind
+      source: "../app/src"
+      target: "/angular/src"
+      # Only for MacOS
+      consistency: consistent
+    - type: bind
+      source: "../app/public"
+      target: "/angular/public"
+      consistency: consistent
+    ports:
+    - "4200:4200"
+    networks:
+    - pf-ng-network
+networks:
+  pf-ng-network:
+    driver: bridge
