@@ -1,0 +1,134 @@
+// C'est ici que nous déterminons quel thème appliquer à l'application
+@import './style/selectedTheme.scss';
+
+:root {
+	// Thème des éléments système/par défaut du navigateur (inputs, scrollbar, etc.)
+	color-scheme: dark light;
+	// Propriétés des polices
+	font-synthesis: none;
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+	font-family: 'Segoe UI';
+	src: url('../public/assets/fonts/SegoeUI/SEGOEUI.TTF') format('truetype');
+	font-weight: regular;
+}
+
+html{
+	body{
+		font-family: $global-font-family;
+		// Base de calcul pour les tailles de police relatives (rem, em, etc.)
+		font-size: 14px;
+		color: $text-content;
+		background-color: $bg-content;
+
+		margin: 0;
+		padding: 0;
+
+		*{
+			// Retirer les contours des liens et des boutons
+			outline: none;
+			// Empêcher le débordement des éléments dû à margin/padding
+			box-sizing: border-box;
+		}
+	}
+}
+
+b,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $global-font-family;
+	font-weight: bold;
+}
+
+// Par défaut, calculé par rapport à la taille de police de html
+// Sinon, égal à la taille de police de l'élément parent (conteneur)
+//⚠️Note: Les tailles de police doivent être appliquées aux conteneurs et non aux éléments eux-mêmes!
+p,
+button,
+input,
+select,
+textarea,
+label {
+	font-size: 1em;
+}
+
+h1 {
+	font-size: 1.5em;
+}
+
+h2 {
+	font-size: 1.4em;
+}
+
+h3 {
+	font-size: 1.3em;
+}
+
+h4 {
+	font-size: 1.2em;
+}
+
+h5 {
+	font-size: 1.1em;
+}
+
+h6 {
+	font-size: 1em;
+}
+
+hr {
+	border: 1px solid $separator;
+}
+
+// Variables selon les tailles d'écran
+@media (max-width: 768px) and (min-width: 576px){
+	:root{
+		--content-margin: 0px;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px){
+	:root{
+		--content-margin: 0px;
+	}
+}
+@media (min-width: 992px) and (max-width: 1199px){
+	:root{
+		--content-margin: 0px;
+	}
+}
+@media (min-width: 1200px) and (max-width: 1399px){
+	:root{
+		--content-margin: 0px;
+	}
+}
+@media (min-width: 1400px){
+	:root{
+		--content-margin: 0px;
+	}
+}
+
+main{
+	display: block;
+	margin: 5px var(--content-margin);
+}
+
+.not-a-button{
+	border: none;
+	background: none;
+	padding: 0;
+	margin: 0;
+	color: inherit;
+	font-family: inherit;
+}
+
+a:hover, a:hover button{
+	cursor: pointer;
+}

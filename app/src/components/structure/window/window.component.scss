@@ -1,0 +1,108 @@
+@import '../../../style/selectedTheme.scss';
+
+$taskbar-height: 50px;
+$title-bar-height: 50px;
+$title-bar-control-size: 50px;
+
+.window{
+	display: block;
+	height: calc(100% - #{$taskbar-height});
+
+	&-minimized{
+		display: none;
+	}
+
+	&-title-bar{
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		height: 40px;
+		background-color: $bg-primary;
+		color: $text-primary;
+		box-sizing: border-box;
+		border-bottom: 1px solid $bg-secondary;
+		user-select: none;
+
+		&-app{
+			display: flex;
+			align-items: center;
+			height: 100%;
+			padding: 0.8em;
+
+			*{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				vertical-align: middle;
+			}
+
+			&-icon{
+				height: 100%;
+				max-width: $title-bar-control-size;
+				margin-right: 0.5em;
+
+				img{
+					min-height: 1em;
+					min-width: 1em;
+					height: 100%;
+					max-height: 2em;
+					max-width: 100%;
+					object-fit: contain;
+				}
+			}
+		}
+
+		&-controls{
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+
+			height: 100%;
+			text-align: center;
+
+			&-button{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				text-align: center;
+
+				height: 100%;
+				max-width: $title-bar-control-size;
+				padding: 1em 2em;
+
+				&.close{
+					&:hover{
+						background: rgba(255, 0, 0, 0.5);
+					}
+					&:focus, &:active{
+						background: rgba(255, 0, 0, 0.3);
+					}
+				}
+
+				img{
+					vertical-align: middle;
+					height: 1em;
+					max-width: 1em;
+					// Conserver le ratio
+					object-fit: contain;
+				}
+
+				&:hover{
+					background: rgba(255, 255, 255, 0.3);
+					color: lighten($bg-primary, 10%);
+				}
+				&:focus, &:active{
+					background: rgba(0, 0, 0, 0.1);
+					color: lighten($bg-primary, 20%);
+				}
+			}
+		}
+	}
+
+	&-content{
+		iframe{
+			width: 100%;
+			height: 100%;
+		}
+	}
+}

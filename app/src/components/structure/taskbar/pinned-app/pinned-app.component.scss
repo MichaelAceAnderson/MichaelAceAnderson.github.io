@@ -1,0 +1,55 @@
+@import '../../../../style/selectedTheme.scss';
+
+.pinned-app {
+	position: relative;
+	box-sizing: border-box;
+	display: inline-block;
+	height: 100%;
+	padding: 0.8em;
+	text-align: center;
+	color: $text-primary;
+	cursor: pointer;
+	vertical-align: middle;
+
+	&.active {
+		background: rgba(255, 255, 255, 0.4);
+		color: lighten($bg-primary, 10%);
+
+		.open-bar {
+			width: 100%;
+		}
+	}
+
+	&:hover {
+		transition: 0.2s;
+		background: rgba(255, 255, 255, 0.3);
+		color: lighten($bg-primary, 10%);
+
+		.open-bar {
+			width: 100%;
+		}
+	}
+
+	&:focus,
+	&:active {
+		background: rgba(0, 0, 0, 0.1);
+		color: lighten($bg-primary, 20%);
+	}
+
+	.open-bar {
+		transition: 0.1s;
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 80%;
+		height: 3px;
+		background-color: rgba(255, 255, 255, 0.5);
+		z-index: 11;
+	}
+
+	img {
+		height: 100%;
+		max-width: 100%;
+	}
+}
