@@ -27,14 +27,22 @@ Types de changements :
 
 - [Journal des modifications](#journal-des-modifications)
   - [Table des matières](#table-des-matières)
+  - [\[0.0.2\] - 2024-27-11](#002---2024-27-11)
+    - [Added in 0.0.2](#added-in-002)
   - [\[0.0.1\] - 2024-11-11](#001---2024-11-11)
-    - [Added](#added)
+    - [Added in 0.0.1](#added-in-001)
 
 <!-- ## [Non publié] -->
 
+## [0.0.2] - 2024-27-11
+
+### Added in 0.0.2
+
+- Ajout du système de tâches et de barre des tâches
+
 ## [0.0.1] - 2024-11-11
 
-### Added
+### Added in 0.0.1
 
 - Site vide
 - Conteneurisation de l'application

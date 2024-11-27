@@ -1,0 +1,24 @@
+<div class="window" [class.window-minimized]="app.isMinimized">
+	<div class="window-title-bar">
+		<span class="window-title-bar-app">
+			<span class="window-title-bar-app-icon">
+				<img [src]="app.icon" [alt]="app.name" />
+			</span>
+			<span class="window-title-bar-app-title">{{app.name}}</span>
+		</span>
+		<span class="window-title-bar-controls">
+			<span class="window-title-bar-controls-button minimize" (click)="app.toggleMinimized(true)">
+				<img src="assets/icons/window-minimize.png" alt="Minimize" />
+			</span>
+			<span class="window-title-bar-controls-button maximize">
+				<img src="assets/icons/window-maximized.png" alt="Maximize" />
+			</span>
+			<span class="window-title-bar-controls-button close" (click)="app.close()">
+				<img src="assets/icons/window-close.png" alt="Close" />
+			</span>
+		</span>
+	</div>
+	<div class="window-content">
+		<ng-content></ng-content>
+	</div>
+</div>
