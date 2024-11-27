@@ -32,7 +32,7 @@
 							}
 						],
 						"styles": [
-							"src/styles.scss"
+							"src/style/global.scss"
 						],
 						"scripts": []
 					},
@@ -103,7 +103,7 @@
 							}
 						],
 						"styles": [
-							"src/styles.scss"
+							"src/style/global.scss"
 						],
 						"scripts": []
 					}
