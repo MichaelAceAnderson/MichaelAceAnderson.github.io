@@ -1,5 +1,5 @@
 // C'est ici que nous déterminons quel thème appliquer à l'application
-@import './style/selectedTheme.scss';
+@import './selectedTheme.scss';
 
 :root {
 	// Thème des éléments système/par défaut du navigateur (inputs, scrollbar, etc.)
@@ -13,7 +13,7 @@
 
 @font-face {
 	font-family: 'Segoe UI';
-	src: url('../public/assets/fonts/SegoeUI/SEGOEUI.TTF') format('truetype');
+	src: url('../../public/assets/fonts/SegoeUI/SEGOEUI.TTF') format('truetype');
 	font-weight: regular;
 }
 
