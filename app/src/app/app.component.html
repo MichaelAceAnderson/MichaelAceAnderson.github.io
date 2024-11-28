@@ -1,5 +1,5 @@
 <router-outlet />
 <ng-container *ngFor="let app of appManager.appList">
-  <window *ngIf="app.isOpened" [app]="app"></window>
+	<window *ngIf="app.isOpened" [app]="app"></window>
 </ng-container>
 <taskbar></taskbar>

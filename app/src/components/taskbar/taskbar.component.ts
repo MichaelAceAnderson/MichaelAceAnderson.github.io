@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
-import { WinLogoIcon } from '../../icons/win-logo/win-logo.component';
+import { WinLogoIcon } from '../icons/win-logo/win-logo.component';
 import { PinnedAppComponent } from './pinned-app/pinned-app.component';
 import { StartMenuComponent } from './start-menu/start-menu.component';
-import { AppManagerService } from '../../../services/AppManagerService';
+import { AppManagerService } from '../../services/AppManagerService';
 import { CommonModule } from '@angular/common';
 
 
