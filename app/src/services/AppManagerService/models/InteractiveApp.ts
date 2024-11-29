@@ -1,8 +1,8 @@
-import { Injectable, Type } from '@angular/core';
-import { environment } from '../environments/environment';
-import { EdgeWindowComponent } from '../components/window/edge-window/edge-window.component';
-import { ExplorerWindowComponent } from '../components/window/explorer-window/explorer-window.component';
-import { VSCodeWindowComponent } from '../components/window/vscode-window/vscode-window.component';
+import { Type } from '@angular/core';
+import { EdgeWindowComponent } from '../../../components/window/edge-window/edge-window.component';
+import { ExplorerWindowComponent } from '../../../components/window/explorer-window/explorer-window.component';
+import { VSCodeWindowComponent } from '../../../components/window/vscode-window/vscode-window.component';
+import { environment } from '../../../environments/environment';
 
 export class InteractiveApp {
 	public name: string;
@@ -81,31 +81,5 @@ export class InteractiveApp {
 		if (environment.DEBUG_MODE) console.log(`[O] ${this.name}`);
 
 		this.toggleMinimized(false);
-	}
-}
-
-@Injectable({
-	// Nécessaire pour partager le tableau InteractiveApp entre plusieurs composants
-	providedIn: 'root',
-})
-export class AppManagerService {
-	public startMenuOpen: boolean = false;
-
-	// NOTE: Nécessaire d'utiliser le format get pour pouvoir accéder correctement
-	// à la liste des applications depuis un composant
-	get appList(): InteractiveApp[] {
-		return InteractiveApp.appList;
-	}
-
-	/**
-	 * Ouvre ou ferme le menu démarrer
-	 * @param open État souhaité du menu démarrer
-	 */
-	toggleStartMenu(open?: boolean): void {
-		this.startMenuOpen = open ?? !this.startMenuOpen;
-		if (environment.DEBUG_MODE)
-			console.log(
-				`[${this.startMenuOpen ? '[O]' : '[X]'}] Menu démarrer`
-			);
 	}
 }
