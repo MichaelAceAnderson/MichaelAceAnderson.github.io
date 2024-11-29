@@ -1,10 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
-import {
-	AppManagerService,
-	InteractiveApp,
-} from '../../services/AppManagerService';
+import { AppManagerService } from '../../services/AppManagerService/AppManagerService';
 import { NgComponentOutlet } from '@angular/common';
 import { environment } from '../../environments/environment';
+import { InteractiveApp } from '../../services/AppManagerService/models/InteractiveApp';
 
 @Component({
 	selector: 'window',
