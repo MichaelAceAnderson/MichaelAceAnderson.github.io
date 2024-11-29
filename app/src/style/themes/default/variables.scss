@@ -8,12 +8,6 @@ $text-primary: rgba(255, 255, 255, 1.0);
 $link-primary: rgba(255, 255, 255, 1.0);
 $link-primary-hover: rgba(204, 204, 204, 1.0);
 
-// Secondaire
-$bg-secondary: rgba(234, 234, 234, 1.0);
-$text-secondary: rgba(0, 0, 0, 1.0);
-$link-secondary: $bg-primary;
-$link-secondary-hover: darken($link-secondary, 10%);
-
 // Contenu
 $bg-content: rgba(255, 255, 255);
 $text-content: rgba(0, 0, 0, 1.0);
