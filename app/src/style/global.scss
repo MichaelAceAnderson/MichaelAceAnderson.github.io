@@ -13,12 +13,83 @@
 
 @font-face {
 	font-family: 'Segoe UI';
-	src: url('../../public/assets/fonts/SegoeUI/SEGOEUI.TTF') format('truetype');
+	src: url('../../public/assets/fonts/SegoeUI/segoeui.ttf') format('truetype');
 	font-weight: regular;
 }
 
-html{
-	body{
+@font-face {
+	font-family: 'Segoe UI';
+	src: url('../../public/assets/fonts/SegoeUI/segoeui-bold.ttf') format('truetype');
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'Segoe UI';
+	src: url('../../public/assets/fonts/SegoeUI/segoeui-italic.ttf') format('truetype');
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Segoe UI';
+	src: url('../../public/assets/fonts/SegoeUI/segoeui-light.ttf') format('truetype');
+	font-weight: 100 200;
+}
+
+@font-face {
+	font-family: 'Segoe UI';
+	src: url('../../public/assets/fonts/SegoeUI/segui-light-italic.ttf') format('truetype');
+	font-weight: 100 200;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Segoe UI';
+	src: url('../../public/assets/fonts/SegoeUI/segoeui-semi-light.ttf') format('truetype');
+	font-weight: 300 400;
+}
+
+@font-face {
+	font-family: 'Segoe UI';
+	src: url('../../public/assets/fonts/SegoeUI/seguis-semi-light-italic.ttf') format('truetype');
+	font-weight: 300 400;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Segoe UI';
+	src: url('../../public/assets/fonts/SegoeUI/segui-semi-bold.ttf') format('truetype');
+	font-weight: 600 800;
+}
+
+@font-face {
+	font-family: 'Segoe UI';
+	src: url('../../public/assets/fonts/SegoeUI/segui-semi-bold-italic.ttf') format('truetype');
+	font-weight: 600 800;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Segoe UI';
+	src: url('../../public/assets/fonts/SegoeUI/segoeui-bold-italic.ttf') format('truetype');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Segoe UI';
+	src: url('../../public/assets/fonts/SegoeUI/segoeui-black.ttf') format('truetype');
+	font-weight: 900;
+}
+
+@font-face {
+	font-family: 'Segoe UI';
+	src: url('../../public/assets/fonts/SegoeUI/segoeui-black-italic.ttf') format('truetype');
+	font-weight: 900;
+	font-style: italic;
+}
+
+html {
+	body {
 		font-family: $global-font-family;
 		// Base de calcul pour les tailles de police relatives (rem, em, etc.)
 		font-size: 14px;
@@ -30,107 +101,108 @@ html{
 		margin: 0;
 		padding: 0;
 
-		*{
+		* {
 			// Retirer les contours des liens et des boutons
 			outline: none;
 			// Empêcher le débordement des éléments dû à margin/padding
 			box-sizing: border-box;
 		}
+
+		a:hover,
+		a:hover button {
+			cursor: pointer;
+		}
+
+		b,
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			font-family: $global-font-family;
+			font-weight: 100;
+		}
+
+		// Par défaut, calculé par rapport à la taille de police de html
+		// Sinon, égal à la taille de police de l'élément parent (conteneur)
+		//⚠️Note: Les tailles de police doivent être appliquées aux conteneurs et non aux éléments eux-mêmes!
+		p,
+		button,
+		input,
+		select,
+		textarea,
+		label {
+			font-size: 1em;
+		}
+
+		h1 {
+			font-size: 1.5em;
+		}
+
+		h2 {
+			font-size: 1.4em;
+		}
+
+		h3 {
+			font-size: 1.3em;
+		}
+
+		h4 {
+			font-size: 1.2em;
+		}
+
+		h5 {
+			font-size: 1.1em;
+		}
+
+		h6 {
+			font-size: 1em;
+		}
+
+		hr {
+			border: 1px solid $separator;
+		}
+
+		.not-a-button {
+			border: none;
+			background: none;
+			padding: 0;
+			margin: 0;
+			color: inherit;
+			font-family: inherit;
+		}
 	}
 }
 
-b,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	font-family: $global-font-family;
-	font-weight: bold;
-}
-
-// Par défaut, calculé par rapport à la taille de police de html
-// Sinon, égal à la taille de police de l'élément parent (conteneur)
-//⚠️Note: Les tailles de police doivent être appliquées aux conteneurs et non aux éléments eux-mêmes!
-p,
-button,
-input,
-select,
-textarea,
-label {
-	font-size: 1em;
-}
-
-h1 {
-	font-size: 1.5em;
-}
-
-h2 {
-	font-size: 1.4em;
-}
-
-h3 {
-	font-size: 1.3em;
-}
-
-h4 {
-	font-size: 1.2em;
-}
-
-h5 {
-	font-size: 1.1em;
-}
-
-h6 {
-	font-size: 1em;
-}
-
-hr {
-	border: 1px solid $separator;
-}
 
 // Variables selon les tailles d'écran
-@media (max-width: 768px) and (min-width: 576px){
-	:root{
-		--content-margin: 0px;
-	}
-}
-@media (min-width: 768px) and (max-width: 991px){
-	:root{
-		--content-margin: 0px;
-	}
-}
-@media (min-width: 992px) and (max-width: 1199px){
-	:root{
-		--content-margin: 0px;
-	}
-}
-@media (min-width: 1200px) and (max-width: 1399px){
-	:root{
-		--content-margin: 0px;
-	}
-}
-@media (min-width: 1400px){
-	:root{
+@media (max-width: 768px) and (min-width: 576px) {
+	:root {
 		--content-margin: 0px;
 	}
 }
 
-main{
-	display: block;
-	margin: 5px var(--content-margin);
+@media (min-width: 768px) and (max-width: 991px) {
+	:root {
+		--content-margin: 0px;
+	}
 }
 
-.not-a-button{
-	border: none;
-	background: none;
-	padding: 0;
-	margin: 0;
-	color: inherit;
-	font-family: inherit;
+@media (min-width: 992px) and (max-width: 1199px) {
+	:root {
+		--content-margin: 0px;
+	}
 }
 
-a:hover, a:hover button{
-	cursor: pointer;
+@media (min-width: 1200px) and (max-width: 1399px) {
+	:root {
+		--content-margin: 0px;
+	}
+}
+
+@media (min-width: 1400px) {
+	:root {
+		--content-margin: 0px;
+	}
 }
