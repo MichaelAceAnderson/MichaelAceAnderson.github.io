@@ -1,0 +1,24 @@
+@import '../../../style/selectedTheme.scss';
+
+// Couleurs par défaut de Windows
+$spinner-circle: rgba(39, 151, 244, 1.0);
+$spinner-emphasis: rgba(35, 206, 255, 1.0);
+
+.spinner {
+	$spinner-size: 1.5em;
+
+	display: inline-block;
+	width: $spinner-size;
+	height: $spinner-size;
+	margin: 0 5px;
+	vertical-align: middle;
+	border: calc($spinner-size/5) solid $spinner-circle;
+	border-top-color: $spinner-emphasis;
+	border-radius: 50%;
+	animation: spin 0.9s linear infinite;
+}
+
+@keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+}

@@ -3,6 +3,9 @@
 # Ne pas suivre les fichiers de configuration de l'IDE
 .vscode/
 
+# Ignorer les variables d'environnement locales
+app/src/environments/environment.local.ts
+
 # Ne pas ignorer les répertoires contenant un fichier .gitkeep
 # (pour garder les répertoires vides dans le dépôt)
 !**/.gitkeep
