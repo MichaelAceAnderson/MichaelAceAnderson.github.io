@@ -1,0 +1,16 @@
+<div class="repository">
+	<div class="repository-intro">
+	<div class="repository-intro-title">
+		<h1><a [href]="repository.html_url" target="_blank">{{ repository.name }}</a></h1>
+	</div>
+	<div class="repository-intro-description">
+		<span *ngIf="repository.description; else noDescription">{{ repository.description }}</span>
+		<ng-template #noDescription><span class="empty">Aucune description</span></ng-template>
+	</div>
+	</div>
+	<div class="repository-language">
+		<span class="repository-language-icon" [ngStyle]="{ 'background': languageColor }">
+		</span>
+		{{ repository.language }}
+	</div>
+</div>

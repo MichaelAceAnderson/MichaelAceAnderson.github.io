@@ -2,4 +2,5 @@
 export const environment = {
 	production: true,
 	DEBUG_MODE: false,
+	GH_PERSONAL_ACCESS_TOKEN: null,
 };

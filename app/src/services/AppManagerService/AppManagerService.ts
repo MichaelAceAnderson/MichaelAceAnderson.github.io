@@ -3,7 +3,7 @@ import { environment } from '../../environments/environment';
 import { InteractiveApp } from './models/InteractiveApp';
 
 @Injectable({
-	// Nécessaire pour partager le tableau InteractiveApp entre plusieurs composants
+	// Nécessaire pour partager l'instance du service entre plusieurs composants
 	providedIn: 'root',
 })
 export class AppManagerService {
