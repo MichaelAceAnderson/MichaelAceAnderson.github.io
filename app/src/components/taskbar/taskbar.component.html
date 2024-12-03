@@ -1,8 +1,8 @@
 <div class="taskbar">
 	<start-menu *ngIf="appManager.startMenuOpen" (close)="appManager.startMenuOpen = false"></start-menu>
-	<span class="taskbar-start-icon">
+	<button class="no-default-button-style taskbar-start-icon">
 		<win-logo />
-	</span>
+	</button>
 	<span *ngFor="let app of appManager.appList">
 		<pinned-app [app]="app"
 			(click)="app.isOpened ? app.toggleMinimized() : app.open()"/>

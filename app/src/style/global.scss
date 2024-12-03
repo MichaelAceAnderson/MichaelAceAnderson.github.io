@@ -1,5 +1,6 @@
 // C'est ici que nous déterminons quel thème appliquer à l'application
 @import './selectedTheme.scss';
+@import './debug.scss';
 
 :root {
 	// Thème des éléments système/par défaut du navigateur (inputs, scrollbar, etc.)
@@ -106,6 +107,15 @@ html {
 			outline: none;
 			// Empêcher le débordement des éléments dû à margin/padding
 			box-sizing: border-box;
+
+			&:focus{
+				outline: none;
+			}
+
+			&:focus-visible {
+				outline: white 3px solid;
+				outline-offset: -3px;
+			}
 		}
 
 		a:hover,
@@ -164,7 +174,7 @@ html {
 			border: 1px solid $separator;
 		}
 
-		.not-a-button {
+		.no-default-button-style {
 			border: none;
 			background: none;
 			padding: 0;
