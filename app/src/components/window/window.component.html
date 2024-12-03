@@ -7,15 +7,15 @@
 			<span class="window-title-bar-app-title">{{app.name}}</span>
 		</span>
 		<span class="window-title-bar-controls">
-			<span class="window-title-bar-controls-button minimize" (click)="app.toggleMinimized(true)">
+			<button class="no-default-button-style window-title-bar-controls-button minimize" (click)="app.toggleMinimized(true)">
 				<img src="assets/icons/window-minimize.svg" alt="Minimize" />
-			</span>
-			<span class="window-title-bar-controls-button maximize">
+			</button>
+			<button class="no-default-button-style window-title-bar-controls-button maximize">
 				<img src="assets/icons/window-maximized.svg" alt="Maximize" />
-			</span>
-			<span class="window-title-bar-controls-button close" (click)="app.close()">
+			</button>
+			<button class="no-default-button-style window-title-bar-controls-button close" (click)="app.close()">
 				<img src="assets/icons/window-close.svg" alt="Close" />
-			</span>
+			</button>
 		</span>
 	</div>
 	<div class="window-content">

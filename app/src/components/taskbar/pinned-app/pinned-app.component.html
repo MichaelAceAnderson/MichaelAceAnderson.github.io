@@ -1,4 +1,4 @@
-<span class="pinned-app" [class.active]="app.isOpened && !app.isMinimized">
+<button class="no-default-button-style pinned-app" [class.active]="app.isOpened && !app.isMinimized">
 	<img [src]="app.icon" [alt]="app.name" />
 	<div *ngIf="app.isOpened" class="open-bar"></div>
-</span>
+</button>
