@@ -4,6 +4,8 @@ import { TaskbarComponent } from '../components/taskbar/taskbar.component';
 import { AppManagerService } from '../services/AppManagerService/AppManagerService';
 import { WindowComponent } from '../components/window/window.component';
 import { CommonModule } from '@angular/common';
+import { GitHubAPIService } from '../services/GitHubAPIService/GitHubAPIService';
+import { environment } from '../environments/environment';
 
 @Component({
 	selector: 'app-root',
@@ -13,7 +15,27 @@ import { CommonModule } from '@angular/common';
 	styleUrl: './app.component.scss',
 })
 export class AppComponent {
-	title = 'PortfolioNg';
+	public title = 'PortfolioNg';
 
-	constructor(public appManager: AppManagerService) {}
+	constructor(public appManager: AppManagerService, public gitHubAPIService: GitHubAPIService) {}
+
+	async ngOnInit(): Promise<void> {
+		try {
+			GitHubAPIService.isLoadingData = true;
+
+			GitHubAPIService.displayedUser = await this.gitHubAPIService.fetchUser(GitHubAPIService.CURRENT_USER_ID);
+			GitHubAPIService.userRepositories[GitHubAPIService.displayedUser.login] = await this.gitHubAPIService.fetchUserRepositories(GitHubAPIService.displayedUser);
+
+			GitHubAPIService.userOrganizations[GitHubAPIService.displayedUser.login] = await this.gitHubAPIService.fetchUserOrganizations(GitHubAPIService.displayedUser);
+			GitHubAPIService.userOrganizations[GitHubAPIService.displayedUser.login].forEach(async (org, index) => {
+				GitHubAPIService.userRepositories[org.login] = await this.gitHubAPIService.fetchUserRepositories(org);
+			});
+
+			GitHubAPIService.isLoadingData = false;
+		} catch (error) {
+			if (environment.DEBUG_MODE) console.error('Une erreur est survenue lors de la récupération des données GitHub:', error);
+			GitHubAPIService.isLoadingData = false;
+		}
+	}
+
 }

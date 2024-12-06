@@ -9,6 +9,29 @@ import { environment } from '../../environments/environment';
 })
 export class GitHubAPIService {
 	public static readonly API_URL = 'https://api.github.com';
+	public static readonly CURRENT_USER_ID = 33232231;
+	public static isLoadingData = false;
+	public static displayedUser: GitHubUser | null = null;
+	public static userRepositories: { [key: string]: GitHubRepository[] } = {};
+	public static userOrganizations: { [key: string]: GitHubUser[] } = {};
+
+	// ⚠️ Ces getters sont nécessaires pour pouvoir appeler
+	// des valeurs statiques dans les templates Angular
+	get isLoadingData(): boolean {
+		return GitHubAPIService.isLoadingData;
+	}
+
+	get displayedUser(): GitHubUser | null {
+		return GitHubAPIService.displayedUser;
+	}
+
+	get userRepositories(): { [key: string]: GitHubRepository[] } {
+		return GitHubAPIService.userRepositories;
+	}
+
+	get userOrganizations(): { [key: string]: GitHubUser[] } {
+		return GitHubAPIService.userOrganizations;
+	}
 
 	async get(url:string): Promise<any>{
 		let headers = {};
@@ -18,13 +41,15 @@ export class GitHubAPIService {
 			};
 		}
 
-		return await fetch(
+		const result = await fetch(
 			url,
 			{
 				method: 'GET',
 				headers: headers,
 			}
 		);
+
+		return result;
 	}
 
 	/**

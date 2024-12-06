@@ -1,21 +1,21 @@
 <span class="content">
-	<h1 class="announce loading" *ngIf="isLoading && !error">
+	<h1 class="announce loading" *ngIf="gitHubAPIService.isLoadingData && !error">
 		<spinner></spinner> Chargement en cours...
 	</h1>
 	<h1 class="announce error" *ngIf="error">{{error}}</h1>
-	<ng-container *ngIf="!isLoading && !error">
+	<ng-container *ngIf="!gitHubAPIService.isLoadingData && !error">
 		<div class="user">
-			<ng-container *ngIf="displayedUser">
-				<a class="user-card" href="{{displayedUser.html_url}}" target=" _blank">
-					<img src="{{displayedUser.avatar_url}}" alt="{{displayedUser.login}}" class="avatar">
-					<h1>{{displayedUser.name}}(&#64;{{displayedUser.login}})
+			<ng-container *ngIf="gitHubAPIService.displayedUser">
+				<a class="user-card" href="{{gitHubAPIService.displayedUser.html_url}}" target=" _blank">
+					<img src="{{gitHubAPIService.displayedUser.avatar_url}}" alt="{{gitHubAPIService.displayedUser.login}}" class="avatar">
+					<h1>{{gitHubAPIService.displayedUser.name}}(&#64;{{gitHubAPIService.displayedUser.login}})
 					</h1>
 				</a>
-				<p class="user-bio" *ngIf="displayedUser.bio">{{displayedUser.bio}}</p>
+				<p class="user-bio" *ngIf="gitHubAPIService.displayedUser.bio">{{gitHubAPIService.displayedUser.bio}}</p>
 			</ng-container>
-			<div class="user-organizations" *ngIf="displayedUser && userOrganizations[displayedUser.login]">
+			<div class="user-organizations" *ngIf="gitHubAPIService.displayedUser && gitHubAPIService.userOrganizations[gitHubAPIService.displayedUser.login]">
 				<h2>Organisations</h2>
-				<a class="user-organizations-card" *ngFor="let organization of userOrganizations[displayedUser.login]"
+				<a class="user-organizations-card" *ngFor="let organization of gitHubAPIService.userOrganizations[gitHubAPIService.displayedUser.login]"
 					href="{{organization.html_url}}" target="_blank">
 					<img src="{{organization.avatar_url}}" alt="{{organization.login}}" class="avatar">
 					<h3>{{organization.name}} (&#64;{{organization.login}})</h3>
@@ -23,29 +23,29 @@
 			</div>
 		</div>
 
-		<div class="repositories" *ngIf="displayedUser && userRepositories[displayedUser.login]">
+		<div class="repositories" *ngIf="gitHubAPIService.displayedUser && gitHubAPIService.userRepositories[gitHubAPIService.displayedUser.login]">
 			<!-- Dépôts de l'utilisateur -->
-			<h1><button class="dropdown" (click)="toggleUserReposVisibility(displayedUser)">
-					{{userReposVisible[displayedUser.login] ? '&#9660;' : '&#9654;'}}
-				</button> Projets publics de {{displayedUser.name}}
-				({{userRepositories[displayedUser.login].length}})
+			<h1><button class="dropdown" (click)="toggleUserReposVisibility(gitHubAPIService.displayedUser)">
+					{{userReposVisible[gitHubAPIService.displayedUser.login] ? '&#9660;' : '&#9654;'}}
+				</button> Projets publics de {{gitHubAPIService.displayedUser.name}}
+				({{gitHubAPIService.userRepositories[gitHubAPIService.displayedUser.login].length}})
 			</h1>
-			<ng-container *ngIf="userReposVisible[displayedUser.login]">
+			<ng-container *ngIf="userReposVisible[gitHubAPIService.displayedUser.login]">
 				<repository-card class="card" [repository]="repository"
-					*ngFor="let repository of userRepositories[displayedUser.login]"></repository-card>
+					*ngFor="let repository of gitHubAPIService.userRepositories[gitHubAPIService.displayedUser.login]"></repository-card>
 			</ng-container>
 
 			<!-- Dépôts des organisations -->
-			<ng-container *ngFor="let organization of userOrganizations[displayedUser.login]">
-				<ng-container *ngIf="userRepositories[organization.login]">
+			<ng-container *ngFor="let organization of gitHubAPIService.userOrganizations[gitHubAPIService.displayedUser.login]">
+				<ng-container *ngIf="gitHubAPIService.userRepositories[organization.login]">
 					<h1><button class="dropdown" (click)="toggleUserReposVisibility(organization)">
 							{{userReposVisible[organization.login] ? '&#9660;' : '&#9654;'}}
 						</button> Projets publics de {{organization.name}}
-						({{userRepositories[organization.login].length}})
+						({{gitHubAPIService.userRepositories[organization.login].length}})
 					</h1>
 					<ng-container *ngIf="userReposVisible[organization.login]">
 						<repository-card class="card" [repository]="repository"
-							*ngFor="let repository of userRepositories[organization.login]"></repository-card>
+							*ngFor="let repository of gitHubAPIService.userRepositories[organization.login]"></repository-card>
 					</ng-container>
 				</ng-container>
 			</ng-container>
