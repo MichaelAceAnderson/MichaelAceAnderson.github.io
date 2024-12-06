@@ -124,6 +124,7 @@ export class GitHubAPIService {
 				jsonRepository.name,
 				jsonRepository.description,
 				jsonRepository.html_url,
+				jsonRepository.full_name,
 				jsonRepository.language
 			);
 			repositoryList.push(repository);

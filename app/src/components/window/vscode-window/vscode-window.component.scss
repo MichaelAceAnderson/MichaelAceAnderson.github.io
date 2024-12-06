@@ -1,0 +1,142 @@
+$taskbar-height: 50px;
+
+.content {
+	display: flex;
+	flex-direction: row;
+	position: relative;
+	height: 100%;
+	background: rgb(31, 31, 31);
+
+	.side-menu {
+		display: inline-block;
+		height: 100%;
+		color: white;
+
+		&-bar {
+			display: inline-block;
+			width: 60px;
+			height: 100%;
+			padding: 0.5em;
+			background: rgb(24, 24, 24);
+			border-right: 1px solid rgb(43, 43, 43);
+			text-align: center;
+
+			&-item {
+				display: block;
+				padding: 0.75em;
+				width: 100%;
+				cursor: pointer;
+				color: rgb(134, 134, 134);
+				position: relative;
+
+				&:hover {
+					color: rgb(215, 215, 215);
+				}
+
+				.icon {
+					display: inline-block;
+					height: 1.75em;
+					width: 1.75em;
+				}
+			}
+		}
+
+		&-tab {
+			display: inline-block;
+			vertical-align: top;
+			height: 100%;
+			width: 300px;
+			background: rgb(24, 24, 24);
+			border-right: 1px solid rgb(43, 43, 43);
+
+			&-title{
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				width: 100%;
+				padding: 0.2em 1em;
+
+				h1{
+					font-size: 0.8em;
+					text-transform: uppercase;
+				}
+			}
+
+			&.explorer {
+				ul{
+					list-style: none;
+					padding: 0;
+					margin: 0;
+
+					li {
+						padding: 0 1em;
+						line-height: 1.3em;
+
+						&:hover{
+							cursor: pointer;
+							background: rgb(255, 255, 255, 0.1);
+
+							a{
+								color: white;
+								text-decoration: underline;
+							}
+						}
+
+						img{
+							max-width: 1em;
+							height: 100%;
+							margin-right: 0.5em;
+							vertical-align: middle;
+						}
+
+						a{
+							font-size: 0.9em;
+							text-decoration: none;
+							color: gray;
+							vertical-align: middle;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.display{
+		display: inline-block;
+		position: relative;
+		flex-grow: 1;
+
+		.icon{
+			display: inline-block;
+			width: 15em;
+			height: 15em;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+	}
+}
+
+.notifications {
+	position: absolute;
+    bottom: calc($taskbar-height + 0.5em);
+    right: 1em;
+	z-index: 11;
+
+	&-card{
+		display: block;
+		padding: 1em;
+		background: rgb(31, 31, 31);
+		border: 1px solid rgb(49, 49, 49);
+		border-radius: 5px;
+		margin: 0.5em 0;
+
+		h1{
+			color: white;
+			font-size: 0.8em;
+			text-transform: uppercase;
+			margin: 0;
+		}
+	}
+}
