@@ -40,7 +40,7 @@
 			color: lighten($bg-primary, 10%);
 		}
 
-		&:focus,
+		&:focus-visible,
 		&:active {
 			background: rgba(0, 0, 0, 0.1);
 			color: lighten($bg-primary, 20%);
