@@ -14,17 +14,17 @@ export class InteractiveApp {
 	public static appList: InteractiveApp[] = [
 		new InteractiveApp(
 			'File Explorer',
-			'/assets/icons/file-explorer.svg',
+			'/assets/icons/apps/file-explorer.svg',
 			ExplorerWindowComponent
 		),
 		new InteractiveApp(
 			'Microsoft Edge',
-			'/assets/icons/edge-logo.svg',
+			'/assets/icons/apps/edge-logo.svg',
 			EdgeWindowComponent
 		),
 		new InteractiveApp(
 			'Visual Studio Code',
-			'/assets/icons/vscode-logo.svg',
+			'/assets/icons/apps/vscode-logo.svg',
 			VSCodeWindowComponent
 		),
 	];
