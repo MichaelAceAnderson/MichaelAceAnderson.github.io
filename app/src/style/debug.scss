@@ -9,11 +9,19 @@ $debug: false;
 		outline: 1px solid rgba(255, 0, 0, 1);
 	}
 
+	*:active{
+		outline: 2px solid rgba(255, 255, 0, 1);
+	}
+
 	*:focus {
 		outline: 2px solid rgba(0, 0, 255, 1);
 	}
 
 	*:focus-visible {
 		outline: 3px solid rgba(0, 255, 0, 1);
+	}
+
+	*:focus-within {
+		outline: 4px solid rgba(255, 0, 255, 1);
 	}
 }
