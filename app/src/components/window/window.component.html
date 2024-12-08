@@ -8,13 +8,13 @@
 		</span>
 		<span class="window-title-bar-controls">
 			<button class="no-default-button-style window-title-bar-controls-button minimize" (click)="app.toggleMinimized(true)">
-				<img src="assets/icons/window-minimize.svg" alt="Minimize" />
+				<window-minimize-icon class="icon" title="Réduire"></window-minimize-icon>
 			</button>
 			<button class="no-default-button-style window-title-bar-controls-button maximize">
-				<img src="assets/icons/window-maximized.svg" alt="Maximize" />
+				<window-maximized-icon class="icon" title="Maximiser"></window-maximized-icon>
 			</button>
 			<button class="no-default-button-style window-title-bar-controls-button close" (click)="app.close()">
-				<img src="assets/icons/window-close.svg" alt="Close" />
+				<window-close-icon class="icon" title="Fermer"></window-close-icon>
 			</button>
 		</span>
 	</div>

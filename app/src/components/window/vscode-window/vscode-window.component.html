@@ -24,7 +24,7 @@
 			<ul
 				*ngIf="!gitHubAPIService.isLoadingData && gitHubAPIService.displayedUser && gitHubAPIService.userRepositories">
 				<li *ngFor="let repository of gitHubAPIService.userRepositories[gitHubAPIService.displayedUser.login]">
-					<img src="/assets/icons/vsc-folder.svg" /><a href="https://github1s.com/{{repository.full_name}}"
+					<img src="/assets/icons/vscode/vsc-folder.svg" /><a href="https://github1s.com/{{repository.full_name}}"
 						target="_blank">{{repository.name}}</a>
 				</li>
 			</ul>

@@ -77,31 +77,27 @@ $title-bar-control-size: 50px;
 			text-align: center;
 
 			&-button {
-				display: flex;
-				justify-content: center;
-				align-items: center;
 				text-align: center;
-
+				position: relative;
 				height: 100%;
-				max-width: $title-bar-control-size;
-				padding: 1em 2em;
+				width: 60px;
 
-				img {
-					vertical-align: middle;
-					height: 100%;
+				.icon {
+					vertical-align: top;
+					height: 40%;
+					display: inline-block;
+					max-width: 100%;
 					// Conserver le ratio
 					object-fit: contain;
 				}
 
 				&:hover {
 					background: rgba(255, 255, 255, 0.3);
-					color: lighten($bg-primary, 10%);
 				}
 
 				&:focus-visible,
 				&:active {
 					background: rgba(0, 0, 0, 0.1);
-					color: lighten($bg-primary, 20%);
 				}
 
 				&.close {
