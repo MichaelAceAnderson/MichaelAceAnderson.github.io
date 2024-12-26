@@ -145,6 +145,7 @@ html {
 		select,
 		textarea,
 		label {
+			font-family: $global-font-family;
 			font-size: 1em;
 		}
 
