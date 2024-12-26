@@ -113,8 +113,10 @@ html {
 			}
 
 			&:focus-visible {
-				outline: white 3px solid;
-				outline-offset: -3px;
+				&:not(input){
+					outline: white 3px solid;
+					outline-offset: -3px;
+				}
 			}
 		}
 
