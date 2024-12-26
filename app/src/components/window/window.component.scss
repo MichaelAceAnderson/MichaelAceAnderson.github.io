@@ -1,7 +1,7 @@
 @import '../../style/selectedTheme.scss';
 
 $taskbar-height: 50px;
-$title-bar-height: 40px;
+$title-bar-height: 30px;
 $title-bar-control-size: 50px;
 
 .window {
@@ -80,7 +80,7 @@ $title-bar-control-size: 50px;
 				text-align: center;
 				position: relative;
 				height: 100%;
-				width: 60px;
+				width: 50px;
 
 				.icon {
 					vertical-align: top;
