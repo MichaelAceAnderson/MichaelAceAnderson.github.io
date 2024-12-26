@@ -36,6 +36,10 @@ export class AppComponent {
 			if (environment.DEBUG_MODE) console.error('Une erreur est survenue lors de la récupération des données GitHub:', error);
 			GitHubAPIService.isLoadingData = false;
 		}
+
+		if (location.pathname !== '/') {
+			location.href = '/';
+		}
 	}
 
 }
