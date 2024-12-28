@@ -23,21 +23,22 @@
 			</span>
 			<ul
 				*ngIf="!gitHubAPIService.isLoadingData && gitHubAPIService.displayedUser && gitHubAPIService.userRepositories">
-				<li *ngIf="!gitHubAPIService.isLoadingData && gitHubAPIService.displayedUser">
-					<img src="/assets/icons/vscode/vsc-folder.svg" />{{gitHubAPIService.displayedUser.login}}
+				<li *ngIf="!gitHubAPIService.isLoadingData && gitHubAPIService.displayedUser" class="folder">
+					<img src="/assets/icons/vscode/vsc-folder.svg" class="folder-icon"/><span class="folder-title">{{gitHubAPIService.displayedUser.login}}</span>
 					<ul>
-						<li *ngFor="let repository of gitHubAPIService.userRepositories[gitHubAPIService.displayedUser.login]">
-							<img src="/assets/icons/vscode/vsc-folder.svg" /><a
+						<li *ngFor="let repository of gitHubAPIService.userRepositories[gitHubAPIService.displayedUser.login]" class="folder">
+							<img src="/assets/icons/vscode/vsc-folder.svg" class="folder-icon"/><a class="folder-title"
 								href="https://github1s.com/{{repository.full_name}}" target="_blank">{{repository.name}}</a>
 						</li>
 					</ul>
 				</li>
 				<li
-					*ngFor="let organization of gitHubAPIService.userOrganizations[gitHubAPIService.displayedUser.login]">
-					<img src="/assets/icons/vscode/vsc-folder.svg" />{{organization.login}}
+					*ngFor="let organization of gitHubAPIService.userOrganizations[gitHubAPIService.displayedUser.login]"
+					class="folder">
+					<img src="/assets/icons/vscode/vsc-folder.svg" class="folder-icon"/>{{organization.login}}
 					<ul *ngIf="gitHubAPIService.userRepositories[organization.login]">
-						<li *ngFor="let repository of gitHubAPIService.userRepositories[organization.login]">
-							<img src="/assets/icons/vscode/vsc-folder.svg" /><a
+						<li *ngFor="let repository of gitHubAPIService.userRepositories[organization.login]" class="folder">
+							<img src="/assets/icons/vscode/vsc-folder.svg" class="folder-icon"/><a class="folder-title"
 								href="https://github1s.com/{{repository.full_name}}"
 								target="_blank">{{repository.name}}</a>
 						</li>
