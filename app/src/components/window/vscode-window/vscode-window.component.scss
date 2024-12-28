@@ -63,6 +63,9 @@ $taskbar-height: 50px;
 			}
 
 			&.explorer {
+				overflow-y: auto;
+				overflow-x: hidden;
+
 				ul{
 					list-style: none;
 					padding: 0;
@@ -71,12 +74,13 @@ $taskbar-height: 50px;
 					li {
 						padding: 0 1em;
 						line-height: 1.3em;
+						color: gray;
 
-						&:hover{
+						&:not(:has(ul)):hover {
 							cursor: pointer;
 							background: rgb(255, 255, 255, 0.1);
 
-							a{
+							a {
 								color: white;
 								text-decoration: underline;
 							}
@@ -92,7 +96,7 @@ $taskbar-height: 50px;
 						a{
 							font-size: 0.9em;
 							text-decoration: none;
-							color: gray;
+							color: inherit;
 							vertical-align: middle;
 						}
 					}
