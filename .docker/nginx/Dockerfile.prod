@@ -1,0 +1,20 @@
+# Note: Docker cannot fetch files outside the build context
+# Therefore, we build this image from the project's root directory
+
+# Define the base image
+FROM nginx:latest
+
+# Define the working directory
+WORKDIR /var/www/html
+
+# Copy the initial Nginx configuration
+COPY .docker/nginx/conf/ /etc/nginx/
+
+# Copy source files (except those in .dockerignore)
+COPY app/dist/portfolio-ng/browser/ ./
+
+# Start the application
+CMD ["nginx", "-g", "daemon off;" ]
+
+# Expose the port
+EXPOSE 80
