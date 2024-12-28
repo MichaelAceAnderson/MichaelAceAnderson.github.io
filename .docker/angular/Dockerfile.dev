@@ -17,7 +17,7 @@ RUN npm install
 COPY app/ .
 
 # Start the application
-CMD ["npm", "run", "start"]
+CMD ["npm", "run", "dev"]
 
 # Expose the port
 EXPOSE 4200
