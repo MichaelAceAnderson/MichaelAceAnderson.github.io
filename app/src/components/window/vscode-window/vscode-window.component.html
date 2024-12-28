@@ -23,9 +23,25 @@
 			</span>
 			<ul
 				*ngIf="!gitHubAPIService.isLoadingData && gitHubAPIService.displayedUser && gitHubAPIService.userRepositories">
-				<li *ngFor="let repository of gitHubAPIService.userRepositories[gitHubAPIService.displayedUser.login]">
-					<img src="/assets/icons/vscode/vsc-folder.svg" /><a href="https://github1s.com/{{repository.full_name}}"
-						target="_blank">{{repository.name}}</a>
+				<li *ngIf="!gitHubAPIService.isLoadingData && gitHubAPIService.displayedUser">
+					<img src="/assets/icons/vscode/vsc-folder.svg" />{{gitHubAPIService.displayedUser.login}}
+					<ul>
+						<li *ngFor="let repository of gitHubAPIService.userRepositories[gitHubAPIService.displayedUser.login]">
+							<img src="/assets/icons/vscode/vsc-folder.svg" /><a
+								href="https://github1s.com/{{repository.full_name}}" target="_blank">{{repository.name}}</a>
+						</li>
+					</ul>
+				</li>
+				<li
+					*ngFor="let organization of gitHubAPIService.userOrganizations[gitHubAPIService.displayedUser.login]">
+					<img src="/assets/icons/vscode/vsc-folder.svg" />{{organization.login}}
+					<ul *ngIf="gitHubAPIService.userRepositories[organization.login]">
+						<li *ngFor="let repository of gitHubAPIService.userRepositories[organization.login]">
+							<img src="/assets/icons/vscode/vsc-folder.svg" /><a
+								href="https://github1s.com/{{repository.full_name}}"
+								target="_blank">{{repository.name}}</a>
+						</li>
+					</ul>
 				</li>
 			</ul>
 		</div>
@@ -36,7 +52,9 @@
 </div>
 <div class="notifications">
 	<div class="notifications-card" *ngIf="gitHubAPIService.isLoadingData">
-		<h1><spinner></spinner> Chargement en cours...</h1>
+		<h1>
+			<spinner></spinner> Chargement en cours...
+		</h1>
 	</div>
 	<div class="notifications-card" *ngIf="!gitHubAPIService.isLoadingData && !gitHubAPIService.displayedUser">
 		<h1>❌ Une erreur est survenue lors du chargement des données</h1>
