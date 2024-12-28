@@ -72,6 +72,7 @@ $taskbar-height: 50px;
 					margin: 0;
 
 					li {
+						font-size: 0.9rem;
 						padding: 0 1em;
 						line-height: 1.3em;
 						color: gray;
@@ -79,25 +80,29 @@ $taskbar-height: 50px;
 						&:not(:has(ul)):hover {
 							cursor: pointer;
 							background: rgb(255, 255, 255, 0.1);
+						}
 
-							a {
-								color: white;
-								text-decoration: underline;
+						&.folder{
+							.folder-icon, .folder-title{
+								vertical-align: middle;
+								line-height: 1rem;
 							}
-						}
 
-						img{
-							max-width: 1em;
-							height: 100%;
-							margin-right: 0.5em;
-							vertical-align: middle;
-						}
+							.folder-icon{
+								max-width: 1em;
+								height: 100%;
+								margin-right: 0.5em;
+							}
 
-						a{
-							font-size: 0.9em;
-							text-decoration: none;
-							color: inherit;
-							vertical-align: middle;
+							a.folder-title{
+								text-decoration: none;
+								color: inherit;
+
+								&:hover{
+									color: white;
+									text-decoration: underline;
+								}
+							}
 						}
 					}
 				}
