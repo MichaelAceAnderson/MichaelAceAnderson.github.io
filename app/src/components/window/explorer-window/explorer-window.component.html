@@ -13,7 +13,10 @@
 		</span>
 		<span class="explorer-header-path" tabindex="0">
 			<img src="/assets/icons/files/folder.svg" class="icon" />
-			<span class="explorer-header-path-text"><span>Windows (C:) </span><chevron-right-icon class="chevron"/><span> Utilisateurs </span><chevron-right-icon class="chevron"/><span> {{gitHubApiService.displayedUser?.login ?? 'Portfolio'}} </span><chevron-right-icon class="chevron"/><span> Documents</span></span>
+			<span class="explorer-header-path-text"><span>Windows (C:) </span><chevron-right-icon
+					class="chevron" /><span> Utilisateurs </span><chevron-right-icon class="chevron" /><span>
+					{{gitHubApiService.displayedUser?.login ?? 'Portfolio'}} </span><chevron-right-icon
+					class="chevron" /><span> Documents</span></span>
 		</span>
 		<span class="explorer-header-search">
 			<input type="text" placeholder="Rechercher..." [(ngModel)]="filterName" />
@@ -26,27 +29,33 @@
 	<div class="explorer-content">
 		<div class="explorer-content-quick-access">
 			<ul>
-				<li style="padding-left: 1em;" tabindex="0"><chevron-down-icon class="icon chevron open"/><img src="/assets/icons/files/folder.svg" class="icon" /> Disque local (C:)</li>
-				<li style="padding-left: 2em;" tabindex="0"><chevron-down-icon class="icon chevron open"/><img src="/assets/icons/files/folder.svg" class="icon" /> Utilisateurs</li>
-				<li style="padding-left: 3em;" tabindex="0"><chevron-down-icon class="icon chevron open"/><img src="{{gitHubApiService.displayedUser?.avatar_url ?? '/assets/icons/files/folder.svg'}}" class="icon" /> {{gitHubApiService.displayedUser?.login}}</li>
-				<li style="padding-left: 4em;" tabindex="0"><chevron-right-icon class="icon chevron"/><img src="/assets/icons/files/folder.svg" class="icon" />Documents</li>
+				<li style="padding-left: 1em;" tabindex="0"><chevron-down-icon class="icon chevron open" /><img
+						src="/assets/icons/files/folder.svg" class="icon" /> Disque local (C:)</li>
+				<li style="padding-left: 2em;" tabindex="0"><chevron-down-icon class="icon chevron open" /><img
+						src="/assets/icons/files/folder.svg" class="icon" /> Utilisateurs</li>
+				<li style="padding-left: 3em;" tabindex="0"><chevron-down-icon class="icon chevron open" /><img
+						src="{{gitHubApiService.displayedUser?.avatar_url ?? '/assets/icons/files/folder.svg'}}"
+						class="icon" /> {{gitHubApiService.displayedUser?.login}}</li>
+				<li style="padding-left: 4em;" tabindex="0"><chevron-right-icon class="icon chevron" /><img
+						src="/assets/icons/files/folder.svg" class="icon" />Documents</li>
 			</ul>
 		</div>
 		<div class="explorer-content-files">
-			<table>
-				<tr>
-					<th class="name">Nom</th>
-					<th>Date de modification</th>
-					<th>Type</th>
-				</tr>
-				<tr #row *ngFor="let file of fileManagerService.fileList; let i = index" tabindex="0"
-					[ngClass]="{'hidden': !file.name.toLowerCase().includes(filterName.toLowerCase())}" (click)="onFileClick($event, file)"
-					(keydown)="onFileKeyDown($event, file, i)" title="{{file.url}}">
-					<td class="name"><img src="{{file.img_url}}" /><span>{{file.name}}</span></td>
-					<td>{{file.last_update | date:'dd/MM/yyyy HH:mm'}}</td>
-					<td>{{file.type}}</td>
-				</tr>
-			</table>
+				<table>
+					<tr>
+						<th class="name">Nom</th>
+						<th>Date de modification</th>
+						<th>Type</th>
+					</tr>
+					<tr #row *ngFor="let file of fileManagerService.fileList; let i = index" tabindex="0"
+						[ngClass]="{'hidden': !file.name.toLowerCase().includes(filterName.toLowerCase())}"
+						(click)="onFileClick($event, file)" (keydown)="onFileKeyDown($event, file, i)"
+						title="{{file.url}}">
+						<td class="name"><img src="{{file.img_url}}" /><span>{{file.name}}</span></td>
+						<td>{{file.last_update | date:'dd/MM/yyyy HH:mm'}}</td>
+						<td>{{file.type}}</td>
+					</tr>
+				</table>
 		</div>
 	</div>
 </div>

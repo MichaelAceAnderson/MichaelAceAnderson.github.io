@@ -19,6 +19,7 @@ $emphasis: rgb(25, 25, 25);
 		&-actions {
 			display: inline-block;
 			height: 100%;
+			white-space: nowrap;
 
 			&-button {
 				display: inline-block;
@@ -48,6 +49,9 @@ $emphasis: rgb(25, 25, 25);
 
 		&-path {
 			flex-grow: 1;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			overflow: hidden;
 
 			.icon {
 				height: 1.2em;
@@ -98,13 +102,14 @@ $emphasis: rgb(25, 25, 25);
 	&-content {
 		flex-grow: 1;
 		display: flex;
-		flex-direction: row;
+		overflow: auto;
 
 		&-quick-access {
 			background: $emphasis;
 			height: 100%;
 			width: 250px;
 			border-right: 1px solid rgb(255, 255, 255, 0.1);
+			overflow: auto;
 
 			ul,
 			ul li {
@@ -118,6 +123,9 @@ $emphasis: rgb(25, 25, 25);
 
 				li {
 					padding: 0.2em;
+					white-space: nowrap;
+					text-overflow: ellipsis;
+					overflow: hidden;
 
 					&:hover, &:focus {
 						user-select: none;
@@ -159,6 +167,10 @@ $emphasis: rgb(25, 25, 25);
 
 			table {
 				border-collapse: collapse;
+
+				td,th{
+					white-space: nowrap;
+				}
 
 				th {
 					color: darkgray;
