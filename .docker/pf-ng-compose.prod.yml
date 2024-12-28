@@ -1,0 +1,21 @@
+services:
+  pf-ng-nginx-s:
+    build:
+      context: ../
+      dockerfile: ".docker/nginx/Dockerfile.prod"
+    container_name: pf-ng-nginx-c
+    env_file:
+    - "nginx/.env.prod"
+    volumes:
+    - type: bind
+      source: "../app/dist/portfolio-ng/browser/"
+      target: "/var/www/html"
+      # Only for MacOS
+      consistency: consistent
+    ports:
+    - "80:80"
+    networks:
+    - pf-ng-network
+networks:
+  pf-ng-network:
+    driver: bridge
