@@ -1,0 +1,37 @@
+name: Déployer sur GitHub Pages
+
+on:
+  push:
+    branches:
+      - develop
+  pull_request:
+    branches:
+      - develop
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Récupérer le code
+        uses: actions/checkout@v3
+      - name: Configurer Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '21'
+      - name: Installer les dépendances
+        run: |
+          cd app
+          npm install
+      - name: Construire l'application Angular
+        run: |
+          cd app
+          npm run build
+      - name: Vérifier le contenu du répertoire de build
+        run: |
+          ls -la app/dist/portfolio-ng/browser
+      - name: Déployer sur GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: app/dist/portfolio-ng/browser
+          token: ${{ secrets.GITHUB_TOKEN }}
