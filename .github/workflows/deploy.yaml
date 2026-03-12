@@ -1,11 +1,8 @@
-name: Déployer sur GitHub Pages
+name: Deployer sur GitHub Pages
 
 on:
   push:
-    branches:
-      - main
-  pull_request:
-    branches:
+    branches: 
       - main
 
 permissions:
@@ -14,29 +11,33 @@ permissions:
   id-token: write
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
+
     steps:
       - name: Récupérer le code
-        uses: actions/checkout@v3
-      - name: Configurer Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '21'
-      - name: Installer les dépendances
+        uses: actions/checkout@v4
+
+      - name: Construire le site final
         run: |
           cd app
           npm install
-      - name: Construire l'application Angular
-        run: |
-          cd app
           npm run build
-      - name: Vérifier le contenu du répertoire de build
-        run: |
-          ls -la app/dist/portfolio-ng/browser
-      - name: Déployer sur GitHub Pages
-        uses: JamesIves/github-pages-deploy-action@v4
+
+      - name: Upload 
+        uses: actions/upload-pages-artifact@v3
         with:
-          branch: gh-pages
-          folder: app/dist/portfolio-ng/browser
-          token: ${{ secrets.GITHUB_TOKEN }}
+          path: ./app/dist/portfolio-ng/browser
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deployer sur GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
