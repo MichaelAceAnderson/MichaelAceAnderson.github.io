@@ -39,4 +39,4 @@ jobs:
         with:
           branch: gh-pages
           folder: app/dist/portfolio-ng/browser
-          token: ${{ secrets.GH_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
