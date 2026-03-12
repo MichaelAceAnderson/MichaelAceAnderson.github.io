@@ -142,6 +142,7 @@ $emphasis: rgb(25, 25, 25);
 					max-width: 1em;
 					display: inline-block;
 					margin-right: 0.25em;
+					cursor: default;
 
 					&.chevron {
 						color: $disabled-control;

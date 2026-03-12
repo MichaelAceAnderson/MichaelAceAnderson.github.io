@@ -62,6 +62,10 @@ $taskbar-height: 50px;
 				}
 			}
 
+			.settings {
+				cursor: pointer;
+			}
+
 			&.explorer {
 				overflow-y: auto;
 				overflow-x: hidden;
@@ -73,7 +77,7 @@ $taskbar-height: 50px;
 
 					li {
 						font-size: 0.9rem;
-						padding: 0 1em;
+						padding: 0.2em 1em;
 						line-height: 1.3em;
 						color: gray;
 
