@@ -20,7 +20,7 @@ jobs:
 
       - name: Injecter les variables d'environnement
         run: |
-          sed -i "s/__GITHUB_TOKEN__/${{ secrets.GITHUB_TOKEN }}/g" app/src/environments/environment.prod.ts
+          sed -i "s/__GITHUB_TOKEN__/${{ secrets.GH_PRIVATE_TOKEN }}/g" app/src/environments/environment.prod.ts
 
       - name: Construire le site final
         run: |
