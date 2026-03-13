@@ -2,5 +2,6 @@
 export const environment = {
 	production: true,
 	DEBUG_MODE: false,
-	GH_PERSONAL_ACCESS_TOKEN: null,
+	// Remplacé au build (CI/script) avec la variable d'env GITHUB_TOKEN
+	GH_PERSONAL_ACCESS_TOKEN: '__GITHUB_TOKEN__',
 };

@@ -18,6 +18,10 @@ jobs:
       - name: Récupérer le code
         uses: actions/checkout@v4
 
+      - name: Injecter les variables d'environnement
+        run: |
+          sed -i "s/__GITHUB_TOKEN__/${{ secrets.GITHUB_TOKEN }}/g" app/src/environments/environment.prod.ts
+
       - name: Construire le site final
         run: |
           cd app

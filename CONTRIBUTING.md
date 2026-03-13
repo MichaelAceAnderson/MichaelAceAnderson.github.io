@@ -10,7 +10,7 @@ Toutes les informations relatives à la contribution au projet se trouvent dans 
         - [Installer WSL pour utiliser Docker sur Windows](#installer-wsl-pour-utiliser-docker-sur-windows)
         - [Installer Docker sur Linux/WSL](#installer-docker-sur-linuxwsl)
       - [Lancer la Composition Docker](#lancer-la-composition-docker)
-    - [Localement (non recommandé)](#localement-non-recommandé)
+    - [Localement](#localement)
   - [Conception Technique](#conception-technique)
     - [Environnement de Développement](#environnement-de-développement)
   - [Conventions du Projet](#conventions-du-projet)
@@ -57,8 +57,6 @@ git clone https://github.com:MichaelAceAnderson/Portfolio.git
 ### Via Docker
 
 L'application peut fonctionner dans un conteneur Docker. Pour ce faire, vous devez installer Docker et Docker Compose, puis lancer la composition Docker.
-
-Exécuter le projet directement localement est moins recommandé car cela nécessite l'installation et la configuration de plusieurs applications (Node/NPM/NVM), ce qui prend du temps. Par conséquent, il est préférable d'utiliser Docker pour lancer l'application.
 
 #### Prérequis
 
@@ -139,7 +137,7 @@ Une fois le conteneur lancé, il est possible de l'explorer de l'intérieur et d
 sudo docker exec -it pf-ng-angular-c sh
 ```
 
-### Localement (non recommandé)
+### Localement
 
 1. Installer Node Package Manager (NPM) et Node.js (NVM est recommandé pour gérer les versions de Node.js)
 2. Installer les dépendances avec `npm install` dans le dossier [app](app/)
